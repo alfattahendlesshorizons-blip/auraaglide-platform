@@ -12,24 +12,6 @@ export const heroContent: HeroContent = {
   description:
     "Business setup, legal protection, compliance and growth advisory connected through one structured support system.",
 
-  trustItems: [
-    {
-      title: "Business-first guidance",
-      description: "Strategic foundation",
-      icon: "foundation",
-    },
-    {
-      title: "Connected specialists",
-      description: "Legal • Tax • Compliance",
-      icon: "network",
-    },
-    {
-      title: "Clear execution",
-      description: "Structured delivery",
-      icon: "execution",
-    },
-  ],
-
   primaryAction: {
     label: "Book a Consultation",
     href: "/contact",
@@ -41,6 +23,44 @@ export const heroContent: HeroContent = {
   },
 
   reassurance: "Clear guidance. No unnecessary complexity.",
+
+  railItems: [
+    {
+      label: "ROC",
+      href: "/services/roc-compliance",
+      description: "Company filings and compliance",
+      enabled: true,
+      order: 1,
+    },
+    {
+      label: "GST",
+      href: "/services/gst-registration",
+      description: "Registration and returns",
+      enabled: true,
+      order: 2,
+    },
+    {
+      label: "MSME",
+      href: "/services/msme-registration",
+      description: "Udyam registration",
+      enabled: true,
+      order: 3,
+    },
+    {
+      label: "LLP",
+      href: "/services/llp-registration",
+      description: "LLP setup and filings",
+      enabled: true,
+      order: 4,
+    },
+    {
+      label: "Trademark",
+      href: "/services/trademark-registration",
+      description: "Brand protection",
+      enabled: true,
+      order: 5,
+    },
+  ],
 
   image: {
     src: "/images/home/hero-advisory-office.png",

@@ -43,3 +43,21 @@
   --space-hero: clamp(28px, 5vw, 84px);
 }
 
+
+/* Global application shell */
+:root {
+  --site-header-height: 84px;
+  --site-header-offset: 22px;
+  --site-header-space:
+    calc(
+      var(--site-header-height) +
+      var(--site-header-offset)
+    );
+}
+
+@media (max-width: 1080px) {
+  :root {
+    --site-header-height: 68px;
+    --site-header-offset: 14px;
+  }
+}

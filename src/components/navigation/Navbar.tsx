@@ -1,7 +1,6 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
-import { DesktopNavigation } from "./DesktopNavigation";
-import { MobileNavigation } from "./MobileNavigation";
+import { DesktopNavbar } from "./DesktopNavbar";
 import { navigationContent } from "./navigation.data";
 import styles from "./Navbar.module.css";
 
@@ -15,16 +14,15 @@ export function Navbar() {
           aria-label="AuraaGlide Solutions home"
         >
           <Image
-            src={navigationContent.logo.image}
+            src={navigationContent.logo.src}
             alt={navigationContent.logo.alt}
-            width={176}
+            width={178}
             height={52}
             priority
           />
         </Link>
 
-        <DesktopNavigation />
-        <MobileNavigation />
+        <DesktopNavbar />
       </nav>
     </header>
   );

@@ -61,25 +61,25 @@
     var(--container-wide)
   );
   margin-inline: auto;
-  padding-block: 28px 72px;
+  padding-block: 32px 92px;
 }
 
 .panel {
   position: relative;
   display: grid;
-  min-height: clamp(590px, 66vh, 680px);
-  padding: clamp(38px, 4vw, 58px);
+  min-height: clamp(620px, 70vh, 730px);
+  padding: clamp(42px, 4.5vw, 68px);
   overflow: hidden;
 
   grid-template-columns:
-    minmax(0, 1.06fr)
-    minmax(390px, 0.94fr);
+    minmax(0, 1.03fr)
+    minmax(410px, 0.97fr);
 
-  gap: clamp(36px, 4vw, 64px);
+  gap: clamp(42px, 5vw, 78px);
   align-items: center;
 
   border: 1px solid rgba(130, 163, 190, 0.17);
-  border-radius: 34px;
+  border-radius: 38px;
 
   background:
     radial-gradient(
@@ -203,12 +203,12 @@
 .copy {
   position: relative;
   z-index: 4;
-  max-width: 670px;
+  max-width: 700px;
 }
 
 .eyebrow {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   gap: 13px;
   align-items: center;
 
@@ -239,9 +239,9 @@
   margin: 0;
 
   font-family: var(--font-heading);
-  font-size: clamp(2.9rem, 4.45vw, 4.95rem);
+  font-size: clamp(3rem, 4.7vw, 5.25rem);
   font-weight: 650;
-  line-height: 1.01;
+  line-height: 0.99;
   letter-spacing: -0.055em;
 }
 
@@ -293,14 +293,14 @@
 }
 
 .description {
-  max-width: 580px;
-  margin: 23px 0 0;
+  max-width: 600px;
+  margin: 27px 0 0;
 
   color: #b5c1cc;
   font-family: var(--font-body);
   font-size: clamp(0.98rem, 1.08vw, 1.08rem);
   font-weight: 430;
-  line-height: 1.66;
+  line-height: 1.72;
   letter-spacing: -0.008em;
 }
 
@@ -465,13 +465,13 @@
 /* CTA */
 
 .ctaArea {
-  margin-top: 27px;
+  margin-top: 31px;
 }
 
 .actions {
   display: flex;
   margin: 0;
-  gap: 18px;
+  gap: 22px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -632,7 +632,7 @@
 
 .reassurance {
   display: flex;
-  margin: 11px 0 0;
+  margin: 13px 0 0;
   gap: 8px;
   align-items: center;
 
@@ -651,7 +651,7 @@
 
 .visual {
   position: relative;
-  min-height: clamp(445px, 49vh, 525px);
+  min-height: clamp(470px, 52vh, 560px);
   overflow: hidden;
 
   border: 1px solid rgba(205, 170, 104, 0.18);
@@ -855,3 +855,28 @@
   border-radius: 27px 27px 0 0;
   border-bottom-color: rgba(205, 167, 95, 0.12);
 }
+
+/* TRADEMARK-ENDPOINT-FIX-START */
+
+/* Last node ke baad connector line bilkul nahi */
+.railItem:last-child::after {
+  display: none;
+  content: none;
+}
+
+/* Trademark text aur node ke beech clean spacing */
+.railItem:last-child {
+  padding-right: 18px;
+}
+
+.railItem:last-child .railLabel {
+  margin-left: 2px;
+  white-space: nowrap;
+}
+
+/* Main track Trademark node par hi stop ho */
+.railTrack {
+  right: 121px;
+}
+
+/* TRADEMARK-ENDPOINT-FIX-END */

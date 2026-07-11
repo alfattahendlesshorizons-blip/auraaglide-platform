@@ -1,7 +1,7 @@
 ﻿import Image from "next/image";
 import { ActionLink } from "@/design-system/primitives/action-link";
 import { heroContent } from "./hero.data";
-import { HeroTrustIcon } from "./HeroTrustIcon";
+import { HeroServiceRail } from "./HeroServiceRail";
 import styles from "./HeroSection.module.css";
 
 export function HeroSection() {
@@ -35,24 +35,7 @@ export function HeroSection() {
           <p className={styles.description}>
             {heroContent.description}
           </p>
-
-          <div
-            className={styles.trustModules}
-            aria-label="Why businesses choose AuraaGlide"
-          >
-            {heroContent.trustItems.map((item) => (
-              <div className={styles.trustModule} key={item.title}>
-                <HeroTrustIcon type={item.icon} />
-
-                <div className={styles.trustCopy}>
-                  <strong>{item.title}</strong>
-                  <span>{item.description}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className={styles.ctaArea}>
+<div className={styles.ctaArea}>
             <div className={styles.actions}>
               <ActionLink
                 href={heroContent.primaryAction.href}
@@ -78,7 +61,8 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className={styles.visual}>
+        <div className={styles.visualStack}>
+          <div className={styles.visual}>
           <Image
             src={heroContent.image.src}
             alt={heroContent.image.alt}
@@ -90,9 +74,15 @@ export function HeroSection() {
 
           <div className={styles.imageShade} />
           <div className={styles.imageEdge} />
+          </div>
+
+          <HeroServiceRail items={heroContent.railItems} />
         </div>
       </div>
     </section>
   );
 }
+
+
+
 

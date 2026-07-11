@@ -1,12 +1,9 @@
-﻿export type HeroTrustIcon =
-  | "foundation"
-  | "network"
-  | "execution";
-
-export type HeroTrustItem = {
-  title: string;
+﻿export type HeroRailItem = {
+  label: string;
+  href: string;
   description: string;
-  icon: HeroTrustIcon;
+  enabled: boolean;
+  order: number;
 };
 
 export type HeroContent = {
@@ -20,8 +17,6 @@ export type HeroContent = {
 
   description: string;
 
-  trustItems: HeroTrustItem[];
-
   primaryAction: {
     label: string;
     href: string;
@@ -34,8 +29,16 @@ export type HeroContent = {
 
   reassurance: string;
 
+  railItems: HeroRailItem[];
+
   image: {
     src: string;
     alt: string;
   };
 };
+
+export type HeroTrustIcon =
+  | "foundation"
+  | "network"
+  | "execution";
+
