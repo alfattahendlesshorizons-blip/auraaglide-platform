@@ -1,0 +1,54 @@
+﻿.root {
+  position: relative;
+
+  display: inline-grid;
+  place-items: center;
+}
+
+.active::before {
+  content: "";
+
+  position: absolute;
+  inset: -8px;
+
+  border-radius: inherit;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(211, 164, 78, 0.13),
+      transparent 68%
+    );
+
+  filter: blur(5px);
+
+  animation:
+    active-glow-breathe
+    3200ms
+    ease-in-out
+    infinite;
+}
+
+.active > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes active-glow-breathe {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.92);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .active::before {
+    animation: none;
+  }
+}

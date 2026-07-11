@@ -1,0 +1,17 @@
+﻿.root {
+  display: inline-flex;
+  width: fit-content;
+  gap: 10px;
+  align-items: center;
+}
+
+.root > span {
+  color: #d2a04d;
+
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,103 @@
+﻿.root {
+  position: relative;
+
+  display: inline-block;
+  height: 8px;
+
+  overflow: hidden;
+}
+
+.xs {
+  width: 36px;
+}
+
+.sm {
+  width: 66px;
+}
+
+.md {
+  width: 112px;
+}
+
+.base,
+.energy {
+  position: absolute;
+  top: 50%;
+
+  height: 1px;
+
+  transform: translateY(-50%);
+}
+
+.base {
+  right: 0;
+  left: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(211, 164, 78, 0.38),
+      rgba(111, 150, 180, 0.13),
+      transparent
+    );
+}
+
+.energy {
+  width: 42%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(244, 205, 132, 0.22),
+      rgba(249, 218, 154, 0.8)
+    );
+
+  filter:
+    drop-shadow(
+      0 0 3px
+      rgba(220, 173, 83, 0.2)
+    );
+
+  animation:
+    living-ray-left
+    7600ms
+    var(--ease-ambient)
+    infinite;
+}
+
+.left .energy {
+  right: -42%;
+}
+
+.right {
+  transform: scaleX(-1);
+}
+
+@keyframes living-ray-left {
+  0%,
+  22% {
+    right: -42%;
+    opacity: 0;
+  }
+
+  32% {
+    opacity: 0.72;
+  }
+
+  72% {
+    opacity: 0.72;
+  }
+
+  90%,
+  100% {
+    right: 100%;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .energy {
+    display: none;
+  }
+}

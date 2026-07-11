@@ -1,0 +1,92 @@
+﻿.base {
+  margin: 0;
+}
+
+.display,
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-weight: 540;
+  letter-spacing: -0.06em;
+  text-wrap: balance;
+}
+
+.display {
+  font-size: clamp(3.5rem, 6vw, 6.6rem);
+  line-height: 0.91;
+}
+
+.sectionTitle {
+  font-size: clamp(2.7rem, 4.6vw, 5rem);
+  line-height: 0.94;
+}
+
+.sectionLabel,
+.caption {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.sectionLabel {
+  font-size: 0.62rem;
+}
+
+.editorialQuote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.08rem, 1.45vw, 1.42rem);
+  font-style: italic;
+  font-weight: 430;
+  line-height: 1.54;
+  letter-spacing: -0.018em;
+}
+
+.bodyLarge,
+.body {
+  font-family: var(--font-body);
+  font-weight: 430;
+}
+
+.bodyLarge {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.body {
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.caption {
+  font-size: 0.56rem;
+}
+
+.light {
+  color: #f1f5f7;
+}
+
+.steel {
+  color: #89abc5;
+}
+
+.gold {
+  color: #dca74c;
+}
+
+.muted {
+  color: #8fa5b6;
+}
+
+@media (max-width: 767px) {
+  .display {
+    font-size: clamp(2.85rem, 13.6vw, 4.35rem);
+  }
+
+  .sectionTitle {
+    font-size: clamp(2.35rem, 11vw, 3.5rem);
+  }
+
+  .bodyLarge {
+    font-size: 0.94rem;
+  }
+}

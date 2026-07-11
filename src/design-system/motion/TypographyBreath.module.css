@@ -1,0 +1,57 @@
+﻿.root {
+  display: inline-block;
+
+  transition:
+    color var(--motion-normal) var(--ease-standard),
+    text-shadow var(--motion-normal) var(--ease-standard);
+
+  animation:
+    typography-breath
+    var(--motion-ambient)
+    var(--ease-ambient)
+    infinite;
+
+  will-change: color, text-shadow, transform;
+}
+
+.light {
+  --breath-color-start: #f1f5f7;
+  --breath-color-end: #f7fafb;
+  --breath-glow: rgba(235, 243, 247, 0.045);
+}
+
+.steel {
+  --breath-color-start: #85a7c0;
+  --breath-color-end: #93b8d1;
+  --breath-glow: rgba(95, 148, 185, 0.11);
+}
+
+.gold {
+  --breath-color-start: #dba64b;
+  --breath-color-end: #e6b75e;
+  --breath-glow: rgba(219, 165, 75, 0.13);
+}
+
+@keyframes typography-breath {
+  0%,
+  100% {
+    color: var(--breath-color-start);
+    text-shadow: 0 0 0 transparent;
+    transform: translateY(0);
+  }
+
+  50% {
+    color: var(--breath-color-end);
+    text-shadow:
+      0 0 26px
+      var(--breath-glow);
+    transform: translateY(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root {
+    color: var(--breath-color-start);
+    animation: none;
+  }
+}
