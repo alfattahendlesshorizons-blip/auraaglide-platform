@@ -1,0 +1,206 @@
+﻿.quote {
+  position: relative;
+
+  margin: 0;
+  padding:
+    12px
+    0
+    9px
+    23px;
+
+  border-left:
+    1px solid
+    rgba(207, 163, 82, 0.4);
+}
+
+.mark {
+  position: absolute;
+  top: -20px;
+  left: 17px;
+
+  color: rgba(221, 174, 86, 0.34);
+
+  font-family: Georgia, serif;
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+.quote p {
+  position: relative;
+
+  margin: 0;
+
+  color: #9ab1c3;
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.08rem, 1.45vw, 1.42rem);
+  font-style: italic;
+  font-weight: 430;
+  line-height: 1.54;
+  letter-spacing: -0.018em;
+
+  text-wrap: pretty;
+
+  animation:
+    journey-quote-reveal 700ms
+    cubic-bezier(0.2, 0.8, 0.2, 1)
+    both;
+}
+
+.quote footer {
+  margin-top: 18px;
+
+  color: rgba(213, 171, 91, 0.8);
+
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  font-style: normal;
+  font-weight: 720;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  animation:
+    journey-signature-reveal 780ms
+    100ms
+    cubic-bezier(0.2, 0.8, 0.2, 1)
+    both;
+}
+
+@keyframes journey-quote-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes journey-signature-reveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .quote {
+    padding-left: 17px;
+  }
+
+  .mark {
+    left: 11px;
+  }
+
+  .quote p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quote p,
+  .quote footer {
+    animation: none;
+  }
+}
+
+/* JOURNEY-QUOTE-BREATH-START */
+
+.quote {
+  animation:
+    journey-quote-breath 8.2s
+    ease-in-out
+    infinite;
+}
+
+.mark {
+  animation:
+    journey-quote-mark-glow 5.8s
+    ease-in-out
+    infinite;
+}
+
+.quote::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -1px;
+
+  width: 1px;
+  height: 32%;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(235, 193, 111, 0),
+      rgba(235, 193, 111, 0.82),
+      rgba(235, 193, 111, 0)
+    );
+
+  animation:
+    journey-quote-line-travel 6.6s
+    ease-in-out
+    infinite;
+}
+
+@keyframes journey-quote-breath {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes journey-quote-mark-glow {
+  0%,
+  100% {
+    opacity: 0.28;
+    text-shadow: 0 0 0 rgba(220, 174, 88, 0);
+  }
+
+  50% {
+    opacity: 0.56;
+    text-shadow:
+      0 0 16px rgba(220, 174, 88, 0.18);
+  }
+}
+
+@keyframes journey-quote-line-travel {
+  0% {
+    top: -20%;
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 0.85;
+  }
+
+  82% {
+    opacity: 0.85;
+  }
+
+  100% {
+    top: 88%;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quote,
+  .mark,
+  .quote::after {
+    animation: none;
+  }
+}
+
+/* JOURNEY-QUOTE-BREATH-END */

@@ -1,0 +1,124 @@
+﻿.root {
+  display: inline-flex;
+  width: fit-content;
+  gap: 10px;
+  align-items: center;
+}
+
+.root p {
+  flex: 0 0 auto;
+  margin: 0;
+
+  color: #d2a04d;
+
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.rail {
+  position: relative;
+
+  display: block;
+  width: 66px;
+  height: 8px;
+
+  overflow: hidden;
+}
+
+.rail::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(208, 161, 76, 0.42),
+      rgba(111, 150, 180, 0.13),
+      rgba(111, 150, 180, 0)
+    );
+
+  transform: translateY(-50%);
+}
+
+.ray {
+  position: absolute;
+  top: 50%;
+  right: -36%;
+
+  width: 36%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 209, 139, 0),
+      rgba(245, 209, 139, 0.24),
+      rgba(250, 220, 158, 0.82)
+    );
+
+  filter:
+    drop-shadow(
+      0 0 3px
+      rgba(221, 173, 83, 0.22)
+    );
+
+  transform: translateY(-50%);
+
+  animation:
+    journey-soft-ray 7.6s
+    cubic-bezier(0.42, 0, 0.2, 1)
+    infinite;
+}
+
+@keyframes journey-soft-ray {
+  0%,
+  22% {
+    right: -36%;
+    opacity: 0;
+  }
+
+  32% {
+    opacity: 0.72;
+  }
+
+  72% {
+    opacity: 0.72;
+  }
+
+  90%,
+  100% {
+    right: 100%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .root {
+    gap: 8px;
+  }
+
+  .root p {
+    font-size: 0.57rem;
+    letter-spacing: 0.15em;
+  }
+
+  .rail {
+    width: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ray {
+    display: none;
+  }
+}

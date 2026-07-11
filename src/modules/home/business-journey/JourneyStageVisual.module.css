@@ -1,0 +1,170 @@
+﻿.visual {
+  position: relative;
+
+  width: 132px;
+  aspect-ratio: 1;
+
+  border:
+    1px solid
+    rgba(111, 151, 182, 0.15);
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(40, 83, 115, 0.13),
+      rgba(6, 20, 31, 0.02) 68%
+    );
+
+  overflow: hidden;
+}
+
+.visual svg {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.orbit,
+.path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.orbit {
+  stroke: rgba(111, 158, 192, 0.24);
+  stroke-width: 1;
+
+  stroke-dasharray: 4 8;
+
+  transform-origin: center;
+
+  animation:
+    journey-orbit-spin 18s
+    linear
+    infinite;
+}
+
+.path {
+  stroke: rgba(215, 171, 89, 0.8);
+  stroke-width: 1.5;
+
+  stroke-dasharray: 170;
+  stroke-dashoffset: 170;
+
+  animation:
+    journey-path-draw 1.25s
+    cubic-bezier(0.2, 0.8, 0.2, 1)
+    forwards;
+}
+
+.nodeOne,
+.nodeTwo,
+.nodeThree {
+  fill: #0b1b28;
+  stroke: rgba(128, 170, 201, 0.82);
+  stroke-width: 1.2;
+}
+
+.core {
+  fill: #d7a850;
+
+  filter:
+    drop-shadow(
+      0 0 7px
+      rgba(215, 168, 80, 0.42)
+    );
+
+  transform-origin: center;
+
+  animation:
+    journey-core-pulse 3.8s
+    ease-in-out
+    infinite;
+}
+
+.glow {
+  position: absolute;
+  inset: 26%;
+
+  border-radius: 50%;
+
+  background:
+    rgba(199, 151, 72, 0.1);
+
+  filter: blur(16px);
+}
+
+/* Stage-specific visual moods */
+.idea {
+  transform: rotate(-5deg);
+}
+
+.launch {
+  transform: rotate(2deg);
+}
+
+.running .orbit {
+  animation-duration: 12s;
+}
+
+.growth .path {
+  stroke: rgba(115, 179, 180, 0.82);
+}
+
+.expansion .orbit {
+  transform: scale(1.08);
+}
+
+@keyframes journey-path-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes journey-orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes journey-core-pulse {
+  0%,
+  100% {
+    opacity: 0.68;
+    transform: scale(0.86);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@media (max-width: 1024px) {
+  .visual {
+    width: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .visual {
+    width: 82px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit,
+  .path,
+  .core {
+    animation: none;
+  }
+
+  .path {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,43 @@
+﻿.intro {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(360px, 0.72fr);
+  gap: clamp(58px, 7vw, 108px);
+  align-items: end;
+}
+
+.copy {
+  min-width: 0;
+}
+
+.story {
+  width: 100%;
+  max-width: 470px;
+  margin-left: auto;
+  align-self: center;
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .story {
+    max-width: 700px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    gap: 30px;
+  }
+
+  .story {
+    max-width: 100%;
+  }
+}

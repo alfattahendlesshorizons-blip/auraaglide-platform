@@ -1,0 +1,43 @@
+﻿.icon {
+  width: 13px;
+  height: 13px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  overflow: visible;
+
+  transition:
+    color 220ms ease,
+    transform 220ms ease,
+    filter 220ms ease;
+}
+
+.spark {
+  stroke: #dca94e;
+
+  animation:
+    stage-spark 2.8s
+    ease-in-out
+    infinite;
+}
+
+@keyframes stage-spark {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spark {
+    animation: none;
+  }
+}
