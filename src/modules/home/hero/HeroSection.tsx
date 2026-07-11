@@ -1,5 +1,5 @@
 ﻿import Image from "next/image";
-import Link from "next/link";
+import { ActionLink } from "@/design-system/primitives/action-link";
 import { heroContent } from "./hero.data";
 import { HeroTrustIcon } from "./HeroTrustIcon";
 import styles from "./HeroSection.module.css";
@@ -54,25 +54,21 @@ export function HeroSection() {
 
           <div className={styles.ctaArea}>
             <div className={styles.actions}>
-              <Link
+              <ActionLink
                 href={heroContent.primaryAction.href}
-                className={`${styles.actionButton} ${styles.primaryAction}`}
+                variant="primary"
+                arrow="diagonal"
               >
-                <span>{heroContent.primaryAction.label}</span>
-                <span className={styles.primaryArrow} aria-hidden="true">
-                  ↗
-                </span>
-              </Link>
+                {heroContent.primaryAction.label}
+              </ActionLink>
 
-              <Link
+              <ActionLink
                 href={heroContent.secondaryAction.href}
-                className={styles.secondaryAction}
+                variant="secondary"
+                arrow="right"
               >
-                <span>{heroContent.secondaryAction.label}</span>
-                <span className={styles.secondaryArrow} aria-hidden="true">
-                  →
-                </span>
-              </Link>
+                {heroContent.secondaryAction.label}
+              </ActionLink>
             </div>
 
             <p className={styles.reassurance}>
@@ -99,3 +95,4 @@ export function HeroSection() {
     </section>
   );
 }
+
