@@ -1,0 +1,25 @@
+﻿.container {
+  width: min(calc(100% - 3rem), var(--container-main));
+  margin-inline: auto;
+}
+
+.container-wide {
+  width: min(calc(100% - 3rem), var(--container-wide));
+  margin-inline: auto;
+}
+
+.section {
+  position: relative;
+  padding-block: clamp(4.75rem, 8vw, 8rem);
+}
+
+@media (max-width: 767px) {
+  .container,
+  .container-wide {
+    width: min(calc(100% - 1.5rem), var(--container-main));
+  }
+
+  .section {
+    padding-block: 4.5rem;
+  }
+}

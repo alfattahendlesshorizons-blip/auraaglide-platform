@@ -1,0 +1,79 @@
+﻿.surface {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(18px);
+}
+
+.surface-raised {
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-raised);
+}
+
+.gold-edge {
+  position: relative;
+}
+
+.gold-edge::before {
+  position: absolute;
+  top: -1px;
+  right: 12%;
+  left: 12%;
+  height: 1px;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(199, 155, 75, 0.68),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.page-background {
+  position: fixed;
+  z-index: -10;
+  inset: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 84% 12%,
+      color-mix(in srgb, var(--accent-secondary) 15%, transparent),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 8% 58%,
+      color-mix(in srgb, var(--accent-primary) 8%, transparent),
+      transparent 31%
+    ),
+    linear-gradient(180deg, var(--bg-page), var(--bg-page-deep));
+}
+
+.page-background::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  opacity: 0.3;
+  background-image:
+    linear-gradient(
+      color-mix(in srgb, var(--border) 36%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--border) 36%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black, transparent 76%);
+}
+
+.page-background::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+  pointer-events: none;
+}

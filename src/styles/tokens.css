@@ -1,0 +1,45 @@
+﻿:root {
+  /* Fonts */
+  --font-heading: var(--font-manrope, "Manrope"), "Segoe UI", Arial, sans-serif;
+  --font-body: var(--font-geist, "Geist"), "Segoe UI", Arial, sans-serif;
+
+  /* Homepage dark environment */
+  --home-bg: #06111c;
+  --home-bg-deep: #030a12;
+  --home-bg-soft: #0a1825;
+
+  --home-surface: #0c1b29;
+  --home-surface-raised: #102334;
+
+  --home-text-primary: #f3f6f9;
+  --home-text-secondary: #a5b1bd;
+  --home-text-muted: #718294;
+
+  --home-border: rgba(126, 157, 184, 0.18);
+  --home-border-strong: rgba(138, 171, 199, 0.3);
+
+  --home-blue: #376a94;
+  --home-blue-soft: #79a2c3;
+
+  --home-gold: #c99a4d;
+  --home-gold-soft: #e0bd7a;
+
+  /* Layout */
+  --container-wide: 1480px;
+  --container-main: 1280px;
+
+  /* Radius */
+  --radius-hero: 40px;
+  --radius-image: 28px;
+  --radius-button: 14px;
+
+  /* Shadows */
+  --shadow-hero:
+    0 70px 160px rgba(0, 0, 0, 0.44),
+    0 24px 64px rgba(0, 0, 0, 0.24);
+
+  /* Spacing */
+  --space-page-x: clamp(18px, 3vw, 48px);
+  --space-hero: clamp(28px, 5vw, 84px);
+}
+

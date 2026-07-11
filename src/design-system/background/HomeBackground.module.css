@@ -1,0 +1,117 @@
+﻿.root {
+  position: fixed;
+  z-index: -20;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--home-bg);
+}
+
+.base,
+.blueDepth,
+.leftVignette,
+.goldWarmth,
+.grid,
+.curveOne,
+.curveTwo,
+.noise {
+  position: absolute;
+  inset: 0;
+}
+
+.base {
+  background:
+    linear-gradient(
+      180deg,
+      var(--home-bg) 0%,
+      #071522 48%,
+      var(--home-bg-deep) 100%
+    );
+}
+
+.blueDepth {
+  inset: -16% -10% auto auto;
+  width: 72vw;
+  height: 72vw;
+  opacity: 0.55;
+  background:
+    radial-gradient(
+      circle,
+      rgba(51, 105, 150, 0.3) 0%,
+      rgba(28, 70, 106, 0.14) 34%,
+      transparent 70%
+    );
+  filter: blur(12px);
+}
+
+.leftVignette {
+  background:
+    radial-gradient(
+      ellipse at left center,
+      rgba(0, 0, 0, 0.38),
+      transparent 58%
+    );
+}
+
+.goldWarmth {
+  inset: auto 5% -38% auto;
+  width: 58vw;
+  height: 58vw;
+  opacity: 0.16;
+  background:
+    radial-gradient(
+      circle,
+      rgba(201, 154, 77, 0.32),
+      transparent 68%
+    );
+  filter: blur(28px);
+}
+
+.grid {
+  opacity: 0.075;
+  background-image:
+    linear-gradient(
+      rgba(145, 174, 198, 0.35) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(145, 174, 198, 0.35) 1px,
+      transparent 1px
+    );
+  background-size: 72px 72px;
+  mask-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.22) 72%,
+      transparent
+    );
+}
+
+.curveOne,
+.curveTwo {
+  border: 1px solid rgba(113, 157, 193, 0.08);
+  border-radius: 50%;
+}
+
+.curveOne {
+  inset: 15% -38% auto auto;
+  width: 90vw;
+  height: 90vw;
+  transform: rotate(-14deg);
+}
+
+.curveTwo {
+  inset: auto auto -60% -28%;
+  width: 86vw;
+  height: 86vw;
+  border-color: rgba(201, 154, 77, 0.055);
+  transform: rotate(17deg);
+}
+
+.noise {
+  opacity: 0.026;
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
