@@ -1098,8 +1098,8 @@
 
 .mobileQuickActions {
   display: flex;
-  justify-content: flex-start;
   gap: 10px;
+  justify-content: flex-start;
 }
 
 .mobileQuickActions a {
@@ -1110,20 +1110,78 @@
   padding: 0;
   place-items: center;
 
+  border: 1px solid rgba(132, 163, 189, 0.22);
   border-radius: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.055);
+
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .mobileQuickActions svg {
+  display: block;
   width: 20px;
   height: 20px;
+  overflow: visible;
 }
 
+/* Phone: clean outline */
 .mobileQuickActions a:first-child {
-  color: #c9d5de;
+  color: #c7d4de;
 }
 
+.mobileQuickActions a:first-child svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* WhatsApp: recognizable green mark */
 .mobileQuickActions a:last-child {
-  color: #bfe0cb;
+  color: #79d99b;
+  border-color: rgba(89, 190, 126, 0.25);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(36, 145, 82, 0.13),
+      rgba(255, 255, 255, 0.015)
+    );
+}
+
+.mobileQuickActions a:last-child svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.45;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mobileQuickActions a:hover,
+.mobileQuickActions a:focus-visible {
+  color: #f4d99d;
+  border-color: rgba(224, 182, 102, 0.48);
+
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.08),
+    0 10px 24px rgba(0, 0, 0, 0.22);
+
+  transform: translateY(-2px);
 }
 
 /* NAV-ACTION-ICON-ONLY-END */
