@@ -2,7 +2,7 @@
 
 export const navigationContent: NavigationContent = {
   logo: {
-    src: "/images/brand/auraaglide-logo.png",
+    src: "/images/brand/auraaglide-logo-light.png",
     alt: "AuraaGlide Solutions",
     href: "/",
   },
@@ -169,3 +169,5 @@ export const navigationContent: NavigationContent = {
     href: "/contact",
   },
 };
+
+

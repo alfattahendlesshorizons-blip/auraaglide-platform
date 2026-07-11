@@ -855,3 +855,25 @@
   border-radius: 27px 27px 0 0;
   border-bottom-color: rgba(205, 167, 95, 0.12);
 }
+
+/* NAVBAR-HERO-GAP-START */
+
+@media (min-width: 1081px) {
+  .section {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  .section {
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-top: 20px;
+  }
+}
+
+/* NAVBAR-HERO-GAP-END */
