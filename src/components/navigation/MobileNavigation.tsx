@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { contactConfig } from "@/config/contact.config";
 import { navigationContent } from "./navigation.data";
+import { SiteSearch } from "./SiteSearch";
 import styles from "./Navbar.module.css";
 
 function PhoneIcon() {
@@ -102,6 +103,12 @@ export function MobileNavigation() {
               </button>
             </div>
 
+            <SiteSearch
+              mobile
+              triggerLabel="Search AuraaGlide"
+              onNavigate={close}
+            />
+
             <div className={styles.mobileGroups}>
               {navigationContent.groups.map((group) => {
                 const isActive = activeGroup === group.label;
@@ -194,6 +201,7 @@ export function MobileNavigation() {
     </div>
   );
 }
+
 
 
 

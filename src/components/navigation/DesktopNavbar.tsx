@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import { navigationContent } from "./navigation.data";
 import { NavigationIconGraphic } from "./NavigationIconGraphic";
+import { SiteSearch } from "./SiteSearch";
 import styles from "./Navbar.module.css";
 
 export function DesktopNavbar() {
@@ -74,17 +75,7 @@ export function DesktopNavbar() {
       </div>
 
       <div className={styles.actions}>
-        <button
-          type="button"
-          className={styles.searchPlaceholder}
-          aria-label="Search AuraaGlide website"
-          disabled
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="11" cy="11" r="6.5" />
-            <path d="m16 16 4 4" />
-          </svg>
-        </button>
+        <SiteSearch triggerClassName={styles.searchPlaceholder} />
 
         <Link href={navigationContent.cta.href} className={styles.cta}>
           <span>{navigationContent.cta.label}</span>
@@ -94,4 +85,5 @@ export function DesktopNavbar() {
     </div>
   );
 }
+
 
