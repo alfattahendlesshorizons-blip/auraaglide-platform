@@ -487,3 +487,15 @@
 }
 
 /* HOME-FLOW-FINAL-END */
+
+/* INDUSTRY-END-RHYTHM-FINAL */
+
+.section {
+  padding-bottom: clamp(4rem, 6vw, 5.5rem) !important;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-bottom: 3.5rem !important;
+  }
+}
