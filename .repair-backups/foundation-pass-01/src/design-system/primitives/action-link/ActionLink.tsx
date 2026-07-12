@@ -6,14 +6,7 @@ import styles from "./ActionLink.module.css";
 export type ActionLinkVariant =
   | "primary"
   | "secondary"
-  | "editorial"
-  | "ghost"
-  | "navbar";
-
-export type ActionLinkSize =
-  | "sm"
-  | "md"
-  | "lg";
+  | "editorial";
 
 export type ActionLinkArrow =
   | "diagonal"
@@ -24,7 +17,6 @@ type ActionLinkProps = {
   href: string;
   children: ReactNode;
   variant?: ActionLinkVariant;
-  size?: ActionLinkSize;
   arrow?: ActionLinkArrow;
   className?: string;
   ariaLabel?: string;
@@ -34,7 +26,6 @@ export function ActionLink({
   href,
   children,
   variant = "primary",
-  size = "md",
   arrow = "right",
   className = "",
   ariaLabel,
@@ -53,7 +44,6 @@ export function ActionLink({
       className={[
         styles.action,
         styles[variant],
-        styles[size],
         className,
       ]
         .filter(Boolean)

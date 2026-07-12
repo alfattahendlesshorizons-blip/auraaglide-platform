@@ -1594,8 +1594,8 @@
 
 .section {
   padding-block:
-    clamp(2.75rem, 4vw, 3.5rem)
-    clamp(3.5rem, 5vw, 4.5rem);
+    var(--section-space-compact)
+    var(--section-space);
 }
 
 .container {
@@ -1607,18 +1607,18 @@
 }
 
 .navigator {
-  margin-top: clamp(1.5rem, 2.4vw, 2.15rem);
+  margin-top: clamp(2.25rem, 3.5vw, 3.25rem);
 }
 
 .preview {
   min-height: 0;
-  margin-top: clamp(1.35rem, 2vw, 1.85rem);
-  padding: clamp(1.8rem, 2.5vw, 2.4rem);
+  margin-top: clamp(2rem, 3vw, 2.75rem);
+  padding: var(--panel-padding);
 }
 
 @media (max-width: 767px) {
   .section {
-    padding-block: 2.75rem 3.25rem;
+    padding-block: 3.5rem;
   }
 
   .container {
@@ -1627,9 +1627,8 @@
 
   .preview {
     min-height: 0;
-    padding: 1.45rem 1rem;
+    padding: 1.75rem 1rem;
   }
 }
 
 /* HOME-SIZING-LOCK-END */
-

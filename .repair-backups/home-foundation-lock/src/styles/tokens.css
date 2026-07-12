@@ -61,24 +61,3 @@
     --site-header-offset: 14px;
   }
 }
-
-/* HOME-FOUNDATION-LOCK-START */
-
-:root {
-  --container-content: 70rem;
-  --container-wide: 80rem;
-  --container-hero: 88rem;
-
-  --section-space: clamp(4.5rem, 6vw, 5.75rem);
-  --section-space-compact: clamp(2.75rem, 4vw, 3.75rem);
-  --section-intro-gap: clamp(2.25rem, 3.5vw, 3.25rem);
-
-  --panel-padding: clamp(2rem, 3vw, 3rem);
-  --panel-radius: 1.65rem;
-
-  --action-height-sm: 2.75rem;
-  --action-height-md: 3rem;
-  --action-height-lg: 3.2rem;
-}
-
-/* HOME-FOUNDATION-LOCK-END */

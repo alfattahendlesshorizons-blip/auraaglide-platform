@@ -17,14 +17,15 @@ export function SectionTransition({
     .join(" ");
 
   return (
-    <div
-      className={rootClassName}
-      aria-hidden={label ? undefined : true}
-      aria-label={label}
-    >
-      <span className={styles.baseLine} aria-hidden="true" />
-      <span className={styles.rayOne} aria-hidden="true" />
-      <span className={styles.rayTwo} aria-hidden="true" />
+    <div className={rootClassName}>
+      <div className={styles.sweep} aria-hidden="true">
+        <span className={styles.baseLine} />
+        <span className={styles.goldRay} />
+        <span className={styles.rayHead} />
+      </div>
+
+      {label ? <p className={styles.label}>{label}</p> : null}
     </div>
   );
 }
+

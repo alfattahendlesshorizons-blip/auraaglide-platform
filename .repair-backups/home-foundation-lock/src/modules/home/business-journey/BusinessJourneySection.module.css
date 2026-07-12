@@ -583,7 +583,7 @@
 }
 
 .previewDescription {
-  max-width: 32rem !important;
+  max-width: 35rem !important;
   margin-top: 1.25rem !important;
 
   color:
@@ -959,26 +959,4 @@
     transition: none !important;
   }
 }
-
-
-/* HOME-SIZING-LOCK-START */
-
-.previewHeading {
-  max-width: 32rem !important;
-  font-size:
-    clamp(2.45rem, 3.45vw, 3.8rem) !important;
-}
-
-.previewDescription {
-  max-width: 34rem !important;
-}
-
-@media (max-width: 767px) {
-  .previewHeading {
-    font-size:
-      clamp(2.05rem, 8.8vw, 2.9rem) !important;
-  }
-}
-
-/* HOME-SIZING-LOCK-END */
 

@@ -2759,23 +2759,3 @@
 }
 
 /* HOME-SIZING-LOCK-END */
-
-/* SECTION-EDGE-ALIGNMENT-START */
-
-.section {
-  padding-bottom: 0;
-}
-
-/* SECTION-EDGE-ALIGNMENT-END */
-
-/* HOME-FLOW-FINAL-START */
-
-.section {
-  padding-bottom: 0 !important;
-}
-
-.experience {
-  margin-bottom: 0 !important;
-}
-
-/* HOME-FLOW-FINAL-END */

@@ -1,5 +1,4 @@
 ﻿import Link from "next/link";
-import { ActionLink } from "@/design-system/primitives/action-link";
 import { navigationContent } from "./navigation.data";
 import { NavigationIconGraphic } from "./NavigationIconGraphic";
 import { SiteSearch } from "./SiteSearch";
@@ -78,19 +77,14 @@ export function DesktopNavbar() {
       <div className={styles.actions}>
         <SiteSearch triggerClassName={styles.searchPlaceholder} />
 
-        <ActionLink
-          href={navigationContent.cta.href}
-          variant="navbar"
-          size="sm"
-          arrow="diagonal"
-        >
-          {navigationContent.cta.label}
-        </ActionLink>
+        <Link href={navigationContent.cta.href} className={styles.cta}>
+          <span>{navigationContent.cta.label}</span>
+          <span aria-hidden="true">↗</span>
+        </Link>
       </div>
     </div>
   );
 }
-
 
 
 

@@ -3,9 +3,8 @@
   | "canvas-to-canvas";
 
 export type SectionTransitionAlign =
-  | "left"
   | "center"
-  | "right";
+  | "left";
 
 export type SectionTransitionProps = {
   label?: string;
@@ -13,3 +12,4 @@ export type SectionTransitionProps = {
   align?: SectionTransitionAlign;
   className?: string;
 };
+

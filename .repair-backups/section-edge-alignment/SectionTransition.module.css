@@ -138,15 +138,3 @@
     animation: none;
   }
 }
-
-/* SECTION-EDGE-ALIGNMENT-START */
-
-.transition {
-  position: relative;
-  height: 1px;
-  margin-top: -1px;
-  margin-bottom: 0;
-  overflow: hidden;
-}
-
-/* SECTION-EDGE-ALIGNMENT-END */

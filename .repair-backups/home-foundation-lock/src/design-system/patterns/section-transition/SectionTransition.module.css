@@ -9,7 +9,7 @@
   height: 1px;
   margin: 0 auto;
 
-  overflow: hidden;
+  overflow: visible;
   pointer-events: none;
 }
 
@@ -18,7 +18,9 @@
 .rayTwo {
   position: absolute;
   top: 0;
+
   height: 1px;
+
   pointer-events: none;
 }
 
@@ -30,49 +32,54 @@
     linear-gradient(
       90deg,
       transparent,
-      rgba(105, 147, 177, 0.11) 12%,
-      rgba(192, 155, 86, 0.17) 50%,
-      rgba(105, 147, 177, 0.11) 88%,
+      rgba(105, 147, 177, 0.12) 12%,
+      rgba(192, 155, 86, 0.18) 50%,
+      rgba(105, 147, 177, 0.12) 88%,
       transparent
     );
 }
 
 .rayOne,
 .rayTwo {
-  left: -24%;
-  width: 18%;
+  left: -22%;
+
+  width: 20%;
+
   opacity: 0;
 
   background:
     linear-gradient(
       90deg,
       transparent,
-      rgba(228, 185, 101, 0.72),
-      rgba(126, 170, 200, 0.35),
+      rgba(226, 183, 99, 0.78),
+      rgba(127, 171, 201, 0.42),
       transparent
     );
 
   filter:
-    drop-shadow(0 0 4px rgba(204, 161, 83, 0.18));
+    drop-shadow(0 0 5px rgba(204, 161, 83, 0.22));
 
   animation:
     edge-ray-travel
-    9s
+    8.5s
     cubic-bezier(0.22, 1, 0.36, 1)
     infinite;
 }
 
 .rayTwo {
-  width: 10%;
-  animation-delay: 3.2s;
-  animation-duration: 10.5s;
+  width: 12%;
+
+  animation-delay: 2.1s;
+  animation-duration: 9.6s;
+
+  opacity: 0;
 
   background:
     linear-gradient(
       90deg,
       transparent,
-      rgba(123, 170, 202, 0.28),
-      rgba(225, 180, 91, 0.5),
+      rgba(123, 170, 202, 0.34),
+      rgba(225, 180, 91, 0.58),
       transparent
     );
 }
@@ -99,20 +106,20 @@
 
 @keyframes edge-ray-travel {
   0% {
-    left: -24%;
+    left: -22%;
     opacity: 0;
   }
 
-  14% {
-    opacity: 0.82;
+  12% {
+    opacity: 0.9;
   }
 
-  74% {
-    opacity: 0.62;
+  72% {
+    opacity: 0.7;
   }
 
   100% {
-    left: 106%;
+    left: 104%;
     opacity: 0;
   }
 }
@@ -123,11 +130,11 @@
   }
 
   .rayOne {
-    width: 28%;
+    width: 30%;
   }
 
   .rayTwo {
-    width: 16%;
+    width: 18%;
   }
 }
 
@@ -138,15 +145,3 @@
     animation: none;
   }
 }
-
-/* SECTION-EDGE-ALIGNMENT-START */
-
-.transition {
-  position: relative;
-  height: 1px;
-  margin-top: -1px;
-  margin-bottom: 0;
-  overflow: hidden;
-}
-
-/* SECTION-EDGE-ALIGNMENT-END */
