@@ -204,3 +204,47 @@
 }
 
 /* JOURNEY-QUOTE-BREATH-END */
+
+/* =========================================================
+   JOURNEY QUOTE — COMPLETE EDITORIAL PUNCTUATION
+   ========================================================= */
+
+.quote p {
+  padding-right: 1.7rem;
+}
+
+.quote p::after {
+  content: "”";
+
+  display: inline-block;
+
+  margin-left: 0.22rem;
+
+  color: rgba(221, 174, 86, 0.58);
+
+  font-family: Georgia, serif;
+  font-size: 1.35em;
+  font-style: normal;
+  line-height: 0;
+
+  transform: translateY(0.18em);
+}
+
+.mark {
+  top: -17px;
+  left: 18px;
+
+  opacity: 0.42;
+}
+
+@media (max-width: 767px) {
+  .quote p {
+    padding-right: 1rem;
+  }
+
+  .mark {
+    top: -14px;
+    left: 12px;
+  }
+}
+

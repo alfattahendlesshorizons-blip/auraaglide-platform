@@ -1,0 +1,52 @@
+﻿diff --git a/src/modules/home/hero/HeroSection.tsx b/src/modules/home/hero/HeroSection.tsx
+index b6299cb..e121e20 100644
+--- a/src/modules/home/hero/HeroSection.tsx
++++ b/src/modules/home/hero/HeroSection.tsx
+@@ -86,3 +86,4 @@ export function HeroSection() {
+ 
+ 
+ 
++
+diff --git a/src/modules/home/hero/HeroServiceRail.tsx b/src/modules/home/hero/HeroServiceRail.tsx
+index b1ea989..d96be75 100644
+--- a/src/modules/home/hero/HeroServiceRail.tsx
++++ b/src/modules/home/hero/HeroServiceRail.tsx
+@@ -44,3 +44,4 @@ export function HeroServiceRail({
+     </nav>
+   );
+ }
++
+diff --git a/src/modules/home/hero/HeroTrustIcon.tsx b/src/modules/home/hero/HeroTrustIcon.tsx
+index 6dfe2ac..e5e3bd1 100644
+--- a/src/modules/home/hero/HeroTrustIcon.tsx
++++ b/src/modules/home/hero/HeroTrustIcon.tsx
+@@ -58,3 +58,4 @@ export function HeroTrustIcon({
+     </span>
+   );
+ }
++
+diff --git a/src/modules/home/hero/hero.data.ts b/src/modules/home/hero/hero.data.ts
+index e06c13d..121a797 100644
+--- a/src/modules/home/hero/hero.data.ts
++++ b/src/modules/home/hero/hero.data.ts
+@@ -67,3 +67,4 @@ export const heroContent: HeroContent = {
+     alt: "Premium business advisory workspace",
+   },
+ };
++
+diff --git a/src/modules/home/hero/hero.types.ts b/src/modules/home/hero/hero.types.ts
+index 7fca304..7533d13 100644
+--- a/src/modules/home/hero/hero.types.ts
++++ b/src/modules/home/hero/hero.types.ts
+@@ -42,3 +42,4 @@ export type HeroTrustIcon =
+   | "network"
+   | "execution";
+ 
++
+diff --git a/src/modules/home/hero/index.ts b/src/modules/home/hero/index.ts
+index 1ec6f6b..ce55e69 100644
+--- a/src/modules/home/hero/index.ts
++++ b/src/modules/home/hero/index.ts
+@@ -1 +1,2 @@
+ ∩╗┐export { HeroSection } from "./HeroSection";
++

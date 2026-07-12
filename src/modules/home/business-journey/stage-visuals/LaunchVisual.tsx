@@ -25,3 +25,4 @@ export function LaunchVisual() {
     </div>
   );
 }
+

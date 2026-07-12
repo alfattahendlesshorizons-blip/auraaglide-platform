@@ -1,0 +1,15 @@
+﻿
+src\components\navigation\DesktopNavbar.tsx:78:        <SiteSearch 
+triggerClassName={styles.searchPlaceholder} />
+src\components\navigation\Navbar.module.css:316:.searchPlaceholder {
+src\components\navigation\Navbar.module.css:330:.searchPlaceholder svg {
+src\components\navigation\Navbar.module.css:1020:  .searchPlaceholder {
+src\components\navigation\Navbar.module.css:1033:  .searchPlaceholder:not(:disabled):hover,
+src\components\navigation\Navbar.module.css:1034:  
+.searchPlaceholder:not(:disabled):focus-visible {
+src\components\navigation\Navbar.module.css:1088:.searchPlaceholder:focus-visible,
+src\components\navigation\SiteSearch.module.css:142:.inputWrap input::placeholder {
+src\components\navigation\SiteSearch.tsx:126:                  placeholder="Search services, 
+industries and resources"
+
+

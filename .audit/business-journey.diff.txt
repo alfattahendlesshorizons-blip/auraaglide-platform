@@ -1,0 +1,189 @@
+﻿diff --git a/src/modules/home/business-journey/BusinessJourneySection.tsx b/src/modules/home/business-journey/BusinessJourneySection.tsx
+index ea489f6..6f6b70c 100644
+--- a/src/modules/home/business-journey/BusinessJourneySection.tsx
++++ b/src/modules/home/business-journey/BusinessJourneySection.tsx
+@@ -55,3 +55,4 @@ export function BusinessJourneySection() {
+ }
+ 
+ 
++
+diff --git a/src/modules/home/business-journey/JourneyAnimatedHeading.tsx b/src/modules/home/business-journey/JourneyAnimatedHeading.tsx
+index 0618983..fe5090d 100644
+--- a/src/modules/home/business-journey/JourneyAnimatedHeading.tsx
++++ b/src/modules/home/business-journey/JourneyAnimatedHeading.tsx
+@@ -25,3 +25,4 @@ export function JourneyAnimatedHeading({
+     </h2>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/JourneyEyebrowRay.tsx b/src/modules/home/business-journey/JourneyEyebrowRay.tsx
+index 2ab34e2..7962ea6 100644
+--- a/src/modules/home/business-journey/JourneyEyebrowRay.tsx
++++ b/src/modules/home/business-journey/JourneyEyebrowRay.tsx
+@@ -17,3 +17,4 @@ export function JourneyEyebrowRay({
+     </div>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/JourneyIntro.tsx b/src/modules/home/business-journey/JourneyIntro.tsx
+index e3720bd..cd99827 100644
+--- a/src/modules/home/business-journey/JourneyIntro.tsx
++++ b/src/modules/home/business-journey/JourneyIntro.tsx
+@@ -38,3 +38,4 @@ export function JourneyIntro({
+     </header>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/JourneyNavigator.tsx b/src/modules/home/business-journey/JourneyNavigator.tsx
+index bd86d8d..0ec03d8 100644
+--- a/src/modules/home/business-journey/JourneyNavigator.tsx
++++ b/src/modules/home/business-journey/JourneyNavigator.tsx
+@@ -99,3 +99,4 @@ export function JourneyNavigator({
+   );
+ }
+ 
++
+diff --git a/src/modules/home/business-journey/JourneyPreview.tsx b/src/modules/home/business-journey/JourneyPreview.tsx
+index 9b197b3..ab7ad6e 100644
+--- a/src/modules/home/business-journey/JourneyPreview.tsx
++++ b/src/modules/home/business-journey/JourneyPreview.tsx
+@@ -35,3 +35,4 @@ export function JourneyPreview({ stage }: JourneyPreviewProps) {
+     </article>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/JourneyQuote.tsx b/src/modules/home/business-journey/JourneyQuote.tsx
+index 209584a..f7c926c 100644
+--- a/src/modules/home/business-journey/JourneyQuote.tsx
++++ b/src/modules/home/business-journey/JourneyQuote.tsx
+@@ -21,3 +21,4 @@ export function JourneyQuote({
+     </blockquote>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/JourneyStageMiniIcon.tsx b/src/modules/home/business-journey/JourneyStageMiniIcon.tsx
+index f93c101..0786f47 100644
+--- a/src/modules/home/business-journey/JourneyStageMiniIcon.tsx
++++ b/src/modules/home/business-journey/JourneyStageMiniIcon.tsx
+@@ -54,3 +54,4 @@ export function JourneyStageMiniIcon({
+     </svg>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/JourneyStageVisual.tsx b/src/modules/home/business-journey/JourneyStageVisual.tsx
+index 7027eef..e0fe5be 100644
+--- a/src/modules/home/business-journey/JourneyStageVisual.tsx
++++ b/src/modules/home/business-journey/JourneyStageVisual.tsx
+@@ -29,3 +29,4 @@ export function JourneyStageVisual({
+       return <ExpansionVisual />;
+   }
+ }
++
+diff --git a/src/modules/home/business-journey/business-journey.adapter.ts b/src/modules/home/business-journey/business-journey.adapter.ts
+index cd1d9cf..5a8b4bb 100644
+--- a/src/modules/home/business-journey/business-journey.adapter.ts
++++ b/src/modules/home/business-journey/business-journey.adapter.ts
+@@ -281,3 +281,4 @@ export function adaptBusinessJourneyContent(
+     errors,
+   };
+ }
++
+diff --git a/src/modules/home/business-journey/business-journey.analytics.ts b/src/modules/home/business-journey/business-journey.analytics.ts
+index f42657a..df24de5 100644
+--- a/src/modules/home/business-journey/business-journey.analytics.ts
++++ b/src/modules/home/business-journey/business-journey.analytics.ts
+@@ -42,3 +42,4 @@ export function trackJourneyEvent(
+    * - Internal analytics API
+    */
+ }
++
+diff --git a/src/modules/home/business-journey/business-journey.data.ts b/src/modules/home/business-journey/business-journey.data.ts
+index ba55cfd..e8c1d70 100644
+--- a/src/modules/home/business-journey/business-journey.data.ts
++++ b/src/modules/home/business-journey/business-journey.data.ts
+@@ -214,3 +214,4 @@ export const businessJourneyContent: BusinessJourneyContent = {
+     },
+   ],
+ };
++
+diff --git a/src/modules/home/business-journey/business-journey.repository.ts b/src/modules/home/business-journey/business-journey.repository.ts
+index d849cab..77d683a 100644
+--- a/src/modules/home/business-journey/business-journey.repository.ts
++++ b/src/modules/home/business-journey/business-journey.repository.ts
+@@ -52,3 +52,4 @@ export async function getBusinessJourneyContent():
+     };
+   }
+ }
++
+diff --git a/src/modules/home/business-journey/business-journey.schema.ts b/src/modules/home/business-journey/business-journey.schema.ts
+index 9be451e..e42ae56 100644
+--- a/src/modules/home/business-journey/business-journey.schema.ts
++++ b/src/modules/home/business-journey/business-journey.schema.ts
+@@ -45,3 +45,4 @@ export const journeyStageIds: JourneyStageId[] = [
+   "growth",
+   "expansion",
+ ];
++
+diff --git a/src/modules/home/business-journey/business-journey.types.ts b/src/modules/home/business-journey/business-journey.types.ts
+index 07c81c3..e19da55 100644
+--- a/src/modules/home/business-journey/business-journey.types.ts
++++ b/src/modules/home/business-journey/business-journey.types.ts
+@@ -50,3 +50,4 @@ export type BusinessJourneyContent = {
+ 
+   stages: JourneyStage[];
+ };
++
+diff --git a/src/modules/home/business-journey/index.ts b/src/modules/home/business-journey/index.ts
+index d0f8717..ef36c7e 100644
+--- a/src/modules/home/business-journey/index.ts
++++ b/src/modules/home/business-journey/index.ts
+@@ -15,3 +15,4 @@ export type {
+   BusinessJourneyCmsPayload,
+   BusinessJourneyRepositoryResult,
+ } from "./business-journey.schema";
++
+diff --git a/src/modules/home/business-journey/stage-visuals/ExpansionVisual.tsx b/src/modules/home/business-journey/stage-visuals/ExpansionVisual.tsx
+index 35a3504..9d16632 100644
+--- a/src/modules/home/business-journey/stage-visuals/ExpansionVisual.tsx
++++ b/src/modules/home/business-journey/stage-visuals/ExpansionVisual.tsx
+@@ -34,3 +34,4 @@ export function ExpansionVisual() {
+     </div>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/stage-visuals/GrowthVisual.tsx b/src/modules/home/business-journey/stage-visuals/GrowthVisual.tsx
+index 7b9d52c..0082ee9 100644
+--- a/src/modules/home/business-journey/stage-visuals/GrowthVisual.tsx
++++ b/src/modules/home/business-journey/stage-visuals/GrowthVisual.tsx
+@@ -28,3 +28,4 @@ export function GrowthVisual() {
+     </div>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/stage-visuals/IdeaVisual.tsx b/src/modules/home/business-journey/stage-visuals/IdeaVisual.tsx
+index 67226d7..6323180 100644
+--- a/src/modules/home/business-journey/stage-visuals/IdeaVisual.tsx
++++ b/src/modules/home/business-journey/stage-visuals/IdeaVisual.tsx
+@@ -34,3 +34,4 @@ export function IdeaVisual() {
+     </div>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/stage-visuals/LaunchVisual.tsx b/src/modules/home/business-journey/stage-visuals/LaunchVisual.tsx
+index 5582d2a..7435bc2 100644
+--- a/src/modules/home/business-journey/stage-visuals/LaunchVisual.tsx
++++ b/src/modules/home/business-journey/stage-visuals/LaunchVisual.tsx
+@@ -25,3 +25,4 @@ export function LaunchVisual() {
+     </div>
+   );
+ }
++
+diff --git a/src/modules/home/business-journey/stage-visuals/RunningVisual.tsx b/src/modules/home/business-journey/stage-visuals/RunningVisual.tsx
+index f1650b9..0ff999f 100644
+--- a/src/modules/home/business-journey/stage-visuals/RunningVisual.tsx
++++ b/src/modules/home/business-journey/stage-visuals/RunningVisual.tsx
+@@ -31,3 +31,4 @@ export function RunningVisual() {
+     </div>
+   );
+ }
++

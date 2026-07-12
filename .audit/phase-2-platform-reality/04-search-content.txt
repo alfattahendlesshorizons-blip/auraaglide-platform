@@ -1,0 +1,251 @@
+﻿==================================================
+FILE: D:\Auraa web\auraaglide-platform-final\src\core\search\index.ts
+==================================================
+export { searchIndex } from "./search-index";
+export { searchSite } from "./search.service";
+
+export type {
+  SearchItem,
+  SearchItemType,
+  SearchResult,
+} from "./search.types";
+
+
+==================================================
+FILE: D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts
+==================================================
+import { navigationContent } from "@/components/navigation/navigation.data";
+import type {
+  SearchItem,
+  SearchItemType,
+} from "./search.types";
+
+function inferType(groupLabel: string): SearchItemType {
+  switch (groupLabel) {
+    case "Services":
+      return "service";
+
+    case "Industries":
+      return "industry";
+
+    case "Resources":
+      return "resource";
+
+    default:
+      return "page";
+  }
+}
+
+function cleanKeywords(
+  values: Array<string | null | undefined>
+): string[] {
+  return values
+    .filter(
+      (value): value is string =>
+        typeof value === "string" &&
+        value.trim().length > 0
+    )
+    .map((value) => value.trim());
+}
+
+const groupItems: SearchItem[] =
+  navigationContent.groups.flatMap<SearchItem>((group) => {
+    const type = inferType(group.label);
+
+    const primaryItems: SearchItem[] =
+      group.items.map((item) => ({
+        id: `${type}:${item.href}`,
+        label: item.label,
+        description: item.description,
+        href: item.href,
+        type,
+        keywords: cleanKeywords([
+          group.label,
+          group.eyebrow,
+          group.description,
+          item.label,
+          item.description,
+        ]),
+      }));
+
+    const quickItems: SearchItem[] =
+      group.quickLinks.map((item) => ({
+        id: `${type}:quick:${item.href}`,
+        label: item.label,
+        description: `Quick access from ${group.label}`,
+        href: item.href,
+        type,
+        keywords: cleanKeywords([
+          group.label,
+          group.eyebrow,
+          item.label,
+        ]),
+      }));
+
+    return [...primaryItems, ...quickItems];
+  });
+
+const directItems: SearchItem[] =
+  navigationContent.directLinks.map((item) => ({
+    id: `page:${item.href}`,
+    label: item.label,
+    description: `${item.label} — AuraaGlide Solutions`,
+    href: item.href,
+    type: "page",
+    keywords: cleanKeywords([
+      item.label,
+      "AuraaGlide",
+      "AuraaGlide Solutions",
+    ]),
+  }));
+
+const homeItem: SearchItem = {
+  id: "page:/",
+  label: "Home",
+  description: "AuraaGlide connected business ecosystem",
+  href: "/",
+  type: "page",
+  keywords: [
+    "home",
+    "AuraaGlide",
+    "business advisory",
+    "business ecosystem",
+  ],
+};
+
+const uniqueItems = new Map<string, SearchItem>();
+
+[homeItem, ...groupItems, ...directItems].forEach((item) => {
+  const existing = uniqueItems.get(item.href);
+
+  if (!existing) {
+    uniqueItems.set(item.href, item);
+    return;
+  }
+
+  uniqueItems.set(item.href, {
+    ...existing,
+    keywords: Array.from(
+      new Set([...existing.keywords, ...item.keywords])
+    ),
+  });
+});
+
+export const searchIndex: SearchItem[] =
+  Array.from(uniqueItems.values());
+
+
+==================================================
+FILE: D:\Auraa web\auraaglide-platform-final\src\core\search\search.service.ts
+==================================================
+import { searchIndex } from "./search-index";
+import type {
+  SearchItem,
+  SearchResult,
+} from "./search.types";
+
+function normalize(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s&-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function scoreItem(
+  item: SearchItem,
+  normalizedQuery: string
+): number {
+  const label = normalize(item.label);
+  const description = normalize(item.description ?? "");
+  const keywords = normalize(item.keywords.join(" "));
+
+  if (label === normalizedQuery) {
+    return 100;
+  }
+
+  if (label.startsWith(normalizedQuery)) {
+    return 80;
+  }
+
+  if (label.includes(normalizedQuery)) {
+    return 65;
+  }
+
+  if (keywords.includes(normalizedQuery)) {
+    return 45;
+  }
+
+  if (description.includes(normalizedQuery)) {
+    return 30;
+  }
+
+  const words = normalizedQuery.split(" ").filter(Boolean);
+
+  const matchedWords = words.filter(
+    (word) =>
+      label.includes(word) ||
+      keywords.includes(word) ||
+      description.includes(word)
+  );
+
+  return matchedWords.length > 0
+    ? matchedWords.length * 12
+    : 0;
+}
+
+export function searchSite(
+  query: string,
+  limit = 8
+): SearchResult[] {
+  const normalizedQuery = normalize(query);
+
+  if (!normalizedQuery) {
+    return searchIndex
+      .slice(0, limit)
+      .map((item, index) => ({
+        ...item,
+        score: limit - index,
+      }));
+  }
+
+  return searchIndex
+    .map((item) => ({
+      ...item,
+      score: scoreItem(item, normalizedQuery),
+    }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => {
+      if (b.score !== a.score) {
+        return b.score - a.score;
+      }
+
+      return a.label.localeCompare(b.label);
+    })
+    .slice(0, limit);
+}
+
+
+==================================================
+FILE: D:\Auraa web\auraaglide-platform-final\src\core\search\search.types.ts
+==================================================
+export type SearchItemType =
+  | "service"
+  | "industry"
+  | "resource"
+  | "page";
+
+export type SearchItem = {
+  id: string;
+  label: string;
+  description?: string;
+  href: string;
+  type: SearchItemType;
+  keywords: string[];
+};
+
+export type SearchResult = SearchItem & {
+  score: number;
+};
+
+

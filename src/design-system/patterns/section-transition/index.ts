@@ -4,3 +4,4 @@ export type {
   SectionTransitionProps,
   SectionTransitionVariant,
 } from "./SectionTransition.types";
+

@@ -1,0 +1,2693 @@
+﻿.section {
+  position: relative;
+  isolation: isolate;
+  padding:
+    clamp(4rem, 6vw, 6.25rem)
+    0
+    clamp(4.75rem, 7vw, 7rem);
+  color: #f4f7fa;
+}
+
+.container {
+  width: min(calc(100% - 2rem), 80rem);
+  margin-inline: auto;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.intro {
+  margin-bottom: clamp(2.4rem, 3.8vw, 3.8rem);
+}
+
+.eyebrowRow {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: clamp(1.1rem, 1.7vw, 1.45rem);
+}
+
+.eyebrowRay {
+  position: relative;
+  width: 3.2rem;
+  height: 1px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(216, 169, 83, 0.1),
+      rgba(233, 188, 105, 0.82)
+    );
+}
+
+.eyebrowRay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 220, 150, 0.82),
+      transparent
+    );
+  transform: translateX(-130%);
+  animation:
+    eyebrowWipe 5.5s
+    cubic-bezier(0.42, 0, 0.2, 1)
+    infinite;
+}
+
+.eyebrow {
+  margin: 0;
+}
+
+.introLayout {
+  display: grid;
+  grid-template-columns:
+    minmax(29rem, 0.92fr)
+    minmax(6rem, 0.18fr)
+    minmax(24rem, 0.74fr);
+  align-items: center;
+  gap: clamp(1.35rem, 2.8vw, 2.8rem);
+}
+
+.heading {
+  display: grid;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.9rem, 4.45vw, 4.95rem);
+  font-weight: 650;
+  line-height: 1.01;
+  letter-spacing: -0.055em;
+}
+
+.heading > span {
+  display: block;
+  width: fit-content;
+}
+
+.headingLead {
+  color: #f3f6f9;
+}
+
+.headingMiddle,
+.headingAccent {
+  display: block;
+  width: fit-content;
+}
+
+/* Double living ray — no dot */
+
+.introBridge {
+  position: relative;
+  width: 100%;
+  height: 2.25rem;
+  overflow: hidden;
+  align-self: center;
+}
+
+.introBridge::before,
+.introBridge::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 1px;
+}
+
+.introBridge::before {
+  top: 0.78rem;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(113, 158, 189, 0.2) 24%,
+      rgba(220, 171, 83, 0.62) 72%,
+      transparent
+    );
+}
+
+.introBridge::after {
+  bottom: 0.78rem;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(220, 171, 83, 0.48) 28%,
+      rgba(111, 158, 191, 0.2) 72%,
+      transparent
+    );
+}
+
+.bridgeTrack,
+.bridgeLight {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 1px;
+  pointer-events: none;
+}
+
+.bridgeTrack {
+  top: 0.78rem;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 219, 145, 0.88) 48%,
+      transparent 100%
+    );
+  background-size: 34% 100%;
+  background-repeat: no-repeat;
+  animation:
+    bridgeSweepForward 6.2s
+    cubic-bezier(0.42, 0, 0.2, 1)
+    infinite;
+}
+
+.bridgeLight {
+  bottom: 0.78rem;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(131, 179, 210, 0.6) 46%,
+      rgba(230, 184, 94, 0.72) 58%,
+      transparent 100%
+    );
+  background-size: 38% 100%;
+  background-repeat: no-repeat;
+  animation:
+    bridgeSweepReverse 7s
+    cubic-bezier(0.42, 0, 0.2, 1)
+    infinite;
+}
+
+.descriptionReveal {
+  min-width: 0;
+  overflow: hidden;
+  animation:
+    introCopyWipe 720ms
+    cubic-bezier(0.16, 1, 0.3, 1)
+    both;
+}
+
+.description {
+  max-width: 32rem;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(0.98rem, 1.05vw, 1.08rem);
+  font-weight: 430;
+  line-height: 1.68;
+}
+
+.descriptionBreath {
+  display: inline;
+}
+
+/* =========================================================
+   EXPERIENCE FRAME
+   ========================================================= */
+
+.experience {
+  position: relative;
+  display: grid;
+  grid-template-columns:
+    minmax(12.5rem, 0.34fr)
+    minmax(0, 1.66fr);
+  min-height: 29rem;
+  overflow: hidden;
+  border:
+    1px solid rgba(126, 169, 197, 0.16);
+  border-radius:
+    clamp(1.25rem, 2vw, 1.8rem);
+  background:
+    rgba(4, 18, 29, 0.42);
+  box-shadow:
+    0 1.7rem 4.5rem rgba(0, 0, 0, 0.16),
+    inset 0 1px rgba(255, 255, 255, 0.025);
+}
+
+.experience::before {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  top: -1px;
+  right: 7%;
+  left: 7%;
+  height: 1px;
+  opacity: 0.72;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(109, 159, 195, 0.34) 24%,
+      rgba(232, 190, 108, 0.92) 50%,
+      rgba(109, 159, 195, 0.34) 76%,
+      transparent
+    );
+  background-size: 38% 100%;
+  background-repeat: no-repeat;
+  animation:
+    panelEdgeTravel 7.5s
+    ease-in-out
+    infinite;
+}
+
+.experience::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: -1.35rem;
+  right: 18%;
+  left: 18%;
+  height: 2.5rem;
+  opacity: 0.13;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(222, 178, 92, 0.8),
+      transparent 68%
+    );
+  filter: blur(1rem);
+  pointer-events: none;
+}
+
+/* =========================================================
+   SELECTOR
+   ========================================================= */
+
+.selector {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:
+    clamp(0.9rem, 1.6vw, 1.45rem);
+  border-right:
+    1px solid rgba(139, 175, 197, 0.1);
+}
+
+.selectorItem {
+  position: relative;
+  display: grid;
+  grid-template-columns:
+    0.18rem
+    minmax(0, 1fr)
+    2rem;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  min-height: 3.65rem;
+  padding: 0.5rem 0.2rem;
+  border: 0;
+  border-bottom:
+    1px solid rgba(137, 169, 189, 0.075);
+  background: transparent;
+  color:
+    rgba(165, 185, 198, 0.59);
+  font-family: var(--font-body);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    color 240ms ease,
+    padding-left 280ms
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.selectorItem:last-child {
+  border-bottom: 0;
+}
+
+.selectorItem:hover,
+.selectorItem:focus-visible,
+.selectorItemActive {
+  color: #f3f6f8;
+  padding-left: 0.28rem;
+}
+
+.selectorItem:focus-visible {
+  outline:
+    1px solid rgba(222, 175, 87, 0.66);
+  outline-offset: 0.2rem;
+  border-radius: 0.35rem;
+}
+
+.selectorIndicator {
+  width: 2px;
+  height: 1.2rem;
+  border-radius: 999px;
+  background:
+    rgba(121, 153, 174, 0.17);
+  transition:
+    height 280ms ease,
+    background 280ms ease,
+    box-shadow 280ms ease;
+}
+
+.selectorItemActive .selectorIndicator {
+  height: 2rem;
+  background:
+    var(--ag-gold, #d6a34c);
+  box-shadow:
+    0 0 12px rgba(218, 170, 79, 0.36);
+}
+
+.selectorLabel {
+  min-width: 0;
+  font-size: clamp(0.88rem, 0.96vw, 0.98rem);
+  font-weight: 580;
+  line-height: 1.24;
+  letter-spacing: -0.01em;
+}
+
+.selectorIconShell {
+  display: grid;
+  width: 1.9rem;
+  height: 1.9rem;
+  place-items: center;
+  border:
+    1px solid rgba(127, 168, 194, 0.11);
+  border-radius: 999px;
+  color:
+    rgba(141, 176, 199, 0.42);
+  background:
+    rgba(7, 25, 37, 0.38);
+  transition:
+    color 260ms ease,
+    border-color 260ms ease,
+    background 260ms ease,
+    transform 260ms ease,
+    box-shadow 260ms ease;
+}
+
+.selectorItem:hover .selectorIconShell,
+.selectorItemActive .selectorIconShell {
+  color:
+    var(--ag-gold, #d7a74f);
+  border-color:
+    rgba(218, 171, 82, 0.34);
+  background:
+    rgba(11, 34, 48, 0.72);
+  box-shadow:
+    0 0 1.2rem rgba(211, 160, 70, 0.1);
+  transform: translateX(0.1rem);
+}
+
+.selectorIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.selectorItemActive .selectorIcon {
+  animation:
+    selectorIconBreath 4.2s
+    ease-in-out
+    infinite;
+}
+
+/* =========================================================
+   CANVAS
+   ========================================================= */
+
+.canvas {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(21rem, 0.95fr);
+  min-width: 0;
+}
+
+.canvasVisual {
+  position: relative;
+  min-height: 29rem;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      145deg,
+      #102c3d,
+      #071a27 72%
+    );
+  background-position: center;
+  background-size: cover;
+  transform-origin: center;
+  animation:
+    visualReveal 520ms
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.canvasVisual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 15, 24, 0.02),
+      transparent 55%,
+      rgba(3, 15, 24, 0.28)
+    );
+  pointer-events: none;
+}
+
+.canvasVisual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background:
+    linear-gradient(
+      115deg,
+      transparent 28%,
+      rgba(255, 255, 255, 0.08) 46%,
+      transparent 64%
+    );
+  transform: translateX(-90%);
+  animation:
+    imageLightPass 9s
+    ease-in-out
+    infinite;
+  pointer-events: none;
+}
+
+.imageAmbient {
+  position: absolute;
+  right: 10%;
+  bottom: -14%;
+  width: 52%;
+  height: 46%;
+  border-radius: 50%;
+  opacity: 0.15;
+  background:
+    rgba(80, 142, 179, 0.42);
+  filter: blur(3.5rem);
+}
+
+.canvasContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding:
+    clamp(2rem, 3.5vw, 3.25rem);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6, 22, 33, 0.91),
+      rgba(4, 17, 27, 0.98)
+    );
+  animation:
+    contentReveal 420ms
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.canvasContent::before {
+  content: "";
+  position: absolute;
+  top: 11%;
+  bottom: 11%;
+  left: 0;
+  width: 1px;
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(126, 168, 195, 0.18),
+      rgba(220, 173, 83, 0.22),
+      transparent
+    );
+}
+
+.canvasContext {
+  margin: 0 0 1.15rem;
+}
+
+.quote {
+  margin: 0;
+  max-width: 29rem;
+  color: #f4f7f9;
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 2.65vw, 2.95rem);
+  font-weight: 520;
+  font-style: italic;
+  line-height: 1.12;
+  letter-spacing: -0.038em;
+  text-wrap: balance;
+}
+
+.canvasDescription {
+  max-width: 28rem;
+  margin: 1.15rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.64;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.48rem;
+  margin: 1.3rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.highlights li {
+  padding: 0.44rem 0.66rem;
+  border:
+    1px solid rgba(139, 175, 197, 0.13);
+  border-radius: 999px;
+  color:
+    rgba(183, 202, 213, 0.74);
+  font-family: var(--font-body);
+  font-size: 0.67rem;
+  line-height: 1;
+}
+
+.canvasAction,
+.previewLabel {
+  align-self: flex-start;
+  margin-top: 1.35rem;
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 650;
+}
+
+.canvasAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ecc474;
+  text-decoration: none;
+}
+
+.previewLabel {
+  color:
+    rgba(149, 174, 190, 0.44);
+}
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes eyebrowWipe {
+  0%,
+  100% {
+    transform: translateX(-130%);
+    opacity: 0;
+  }
+
+  18%,
+  76% {
+    opacity: 1;
+  }
+
+  54% {
+    transform: translateX(130%);
+  }
+}
+
+@keyframes bridgeSweepForward {
+  0%,
+  100% {
+    background-position: 130% 0;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  55% {
+    background-position: -40% 0;
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes bridgeSweepReverse {
+  0%,
+  100% {
+    background-position: -40% 0;
+    opacity: 0;
+  }
+
+  22% {
+    opacity: 1;
+  }
+
+  56% {
+    background-position: 135% 0;
+    opacity: 1;
+  }
+
+  82% {
+    opacity: 0;
+  }
+}
+
+@keyframes introCopyWipe {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 0 100%);
+    transform: translateX(1.2rem);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes panelEdgeTravel {
+  0%,
+  100% {
+    background-position: -40% 0;
+    opacity: 0.35;
+  }
+
+  50% {
+    background-position: 140% 0;
+    opacity: 0.95;
+  }
+}
+
+@keyframes selectorIconBreath {
+  0%,
+  100% {
+    opacity: 0.66;
+    transform: scale(0.94);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes visualReveal {
+  from {
+    opacity: 0.3;
+    transform: scale(1.025);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes contentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imageLightPass {
+  0%,
+  72%,
+  100% {
+    transform: translateX(-90%);
+    opacity: 0;
+  }
+
+  82% {
+    opacity: 0.12;
+  }
+
+  94% {
+    transform: translateX(90%);
+    opacity: 0;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 980px) {
+  .introLayout {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(4.5rem, 0.14fr)
+      minmax(19rem, 0.72fr);
+    gap: 1.25rem;
+  }
+
+  .description {
+    max-width: 29rem;
+  }
+
+  .experience {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .selector {
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 0.65rem;
+    border-right: 0;
+    border-bottom:
+      1px solid rgba(139, 175, 197, 0.1);
+    scrollbar-width: none;
+  }
+
+  .selector::-webkit-scrollbar {
+    display: none;
+  }
+
+  .selectorItem {
+    flex: 0 0 auto;
+    grid-template-columns:
+      0.16rem
+      auto
+      1.8rem;
+    min-height: 3.15rem;
+    padding:
+      0.45rem
+      0.75rem;
+    border-right:
+      1px solid rgba(137, 169, 189, 0.075);
+    border-bottom: 0;
+  }
+
+  .canvas {
+    grid-template-columns:
+      minmax(0, 0.95fr)
+      minmax(20rem, 1.05fr);
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .section {
+    padding:
+      3.75rem
+      0
+      4.5rem;
+  }
+
+  .container {
+    width:
+      min(calc(100% - 1.25rem), 80rem);
+  }
+
+  .intro {
+    margin-bottom: 2rem;
+  }
+
+  .introLayout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .heading {
+    font-size:
+      clamp(2.55rem, 12vw, 3.65rem);
+    line-height: 1;
+  }
+
+  .introBridge {
+    width: min(68%, 13rem);
+    height: 1.7rem;
+  }
+
+  .introBridge::before,
+  .bridgeTrack {
+    top: 0.52rem;
+  }
+
+  .introBridge::after,
+  .bridgeLight {
+    bottom: 0.52rem;
+  }
+
+  .descriptionReveal {
+    max-width: 30rem;
+  }
+
+  .description {
+    max-width: 29rem;
+    font-size: 0.94rem;
+    line-height: 1.62;
+  }
+
+  .experience {
+    border-radius: 1.15rem;
+  }
+
+  .selector {
+    padding: 0.5rem;
+  }
+
+  .selectorItem {
+    min-height: 3rem;
+    padding:
+      0.4rem
+      0.65rem;
+  }
+
+  .selectorIconShell {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .selectorIcon {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  .canvas {
+    grid-template-columns: 1fr;
+  }
+
+  .canvasVisual {
+    min-height: 14.5rem;
+  }
+
+  .canvasContent {
+    min-height: 18rem;
+    padding: 1.45rem;
+  }
+
+  .canvasContent::before {
+    display: none;
+  }
+
+  .quote {
+    max-width: 22rem;
+    font-size:
+      clamp(1.55rem, 7.5vw, 2.2rem);
+  }
+
+  .canvasDescription {
+    font-size: 0.84rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .eyebrowRay::after,
+  .bridgeTrack,
+  .bridgeLight,
+  .descriptionReveal,
+  .experience::before,
+  .selectorIcon,
+  .canvasVisual,
+  .canvasVisual::after,
+  .canvasContent {
+    animation: none;
+  }
+
+  .selectorItem,
+  .selectorIndicator,
+  .selectorIconShell {
+    transition: none;
+  }
+}
+
+/* =========================================================
+   SHARED PREMIUM FRAME INTEGRATION
+   The shared PremiumFrame now owns:
+   border, radius, shadow, bloom and travelling edge.
+   ========================================================= */
+
+.experience {
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  box-shadow: none;
+}
+
+.experience::before,
+.experience::after {
+  display: none;
+}
+
+.canvasAction {
+  margin-top: 1.45rem;
+}
+
+
+/* =========================================================
+   BUSINESS REALITY — FINAL VISIBLE CORRECTION
+   Hero DNA, readable proportions and responsive composition
+   ========================================================= */
+
+/* ---------- INTRO ---------- */
+
+.intro {
+  margin-bottom: clamp(3.25rem, 5vw, 5rem);
+}
+
+.introLayout {
+  display: grid;
+  grid-template-columns:
+    minmax(31rem, 0.94fr)
+    minmax(9rem, 0.24fr)
+    minmax(26rem, 0.82fr);
+  align-items: center;
+  gap: clamp(1.4rem, 2.5vw, 2.75rem);
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.9rem, 4.45vw, 4.95rem);
+  font-weight: 650;
+  line-height: 1.01;
+  letter-spacing: -0.055em;
+}
+
+.heading > span {
+  display: block;
+  width: fit-content;
+}
+
+.introRays {
+  display: grid;
+  width: 100%;
+  gap: 0.65rem;
+}
+
+.introRays span {
+  position: relative;
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(113, 158, 190, 0.3) 24%,
+      rgba(218, 171, 83, 0.5) 72%,
+      transparent
+    );
+}
+
+.introRays span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 222, 153, 0.92),
+      transparent
+    );
+  transform: translateX(-120%);
+  animation: business-ray-forward 6.4s ease-in-out infinite;
+}
+
+.introRays span:nth-child(2)::after {
+  animation-name: business-ray-reverse;
+  animation-duration: 7.2s;
+}
+
+.introRays span:nth-child(3)::after {
+  animation-delay: -2.2s;
+  animation-duration: 8s;
+}
+
+.introQuote {
+  position: relative;
+  max-width: 36rem;
+  margin: 0;
+  padding: 1.2rem 2.1rem 1.15rem 2.5rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.14rem, 1.48vw, 1.55rem);
+  font-style: italic;
+  font-weight: 430;
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  animation:
+    business-quote-reveal
+    720ms
+    cubic-bezier(0.16, 1, 0.3, 1)
+    both;
+}
+
+.introQuote::before,
+.introQuote::after {
+  position: absolute;
+  color: rgba(220, 167, 76, 0.9);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.introQuote::before {
+  content: "“";
+  top: 0.3rem;
+  left: 0;
+  font-size: 2.5rem;
+}
+
+.introQuote::after {
+  content: "”";
+  right: 0.15rem;
+  bottom: 0.05rem;
+  font-size: 2.1rem;
+}
+
+/* ---------- SHARED HERO-STYLE FRAME ---------- */
+
+.experience {
+  position: relative;
+  display: grid;
+  grid-template-columns:
+    minmax(18rem, 24%)
+    minmax(0, 76%);
+  min-height: 31rem;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(205, 170, 104, 0.2) !important;
+  border-radius: 27px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(10, 34, 49, 0.8),
+      rgba(4, 18, 29, 0.96)
+    ) !important;
+
+  box-shadow:
+    0 38px 88px rgba(0, 0, 0, 0.32),
+    inset 0 1px rgba(255, 255, 255, 0.07) !important;
+
+  transition:
+    transform 650ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 450ms ease,
+    box-shadow 650ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.experience:hover {
+  border-color:
+    rgba(226, 185, 107, 0.32) !important;
+
+  box-shadow:
+    0 48px 105px rgba(0, 0, 0, 0.4),
+    inset 0 1px rgba(255, 255, 255, 0.09) !important;
+
+  transform: translateY(-3px);
+}
+
+/* Old local edge effects must not compete with PremiumFrame. */
+
+.experience::before,
+.experience::after {
+  display: none !important;
+}
+
+/* ---------- SELECTOR ---------- */
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(1.4rem, 2.3vw, 2.25rem);
+
+  border-right:
+    1px solid rgba(133, 174, 199, 0.14);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3, 16, 26, 0.36),
+      rgba(3, 14, 23, 0.58)
+    );
+}
+
+.selectorItem {
+  display: grid;
+  grid-template-columns:
+    0.2rem
+    2.7rem
+    minmax(0, 1fr);
+  align-items: center;
+  gap: 0.85rem;
+
+  min-height: 4.35rem;
+  padding: 0.5rem 0;
+
+  color: rgba(153, 179, 197, 0.69);
+
+  border-bottom:
+    1px solid rgba(137, 169, 189, 0.09);
+
+  transition:
+    color 250ms ease,
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.selectorItem:hover,
+.selectorItemActive {
+  color: #f3f6f8;
+  transform: translateX(0.18rem);
+}
+
+.selectorActiveBar {
+  width: 2px;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: rgba(113, 154, 181, 0.2);
+}
+
+.selectorItemActive .selectorActiveBar {
+  height: 2.65rem;
+  background: var(--ag-gold, #dca74c);
+  box-shadow:
+    0 0 1rem rgba(220, 167, 76, 0.44);
+}
+
+.selectorIconShell {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+
+  border:
+    1px solid rgba(105, 158, 196, 0.35);
+  border-radius: 999px;
+
+  color: rgba(120, 169, 202, 0.7);
+  background: rgba(5, 22, 34, 0.66);
+}
+
+.selectorItemActive .selectorIconShell,
+.selectorItem:hover .selectorIconShell {
+  color: var(--ag-gold, #dca74c);
+  border-color: rgba(221, 176, 87, 0.66);
+  box-shadow:
+    0 0 1.4rem rgba(215, 165, 73, 0.14);
+}
+
+.selectorIcon {
+  width: 1.18rem;
+  height: 1.18rem;
+}
+
+.selectorItemActive .selectorIcon {
+  animation:
+    business-icon-breath
+    4.4s
+    ease-in-out
+    infinite;
+}
+
+.selectorLabel {
+  min-width: 0;
+  font-size: clamp(0.92rem, 1vw, 1.02rem);
+  font-weight: 570;
+  line-height: 1.28;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* ---------- IMAGE + CONTENT ---------- */
+
+.canvas {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 50%)
+    minmax(0, 50%);
+  min-width: 0;
+}
+
+.canvasVisual {
+  position: relative;
+  min-height: 31rem;
+
+  background-position: center;
+  background-size: cover;
+
+  transform-origin: center;
+  animation:
+    business-image-reveal
+    560ms
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.canvasVisual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(2, 9, 15, 0.58),
+      transparent 44%
+    ),
+    linear-gradient(
+      100deg,
+      rgba(4, 17, 28, 0.12),
+      transparent 52%
+    );
+
+  pointer-events: none;
+}
+
+.canvasVisual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  opacity: 0.11;
+
+  background:
+    linear-gradient(
+      112deg,
+      transparent 28%,
+      rgba(255, 255, 255, 0.09) 47%,
+      transparent 66%
+    );
+
+  transform: translateX(-100%);
+  animation:
+    business-image-sweep
+    10s
+    ease-in-out
+    infinite;
+
+  pointer-events: none;
+}
+
+.canvasContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+
+  padding:
+    clamp(2.3rem, 4vw, 4rem);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 21, 33, 0.94),
+      rgba(3, 15, 25, 0.99)
+    );
+}
+
+.canvasContent::before {
+  content: "";
+  position: absolute;
+  top: 9%;
+  bottom: 9%;
+  left: 0;
+  width: 1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(112, 161, 194, 0.22),
+      rgba(224, 178, 87, 0.28),
+      transparent
+    );
+}
+
+.canvasContext {
+  margin-bottom: 1.25rem;
+}
+
+.quote {
+  max-width: 31rem;
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 2.55vw, 2.9rem);
+  font-style: italic;
+  font-weight: 510;
+  line-height: 1.14;
+  letter-spacing: -0.038em;
+
+  text-wrap: balance;
+}
+
+.canvasDescription {
+  max-width: 30rem;
+  margin-top: 1.25rem;
+
+  font-size: 0.92rem;
+  line-height: 1.68;
+}
+
+.highlights {
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.highlights li {
+  padding: 0.48rem 0.72rem;
+  font-size: 0.69rem;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1080px) {
+  .introLayout {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(6rem, 0.18fr)
+      minmax(21rem, 0.82fr);
+  }
+
+  .experience {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .selector {
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+
+    padding: 0.7rem;
+
+    border-right: 0;
+    border-bottom:
+      1px solid rgba(133, 174, 199, 0.14);
+
+    scrollbar-width: none;
+  }
+
+  .selector::-webkit-scrollbar {
+    display: none;
+  }
+
+  .selectorItem {
+    flex: 0 0 auto;
+
+    grid-template-columns:
+      0.18rem
+      2.35rem
+      auto;
+
+    min-height: 3.45rem;
+    padding: 0.4rem 0.82rem;
+
+    border-right:
+      1px solid rgba(137, 169, 189, 0.09);
+    border-bottom: 0;
+  }
+
+  .selectorLabel {
+    white-space: nowrap;
+  }
+
+  .canvas {
+    grid-template-columns:
+      minmax(0, 46%)
+      minmax(0, 54%);
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+  .introLayout {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .introRays {
+    width: min(65%, 14rem);
+    gap: 0.48rem;
+  }
+
+  .introQuote {
+    max-width: 30rem;
+    padding:
+      1.05rem
+      1.65rem
+      1rem
+      1.9rem;
+
+    font-size:
+      clamp(1.02rem, 4.6vw, 1.3rem);
+  }
+
+  .experience {
+    border-radius: 20px !important;
+  }
+
+  .canvas {
+    grid-template-columns: 1fr;
+  }
+
+  .canvasVisual {
+    min-height: 16rem;
+  }
+
+  .canvasContent {
+    min-height: 19rem;
+    padding: 1.5rem;
+  }
+
+  .canvasContent::before {
+    display: none;
+  }
+
+  .quote {
+    font-size:
+      clamp(1.6rem, 7.5vw, 2.25rem);
+  }
+}
+
+/* ---------- MOTION ---------- */
+
+@keyframes business-ray-forward {
+  0%,
+  100% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  20%,
+  78% {
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes business-ray-reverse {
+  0%,
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+
+  20%,
+  78% {
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateX(-120%);
+  }
+}
+
+@keyframes business-quote-reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 0 100%);
+    transform: translateX(1.3rem);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes business-icon-breath {
+  0%,
+  100% {
+    opacity: 0.68;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes business-image-reveal {
+  from {
+    opacity: 0.28;
+    transform: scale(1.025);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes business-image-sweep {
+  0%,
+  72%,
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  82% {
+    opacity: 0.11;
+  }
+
+  94% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .introRays span::after,
+  .introQuote,
+  .selectorIcon,
+  .canvasVisual,
+  .canvasVisual::after {
+    animation: none !important;
+  }
+
+  .experience,
+  .selectorItem,
+  .selectorIconShell {
+    transition: none !important;
+  }
+}
+
+
+/* =========================================================
+   BUSINESS REALITY INTRO — EDITORIAL FINAL
+   ========================================================= */
+
+.intro {
+  margin-bottom: clamp(3.4rem, 5vw, 5rem);
+}
+
+.introLayout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.12fr)
+    minmax(24rem, 0.72fr);
+  align-items: center;
+  gap: clamp(4rem, 9vw, 9rem);
+}
+
+.heading {
+  display: grid;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.9rem, 4.45vw, 4.95rem);
+  font-weight: 650;
+  line-height: 1.01;
+  letter-spacing: -0.055em;
+}
+
+.heading > span {
+  display: block;
+  width: fit-content;
+}
+
+.introRays,
+.introBridge,
+.descriptionReveal,
+.introQuoteMarkEnd {
+  display: none !important;
+}
+
+.introQuotePanel {
+  position: relative;
+  max-width: 31rem;
+  padding:
+    1rem
+    0
+    1rem
+    clamp(1.6rem, 2.5vw, 2.3rem);
+
+  border-left:
+    1px solid rgba(222, 175, 87, 0.58);
+
+  animation:
+    business-intro-quote-reveal
+    720ms
+    cubic-bezier(0.16, 1, 0.3, 1)
+    both;
+}
+
+.introQuotePanel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(236, 194, 109, 0.95) 42%,
+      rgba(117, 165, 197, 0.5) 68%,
+      transparent
+    );
+
+  background-size: 100% 38%;
+  background-repeat: no-repeat;
+
+  animation:
+    business-intro-line-travel
+    6.8s
+    ease-in-out
+    infinite;
+}
+
+.introQuoteMark {
+  position: absolute;
+  top: -0.45rem;
+  left: clamp(1.5rem, 2.3vw, 2.1rem);
+
+  color: rgba(220, 167, 76, 0.3);
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.introQuote {
+  position: relative;
+  z-index: 1;
+  max-width: 29rem;
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.12rem, 1.5vw, 1.5rem);
+  font-style: italic;
+  font-weight: 430;
+  line-height: 1.58;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.introQuoteCaption {
+  margin: 1.15rem 0 0;
+}
+
+@keyframes business-intro-quote-reveal {
+  from {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes business-intro-line-travel {
+  0%,
+  100% {
+    background-position: 0 -55%;
+    opacity: 0.35;
+  }
+
+  50% {
+    background-position: 0 155%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 980px) {
+  .introLayout {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(20rem, 0.76fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .intro {
+    margin-bottom: 2.3rem;
+  }
+
+  .introLayout {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .introQuotePanel {
+    max-width: 100%;
+    padding:
+      0.8rem
+      0
+      0.8rem
+      1.4rem;
+  }
+
+  .introQuoteMark {
+    left: 1.25rem;
+    font-size: 2.35rem;
+  }
+
+  .introQuote {
+    max-width: 31rem;
+    font-size: clamp(1.02rem, 4.6vw, 1.28rem);
+    line-height: 1.55;
+  }
+
+  .introQuoteCaption {
+    margin-top: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .introQuotePanel,
+  .introQuotePanel::after {
+    animation: none;
+  }
+}
+
+
+/* =========================================================
+   BUSINESS REALITY INTRO — TWO-LINE HEADING POLISH
+   ========================================================= */
+
+.section {
+  padding-top: clamp(4rem, 5.5vw, 5.8rem);
+}
+
+.container {
+  width: min(calc(100% - 3rem), 88rem);
+}
+
+.intro {
+  margin-bottom: clamp(2.8rem, 4vw, 4rem);
+}
+
+.introLayout {
+  grid-template-columns:
+    minmax(0, 1.18fr)
+    minmax(24rem, 0.72fr);
+
+  align-items: center;
+
+  gap: clamp(3.5rem, 7vw, 7.5rem);
+}
+
+.heading {
+  display: grid;
+
+  font-size: clamp(3.25rem, 5vw, 5.65rem);
+  line-height: 0.98;
+  letter-spacing: -0.058em;
+}
+
+.headingFirstLine {
+  display: flex !important;
+  width: auto !important;
+  flex-wrap: nowrap;
+  gap: 0.24em;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.headingLead,
+.headingMiddle {
+  display: inline-block !important;
+  width: auto !important;
+}
+
+.headingAccent {
+  display: block;
+  width: fit-content;
+  margin-top: 0.04em;
+}
+
+.introQuotePanel {
+  justify-self: end;
+  width: min(100%, 31rem);
+  padding-left: clamp(1.5rem, 2vw, 2rem);
+}
+
+.introQuote {
+  max-width: 28rem;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: min(calc(100% - 2rem), 88rem);
+  }
+
+  .introLayout {
+    grid-template-columns:
+      minmax(0, 1.1fr)
+      minmax(20rem, 0.8fr);
+
+    gap: clamp(2.5rem, 5vw, 4.5rem);
+  }
+
+  .heading {
+    font-size: clamp(2.85rem, 4.8vw, 4.5rem);
+  }
+}
+
+@media (max-width: 820px) {
+  .introLayout {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .introQuotePanel {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding-top: 3.5rem;
+  }
+
+  .container {
+    width: min(calc(100% - 1.25rem), 88rem);
+  }
+
+  .heading {
+    font-size: clamp(2.55rem, 11.5vw, 3.8rem);
+  }
+
+  .headingFirstLine {
+    flex-wrap: wrap;
+    gap: 0 0.22em;
+    white-space: normal;
+  }
+
+  .headingAccent {
+    margin-top: 0.06em;
+  }
+}
+
+
+/* =========================================================
+   BUSINESS REALITY — CONTENT LIFE + SEO PANEL POLISH
+   ========================================================= */
+
+.canvasContent {
+  overflow: hidden;
+}
+
+.canvasContent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -35%;
+  width: 42%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(123, 169, 199, 0.48),
+      rgba(236, 194, 108, 0.92),
+      transparent
+    );
+
+  animation:
+    business-content-edge-travel
+    7.2s
+    ease-in-out
+    infinite;
+}
+
+.canvasHeader {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.canvasContext {
+  margin: 0;
+}
+
+.canvasIconShell {
+  position: relative;
+
+  display: grid;
+  width: 2.45rem;
+  height: 2.45rem;
+  flex: 0 0 auto;
+  place-items: center;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(218, 172, 84, 0.42);
+  border-radius: 999px;
+
+  color: var(--ag-gold, #dca74c);
+
+  background:
+    radial-gradient(
+      circle at 40% 30%,
+      rgba(55, 109, 143, 0.28),
+      rgba(5, 22, 34, 0.68) 68%
+    );
+
+  box-shadow:
+    0 0 1.5rem rgba(216, 166, 73, 0.08);
+
+  animation:
+    business-content-icon-shell
+    4.8s
+    ease-in-out
+    infinite;
+}
+
+.canvasIconShell::after {
+  content: "";
+  position: absolute;
+  inset: -35%;
+
+  background:
+    linear-gradient(
+      110deg,
+      transparent 35%,
+      rgba(255, 223, 156, 0.18) 50%,
+      transparent 65%
+    );
+
+  transform: translateX(-80%) rotate(12deg);
+
+  animation:
+    business-content-icon-light
+    6.2s
+    ease-in-out
+    infinite;
+}
+
+.canvasIcon {
+  position: relative;
+  z-index: 1;
+  width: 1.1rem;
+  height: 1.1rem;
+
+  animation:
+    business-content-icon-breath
+    3.8s
+    ease-in-out
+    infinite;
+}
+
+.quote {
+  transform-origin: left center;
+
+  animation:
+    business-quote-enter
+      620ms
+      cubic-bezier(0.16, 1, 0.3, 1)
+      both,
+    business-quote-breathe
+      8.4s
+      ease-in-out
+      700ms
+      infinite;
+}
+
+.canvasDescription {
+  animation:
+    business-description-enter
+    620ms
+    90ms
+    cubic-bezier(0.16, 1, 0.3, 1)
+    both;
+}
+
+.highlights li {
+  position: relative;
+
+  display: inline-flex;
+  gap: 0.42rem;
+  align-items: center;
+
+  opacity: 0;
+
+  animation:
+    business-highlight-enter
+    480ms
+    calc(
+      170ms +
+      var(--highlight-index) * 90ms
+    )
+    cubic-bezier(0.16, 1, 0.3, 1)
+    forwards;
+
+  transition:
+    color 220ms ease,
+    border-color 220ms ease,
+    background 220ms ease,
+    transform 220ms ease;
+}
+
+.highlights li:hover {
+  color: #f2d494;
+
+  border-color:
+    rgba(222, 176, 86, 0.36);
+
+  background:
+    rgba(211, 164, 77, 0.05);
+
+  transform: translateY(-2px);
+}
+
+.highlightPulse {
+  width: 0.32rem;
+  height: 0.32rem;
+  flex: 0 0 auto;
+
+  border-radius: 999px;
+
+  background:
+    rgba(219, 170, 79, 0.85);
+
+  box-shadow:
+    0 0 0.55rem
+    rgba(219, 170, 79, 0.25);
+
+  animation:
+    business-highlight-pulse
+    3.4s
+    ease-in-out
+    infinite;
+}
+
+.previewLabel {
+  position: relative;
+
+  color: #d9b767;
+
+  cursor: default;
+
+  opacity: 0;
+
+  animation:
+    business-description-enter
+    500ms
+    420ms
+    cubic-bezier(0.16, 1, 0.3, 1)
+    forwards;
+}
+
+.previewLabel::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: -0.42rem;
+  left: 0;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(219, 171, 80, 0.7),
+      rgba(112, 160, 193, 0.24),
+      transparent
+    );
+
+  transform: scaleX(0.68);
+  transform-origin: left center;
+
+  animation:
+    business-preview-link-breathe
+    4.8s
+    ease-in-out
+    infinite;
+}
+
+@keyframes business-content-edge-travel {
+  0%,
+  100% {
+    right: -35%;
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 0.9;
+  }
+
+  58% {
+    right: 105%;
+    opacity: 0.9;
+  }
+
+  78% {
+    opacity: 0;
+  }
+}
+
+@keyframes business-content-icon-shell {
+  0%,
+  100% {
+    border-color:
+      rgba(218, 172, 84, 0.32);
+
+    box-shadow:
+      0 0 0.8rem
+      rgba(216, 166, 73, 0.04);
+  }
+
+  50% {
+    border-color:
+      rgba(232, 192, 111, 0.66);
+
+    box-shadow:
+      0 0 1.6rem
+      rgba(216, 166, 73, 0.14);
+  }
+}
+
+@keyframes business-content-icon-light {
+  0%,
+  68%,
+  100% {
+    transform:
+      translateX(-80%)
+      rotate(12deg);
+
+    opacity: 0;
+  }
+
+  78% {
+    opacity: 1;
+  }
+
+  92% {
+    transform:
+      translateX(80%)
+      rotate(12deg);
+
+    opacity: 0;
+  }
+}
+
+@keyframes business-content-icon-breath {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: scale(0.94);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.07);
+  }
+}
+
+@keyframes business-quote-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.8rem);
+    filter: blur(3px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes business-quote-breathe {
+  0%,
+  100% {
+    color: #edf3f6;
+    text-shadow:
+      0 0 0
+      rgba(104, 156, 192, 0);
+  }
+
+  50% {
+    color: #f7fafb;
+    text-shadow:
+      0 0 2rem
+      rgba(104, 156, 192, 0.07);
+  }
+}
+
+@keyframes business-description-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.55rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes business-highlight-enter {
+  from {
+    opacity: 0;
+    transform:
+      translateY(0.4rem)
+      scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+@keyframes business-highlight-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.78);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes business-preview-link-breathe {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: scaleX(0.68);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 700px) {
+  .canvasHeader {
+    margin-bottom: 1rem;
+  }
+
+  .canvasIconShell {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .canvasIcon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canvasContent::after,
+  .canvasIconShell,
+  .canvasIconShell::after,
+  .canvasIcon,
+  .quote,
+  .canvasDescription,
+  .highlights li,
+  .highlightPulse,
+  .previewLabel,
+  .previewLabel::after {
+    animation: none;
+  }
+
+  .highlights li,
+  .previewLabel {
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   BUSINESS REALITY — FINAL SELECTOR + LINK POLISH
+   ========================================================= */
+
+.selector {
+  justify-content: flex-start;
+}
+
+.selectorIntro {
+  padding:
+    0.2rem
+    0
+    1.35rem;
+
+  border-bottom:
+    1px solid rgba(137, 169, 189, 0.09);
+}
+
+.selectorIntroLabel {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+
+  color:
+    var(--ag-gold, #dca74c);
+
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 720;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.selectorIntroRay {
+  position: relative;
+
+  display: block;
+  width: 2.3rem;
+  height: 1px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(220, 171, 83, 0.72),
+      rgba(111, 158, 190, 0.14),
+      transparent
+    );
+}
+
+.selectorIntroRay::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(248, 214, 145, 0.92),
+      transparent
+    );
+
+  transform: translateX(-120%);
+
+  animation:
+    selector-intro-ray
+    5.8s
+    ease-in-out
+    infinite;
+}
+
+.selectorIntro p {
+  max-width: 13rem;
+  margin:
+    0.85rem
+    0
+    0;
+
+  color:
+    rgba(151, 178, 196, 0.72);
+
+  font-family: var(--font-body);
+  font-size: 0.83rem;
+  line-height: 1.55;
+}
+
+.selectorList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding-top: 0.6rem;
+}
+
+.highlights li {
+  padding: 0;
+  overflow: hidden;
+}
+
+.highlights li a {
+  display: inline-flex;
+  gap: 0.42rem;
+  align-items: center;
+
+  padding:
+    0.48rem
+    0.72rem;
+
+  color: inherit;
+  text-decoration: none;
+
+  border-radius: inherit;
+
+  transition:
+    color 220ms ease,
+    background 220ms ease,
+    transform 220ms ease;
+}
+
+.highlights li:hover {
+  transform: none;
+}
+
+.highlights li:hover a,
+.highlights li a:focus-visible {
+  color: #f2d494;
+
+  background:
+    rgba(211, 164, 77, 0.05);
+
+  transform: translateY(-2px);
+}
+
+.highlights li a:focus-visible {
+  outline:
+    1px solid rgba(224, 180, 92, 0.7);
+  outline-offset: -1px;
+}
+
+.canvasAction {
+  margin-top: 1.45rem;
+}
+
+@keyframes selector-intro-ray {
+  0%,
+  100% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  22%,
+  78% {
+    opacity: 1;
+  }
+
+  56% {
+    transform: translateX(120%);
+  }
+}
+
+@media (max-width: 1080px) {
+  .selectorIntro {
+    display: none;
+  }
+
+  .selectorList {
+    flex-direction: row;
+    padding-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .selectorIntroRay::after {
+    animation: none;
+  }
+}
+
+
+/* =========================================================
+   BUSINESS REALITY QUOTE — FINAL PUNCTUATION ALIGNMENT
+   The vertical line belongs only to the quotation.
+   ========================================================= */
+
+.introQuotePanel {
+  border-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.introQuotePanel::after {
+  display: none !important;
+  content: none !important;
+}
+
+.introQuote {
+  position: relative;
+
+  max-width: 30rem;
+  margin: 0;
+
+  padding:
+    0.8rem
+    2.1rem
+    0.8rem
+    3.2rem !important;
+
+  border-left:
+    1px solid rgba(218, 173, 85, 0.52);
+
+  font-size:
+    clamp(1.1rem, 1.48vw, 1.48rem);
+  line-height: 1.57;
+}
+
+/* Living accent now travels only through quote height. */
+
+.introQuote > span {
+  position: relative;
+  z-index: 2;
+}
+
+.introQuote::before {
+  content: "“" !important;
+
+  position: absolute;
+  z-index: 2;
+
+  top: 0.55rem !important;
+  left: 1.15rem !important;
+
+  color: rgba(223, 176, 85, 0.88);
+
+  font-family: Georgia, serif;
+  font-size: 2.35rem !important;
+  line-height: 1;
+}
+
+.introQuote::after {
+  content: "”" !important;
+
+  position: absolute;
+  z-index: 2;
+
+  right: 0.35rem !important;
+  bottom: 0.38rem !important;
+
+  color: rgba(223, 176, 85, 0.82);
+
+  font-family: Georgia, serif;
+  font-size: 1.9rem !important;
+  line-height: 1;
+}
+
+/* Moving highlight restricted to quotation line. */
+
+.introQuotePanel::before {
+  content: "";
+
+  position: absolute;
+  z-index: 3;
+
+  top: 0.8rem;
+  bottom:
+    calc(
+      0.8rem +
+      2.2rem
+    );
+  left: 0;
+
+  width: 1px;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(235, 192, 107, 0.92),
+      rgba(117, 165, 197, 0.42),
+      transparent
+    );
+
+  background-repeat: no-repeat;
+  background-size: 100% 34%;
+
+  animation:
+    reality-quote-line-travel
+    6.8s
+    ease-in-out
+    infinite;
+}
+
+.introQuoteCaption {
+  margin:
+    0.8rem
+    0
+    0
+    3.2rem !important;
+}
+
+@keyframes reality-quote-line-travel {
+  0%,
+  100% {
+    background-position: 0 -45%;
+    opacity: 0.35;
+  }
+
+  50% {
+    background-position: 0 145%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .introQuote {
+    padding:
+      0.75rem
+      1.75rem
+      0.75rem
+      2.7rem !important;
+  }
+
+  .introQuote::before {
+    left: 0.95rem !important;
+    font-size: 2rem !important;
+  }
+
+  .introQuote::after {
+    right: 0.25rem !important;
+    font-size: 1.65rem !important;
+  }
+
+  .introQuoteCaption {
+    margin-left: 2.7rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .introQuotePanel::before {
+    animation: none;
+  }
+}
+

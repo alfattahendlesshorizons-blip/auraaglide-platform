@@ -1,0 +1,270 @@
+﻿diff --git a/src/design-system/background/HomeBackground.module.css b/src/design-system/background/HomeBackground.module.css
+index 2564d6a..e01dc90 100644
+--- a/src/design-system/background/HomeBackground.module.css
++++ b/src/design-system/background/HomeBackground.module.css
+@@ -2,8 +2,10 @@
+   position: fixed;
+   z-index: -20;
+   inset: 0;
++
+   overflow: hidden;
+   pointer-events: none;
++
+   background: var(--home-bg);
+ }
+ 
+@@ -11,9 +13,6 @@
+ .blueDepth,
+ .leftVignette,
+ .goldWarmth,
+-.grid,
+-.curveOne,
+-.curveTwo,
+ .noise {
+   position: absolute;
+   inset: 0;
+@@ -31,17 +30,21 @@
+ 
+ .blueDepth {
+   inset: -16% -10% auto auto;
++
+   width: 72vw;
+   height: 72vw;
+-  opacity: 0.55;
++
++  opacity: 0.45;
++
+   background:
+     radial-gradient(
+       circle,
+-      rgba(51, 105, 150, 0.3) 0%,
+-      rgba(28, 70, 106, 0.14) 34%,
++      rgba(51, 105, 150, 0.25) 0%,
++      rgba(28, 70, 106, 0.11) 34%,
+       transparent 70%
+     );
+-  filter: blur(12px);
++
++  filter: blur(16px);
+ }
+ 
+ .leftVignette {
+@@ -55,63 +58,25 @@
+ 
+ .goldWarmth {
+   inset: auto 5% -38% auto;
++
+   width: 58vw;
+   height: 58vw;
+-  opacity: 0.16;
++
++  opacity: 0.11;
++
+   background:
+     radial-gradient(
+       circle,
+-      rgba(201, 154, 77, 0.32),
++      rgba(201, 154, 77, 0.27),
+       transparent 68%
+     );
+-  filter: blur(28px);
+-}
+ 
+-.grid {
+-  opacity: 0.075;
+-  background-image:
+-    linear-gradient(
+-      rgba(145, 174, 198, 0.35) 1px,
+-      transparent 1px
+-    ),
+-    linear-gradient(
+-      90deg,
+-      rgba(145, 174, 198, 0.35) 1px,
+-      transparent 1px
+-    );
+-  background-size: 72px 72px;
+-  mask-image:
+-    linear-gradient(
+-      to bottom,
+-      rgba(0, 0, 0, 0.85),
+-      rgba(0, 0, 0, 0.22) 72%,
+-      transparent
+-    );
+-}
+-
+-.curveOne,
+-.curveTwo {
+-  border: 1px solid rgba(113, 157, 193, 0.08);
+-  border-radius: 50%;
+-}
+-
+-.curveOne {
+-  inset: 15% -38% auto auto;
+-  width: 90vw;
+-  height: 90vw;
+-  transform: rotate(-14deg);
+-}
+-
+-.curveTwo {
+-  inset: auto auto -60% -28%;
+-  width: 86vw;
+-  height: 86vw;
+-  border-color: rgba(201, 154, 77, 0.055);
+-  transform: rotate(17deg);
++  filter: blur(34px);
+ }
+ 
+ .noise {
+-  opacity: 0.026;
++  opacity: 0.02;
++
+   background-image:
+     url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+ }
+diff --git a/src/design-system/background/HomeBackground.tsx b/src/design-system/background/HomeBackground.tsx
+index 7da1bc1..8193aa5 100644
+--- a/src/design-system/background/HomeBackground.tsx
++++ b/src/design-system/background/HomeBackground.tsx
+@@ -7,9 +7,6 @@ export function HomeBackground() {
+       <div className={styles.blueDepth} />
+       <div className={styles.leftVignette} />
+       <div className={styles.goldWarmth} />
+-      <div className={styles.grid} />
+-      <div className={styles.curveOne} />
+-      <div className={styles.curveTwo} />
+       <div className={styles.noise} />
+     </div>
+   );
+diff --git a/src/design-system/decorative/LivingRay.tsx b/src/design-system/decorative/LivingRay.tsx
+index 097ac42..ccac0fb 100644
+--- a/src/design-system/decorative/LivingRay.tsx
++++ b/src/design-system/decorative/LivingRay.tsx
+@@ -28,3 +28,4 @@ export function LivingRay({
+     </span>
+   );
+ }
++
+diff --git a/src/design-system/decorative/SectionLabel.tsx b/src/design-system/decorative/SectionLabel.tsx
+index b1b241f..1569a86 100644
+--- a/src/design-system/decorative/SectionLabel.tsx
++++ b/src/design-system/decorative/SectionLabel.tsx
+@@ -19,3 +19,4 @@ export function SectionLabel({
+     </div>
+   );
+ }
++
+diff --git a/src/design-system/decorative/index.ts b/src/design-system/decorative/index.ts
+index b9304ca..cebb78b 100644
+--- a/src/design-system/decorative/index.ts
++++ b/src/design-system/decorative/index.ts
+@@ -3,3 +3,4 @@ export { SectionLabel } from "./SectionLabel";
+ 
+ export type { LivingRayProps } from "./LivingRay";
+ export type { SectionLabelProps } from "./SectionLabel";
++
+diff --git a/src/design-system/motion/ActiveGlow.tsx b/src/design-system/motion/ActiveGlow.tsx
+index b34bb5c..16d65fe 100644
+--- a/src/design-system/motion/ActiveGlow.tsx
++++ b/src/design-system/motion/ActiveGlow.tsx
+@@ -26,3 +26,4 @@ export function ActiveGlow({
+     </span>
+   );
+ }
++
+diff --git a/src/design-system/motion/MotionReveal.tsx b/src/design-system/motion/MotionReveal.tsx
+index 4963426..23a108d 100644
+--- a/src/design-system/motion/MotionReveal.tsx
++++ b/src/design-system/motion/MotionReveal.tsx
+@@ -33,3 +33,4 @@ export function MotionReveal({
+     </div>
+   );
+ }
++
+diff --git a/src/design-system/motion/TypographyBreath.tsx b/src/design-system/motion/TypographyBreath.tsx
+index e35207d..cec9388 100644
+--- a/src/design-system/motion/TypographyBreath.tsx
++++ b/src/design-system/motion/TypographyBreath.tsx
+@@ -31,3 +31,4 @@ export function TypographyBreath({
+     </span>
+   );
+ }
++
+diff --git a/src/design-system/motion/index.ts b/src/design-system/motion/index.ts
+index d7aeeda..ee2746b 100644
+--- a/src/design-system/motion/index.ts
++++ b/src/design-system/motion/index.ts
+@@ -9,3 +9,4 @@ export type {
+   TypographyBreathProps,
+   TypographyBreathTone,
+ } from "./TypographyBreath";
++
+diff --git a/src/design-system/motion/motion.tokens.ts b/src/design-system/motion/motion.tokens.ts
+index b53feb5..18f1ff5 100644
+--- a/src/design-system/motion/motion.tokens.ts
++++ b/src/design-system/motion/motion.tokens.ts
+@@ -14,3 +14,4 @@
+     ambient: "cubic-bezier(0.42, 0, 0.2, 1)",
+   },
+ } as const;
++
+diff --git a/src/design-system/patterns/section-transition/SectionTransition.tsx b/src/design-system/patterns/section-transition/SectionTransition.tsx
+index 5ba252d..3b616ec 100644
+--- a/src/design-system/patterns/section-transition/SectionTransition.tsx
++++ b/src/design-system/patterns/section-transition/SectionTransition.tsx
+@@ -28,3 +28,4 @@ export function SectionTransition({
+     </div>
+   );
+ }
++
+diff --git a/src/design-system/patterns/section-transition/SectionTransition.types.ts b/src/design-system/patterns/section-transition/SectionTransition.types.ts
+index ab1b2b5..6727d74 100644
+--- a/src/design-system/patterns/section-transition/SectionTransition.types.ts
++++ b/src/design-system/patterns/section-transition/SectionTransition.types.ts
+@@ -12,3 +12,4 @@ export type SectionTransitionProps = {
+   align?: SectionTransitionAlign;
+   className?: string;
+ };
++
+diff --git a/src/design-system/patterns/section-transition/index.ts b/src/design-system/patterns/section-transition/index.ts
+index 4409b40..c42085e 100644
+--- a/src/design-system/patterns/section-transition/index.ts
++++ b/src/design-system/patterns/section-transition/index.ts
+@@ -4,3 +4,4 @@ export type {
+   SectionTransitionProps,
+   SectionTransitionVariant,
+ } from "./SectionTransition.types";
++
+diff --git a/src/design-system/primitives/action-link/ActionLink.tsx b/src/design-system/primitives/action-link/ActionLink.tsx
+index 6427a90..840395e 100644
+--- a/src/design-system/primitives/action-link/ActionLink.tsx
++++ b/src/design-system/primitives/action-link/ActionLink.tsx
+@@ -30,3 +30,4 @@ export function ActionLink({
+     </Link>
+   );
+ }
++
+diff --git a/src/design-system/primitives/action-link/index.ts b/src/design-system/primitives/action-link/index.ts
+index 46f1248..2d66c6d 100644
+--- a/src/design-system/primitives/action-link/index.ts
++++ b/src/design-system/primitives/action-link/index.ts
+@@ -1 +1,2 @@
+ ∩╗┐export { ActionLink } from "./ActionLink";
++
+diff --git a/src/design-system/typography/Typography.tsx b/src/design-system/typography/Typography.tsx
+index 4a3d0ad..75bfb0e 100644
+--- a/src/design-system/typography/Typography.tsx
++++ b/src/design-system/typography/Typography.tsx
+@@ -49,3 +49,4 @@ export function Typography({
+     </Component>
+   );
+ }
++
+diff --git a/src/design-system/typography/index.ts b/src/design-system/typography/index.ts
+index ba2241e..b16d4aa 100644
+--- a/src/design-system/typography/index.ts
++++ b/src/design-system/typography/index.ts
+@@ -5,3 +5,4 @@ export type {
+   TypographyTone,
+   TypographyVariant,
+ } from "./Typography";
++

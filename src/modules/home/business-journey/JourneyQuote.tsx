@@ -21,3 +21,4 @@ export function JourneyQuote({
     </blockquote>
   );
 }
+

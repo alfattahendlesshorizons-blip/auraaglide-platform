@@ -1,0 +1,7 @@
+﻿src\app\api : False
+src\server : False
+src\services : False
+src\lib\db : False
+prisma : False
+drizzle : False
+database : False

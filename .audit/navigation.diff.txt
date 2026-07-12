@@ -1,0 +1,102 @@
+﻿diff --git a/src/components/navigation/DesktopNavbar.tsx b/src/components/navigation/DesktopNavbar.tsx
+index 73ef665..389593c 100644
+--- a/src/components/navigation/DesktopNavbar.tsx
++++ b/src/components/navigation/DesktopNavbar.tsx
+@@ -87,3 +87,4 @@ export function DesktopNavbar() {
+ }
+ 
+ 
++
+diff --git a/src/components/navigation/DesktopNavigation.tsx b/src/components/navigation/DesktopNavigation.tsx
+index 6a20b32..3d9cfe5 100644
+--- a/src/components/navigation/DesktopNavigation.tsx
++++ b/src/components/navigation/DesktopNavigation.tsx
+@@ -49,3 +49,4 @@ export function DesktopNavigation() {
+     </div>
+   );
+ }
++
+diff --git a/src/components/navigation/MegaMenu.tsx b/src/components/navigation/MegaMenu.tsx
+index e69de29..5f28270 100644
+--- a/src/components/navigation/MegaMenu.tsx
++++ b/src/components/navigation/MegaMenu.tsx
+@@ -0,0 +1 @@
++∩╗┐
+\ No newline at end of file
+diff --git a/src/components/navigation/MobileNavigation.tsx b/src/components/navigation/MobileNavigation.tsx
+index d698b5c..11e0c1c 100644
+--- a/src/components/navigation/MobileNavigation.tsx
++++ b/src/components/navigation/MobileNavigation.tsx
+@@ -205,3 +205,4 @@ export function MobileNavigation() {
+ 
+ 
+ 
++
+diff --git a/src/components/navigation/Navbar.tsx b/src/components/navigation/Navbar.tsx
+index 156ed23..b6e7d9e 100644
+--- a/src/components/navigation/Navbar.tsx
++++ b/src/components/navigation/Navbar.tsx
+@@ -30,3 +30,4 @@ export function Navbar() {
+     </header>
+   );
+ }
++
+diff --git a/src/components/navigation/NavigationIconGraphic.tsx b/src/components/navigation/NavigationIconGraphic.tsx
+index dcd5a5b..991e4d6 100644
+--- a/src/components/navigation/NavigationIconGraphic.tsx
++++ b/src/components/navigation/NavigationIconGraphic.tsx
+@@ -94,3 +94,4 @@ export function NavigationIconGraphic({
+     </span>
+   );
+ }
++
+diff --git a/src/components/navigation/QuickLinks.tsx b/src/components/navigation/QuickLinks.tsx
+index e69de29..5f28270 100644
+--- a/src/components/navigation/QuickLinks.tsx
++++ b/src/components/navigation/QuickLinks.tsx
+@@ -0,0 +1 @@
++∩╗┐
+\ No newline at end of file
+diff --git a/src/components/navigation/SiteSearch.tsx b/src/components/navigation/SiteSearch.tsx
+index 24a4d21..eabe29a 100644
+--- a/src/components/navigation/SiteSearch.tsx
++++ b/src/components/navigation/SiteSearch.tsx
+@@ -210,3 +210,4 @@ export function SiteSearch({
+     </>
+   );
+ }
++
+diff --git a/src/components/navigation/ThemeToggle.tsx b/src/components/navigation/ThemeToggle.tsx
+index 9974680..23be3e0 100644
+--- a/src/components/navigation/ThemeToggle.tsx
++++ b/src/components/navigation/ThemeToggle.tsx
+@@ -27,3 +27,4 @@ export function ThemeToggle() {
+     </button>
+   );
+ }
++
+diff --git a/src/components/navigation/index.ts b/src/components/navigation/index.ts
+index 7fc1a2a..ae76186 100644
+--- a/src/components/navigation/index.ts
++++ b/src/components/navigation/index.ts
+@@ -1 +1,2 @@
+ ∩╗┐export { Navbar } from "./Navbar";
++
+diff --git a/src/components/navigation/navigation.data.ts b/src/components/navigation/navigation.data.ts
+index cd39971..3067456 100644
+--- a/src/components/navigation/navigation.data.ts
++++ b/src/components/navigation/navigation.data.ts
+@@ -172,3 +172,4 @@ export const navigationContent: NavigationContent = {
+ 
+ 
+ 
++
+diff --git a/src/components/navigation/navigation.types.ts b/src/components/navigation/navigation.types.ts
+index 17a53b2..ef094b2 100644
+--- a/src/components/navigation/navigation.types.ts
++++ b/src/components/navigation/navigation.types.ts
+@@ -36,3 +36,4 @@ export type NavigationContent = {
+   directLinks: NavigationLink[];
+   cta: NavigationLink;
+ };
++

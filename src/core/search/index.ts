@@ -6,3 +6,4 @@ export type {
   SearchItemType,
   SearchResult,
 } from "./search.types";
+

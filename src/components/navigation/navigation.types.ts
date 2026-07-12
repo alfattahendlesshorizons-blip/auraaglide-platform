@@ -36,3 +36,4 @@ export type NavigationContent = {
   directLinks: NavigationLink[];
   cta: NavigationLink;
 };
+

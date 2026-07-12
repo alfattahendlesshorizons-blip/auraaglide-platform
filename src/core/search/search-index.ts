@@ -117,3 +117,4 @@ const uniqueItems = new Map<string, SearchItem>();
 
 export const searchIndex: SearchItem[] =
   Array.from(uniqueItems.values());
+

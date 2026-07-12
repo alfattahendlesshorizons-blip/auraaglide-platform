@@ -1,0 +1,398 @@
+﻿.section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(5.5rem, 9vw, 9rem) 0 clamp(6rem, 10vw, 10rem);
+  color: var(--ag-text-light, #f5f8fb);
+}
+
+.container {
+  width: min(calc(100% - 2rem), 80rem);
+  margin-inline: auto;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.62fr);
+  column-gap: clamp(3rem, 8vw, 8rem);
+  align-items: end;
+  margin-bottom: clamp(3rem, 6vw, 5.5rem);
+}
+
+.eyebrowRow {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.4rem;
+}
+
+.eyebrowRay {
+  width: 3.2rem;
+  height: 1px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(210, 164, 82, 0.2),
+    rgba(232, 186, 103, 0.85)
+  );
+}
+
+.eyebrowRay::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.4rem;
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 999px;
+  background: #f0c878;
+  box-shadow: 0 0 12px rgba(238, 190, 99, 0.75);
+  transform: translateY(-50%);
+  animation: rayTravel 4.8s ease-in-out infinite;
+}
+
+.eyebrow {
+  color: var(--ag-gold, #d3a24f);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: clamp(3.4rem, 6.5vw, 6.8rem);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 0.88;
+}
+
+.heading span {
+  display: block;
+}
+
+.headingLead {
+  color: #f5f7fa;
+}
+
+.headingMiddle {
+  color: var(--ag-steel-light, #91b3ca);
+}
+
+.headingAccent {
+  color: var(--ag-gold, #dda94f);
+}
+
+.description {
+  max-width: 35rem;
+  margin: 0 0 0.35rem;
+  color: var(--ag-text-body, #8ea3b2);
+  font-size: clamp(1rem, 1.35vw, 1.14rem);
+  line-height: 1.78;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: 8rem;
+  gap: 1rem;
+}
+
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 23rem;
+  overflow: hidden;
+  border: 1px solid rgba(135, 174, 199, 0.15);
+  border-radius: clamp(1.3rem, 2vw, 2rem);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16, 38, 54, 0.94),
+      rgba(5, 19, 30, 0.98)
+    );
+  color: inherit;
+  text-decoration: none;
+  box-shadow:
+    0 1.5rem 5rem rgba(0, 0, 0, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+  transform: translateZ(0);
+  transition:
+    border-color 320ms ease,
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 420ms ease;
+}
+
+.panel:hover {
+  border-color: rgba(220, 174, 88, 0.32);
+  transform: translateY(-0.3rem);
+  box-shadow:
+    0 2rem 6rem rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.panel_startups {
+  grid-column: 1 / span 5;
+  grid-row: span 3;
+}
+
+.panel_manufacturing {
+  grid-column: 6 / span 7;
+  grid-row: span 4;
+}
+
+.panel_healthcare {
+  grid-column: 1 / span 7;
+  grid-row: span 4;
+}
+
+.panel_retail {
+  grid-column: 8 / span 5;
+  grid-row: span 3;
+}
+
+.panel_agriculture {
+  grid-column: 1 / -1;
+  grid-row: span 3;
+}
+
+.visual {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 78% 20%,
+      rgba(81, 136, 170, 0.2),
+      transparent 37%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(17, 46, 64, 0.42),
+      rgba(5, 18, 29, 0.1)
+    );
+  background-position: center;
+  background-size: cover;
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.panel:hover .visual {
+  transform: scale(1.025);
+}
+
+.visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3, 13, 22, 0.05) 0%,
+      rgba(3, 13, 22, 0.3) 42%,
+      rgba(3, 13, 22, 0.96) 100%
+    );
+}
+
+.visualAtmosphere {
+  position: absolute;
+  inset: auto -10% -30% 30%;
+  height: 65%;
+  border-radius: 50%;
+  background: rgba(82, 143, 181, 0.14);
+  filter: blur(3.2rem);
+}
+
+.iconShell {
+  position: absolute;
+  z-index: 1;
+  top: 1.4rem;
+  right: 1.4rem;
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border: 1px solid rgba(215, 169, 85, 0.32);
+  border-radius: 999px;
+  background: rgba(5, 19, 30, 0.58);
+  color: var(--ag-gold, #d8a855);
+  backdrop-filter: blur(0.8rem);
+}
+
+.icon {
+  width: 1.45rem;
+  height: 1.45rem;
+  animation: iconBreath 4.4s ease-in-out infinite;
+}
+
+.panelContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.panelEyebrow {
+  margin-bottom: 0.45rem;
+  color: var(--ag-gold, #d5a34e);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.panel h3 {
+  margin: 0;
+  max-width: 22rem;
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.statement {
+  max-width: 31rem;
+  margin: 0.8rem 0 0;
+  color: #aec4d2;
+  font-size: clamp(0.98rem, 1.35vw, 1.12rem);
+  line-height: 1.45;
+}
+
+.panelDescription {
+  max-width: 35rem;
+  margin: 0.75rem 0 0;
+  color: rgba(167, 188, 201, 0.72);
+  font-size: 0.89rem;
+  line-height: 1.62;
+}
+
+.panelAction,
+.plannedLabel {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.6rem;
+  margin-top: 1.1rem;
+  font-size: 0.79rem;
+  font-weight: 650;
+}
+
+.panelAction {
+  color: #edc574;
+}
+
+.plannedLabel {
+  color: rgba(166, 188, 202, 0.56);
+}
+
+@keyframes rayTravel {
+  0%,
+  100% {
+    left: -0.4rem;
+    opacity: 0;
+  }
+
+  18%,
+  82% {
+    opacity: 1;
+  }
+
+  50% {
+    left: calc(100% - 0.1rem);
+  }
+}
+
+@keyframes iconBreath {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(0.96);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@media (max-width: 900px) {
+  .intro {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: auto;
+  }
+
+  .panel {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 27rem;
+  }
+
+  .panel_agriculture {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-top: 4.5rem;
+  }
+
+  .container {
+    width: min(calc(100% - 1.25rem), 80rem);
+  }
+
+  .heading {
+    font-size: clamp(3.25rem, 17vw, 5rem);
+  }
+
+  .grid {
+    display: flex;
+    gap: 0.85rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-bottom: 0.5rem;
+  }
+
+  .grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .panel {
+    flex: 0 0 min(86vw, 22rem);
+    min-height: 30rem;
+    scroll-snap-align: start;
+  }
+
+  .panel_agriculture {
+    grid-column: auto;
+  }
+
+  .panelDescription {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eyebrowRay::after,
+  .icon {
+    animation: none;
+  }
+
+  .panel,
+  .visual {
+    transition: none;
+  }
+}

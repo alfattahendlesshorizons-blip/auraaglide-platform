@@ -1,0 +1,156 @@
+﻿
+src\components\navigation\DesktopNavbar.tsx:13:            <Link href={group.href} 
+className={styles.groupTrigger}>
+src\components\navigation\DesktopNavbar.tsx:27:                <Link href={group.href} 
+className={styles.viewAll}>
+src\components\navigation\DesktopNavbar.tsx:37:                      href={item.href}
+src\components\navigation\DesktopNavbar.tsx:59:                    <Link href={link.href} 
+key={link.href}>
+src\components\navigation\DesktopNavbar.tsx:71:          <Link href={link.href} 
+className={styles.directLink} key={link.href}>
+src\components\navigation\DesktopNavbar.tsx:80:        <Link 
+href={navigationContent.cta.href} className={styles.cta}>
+src\components\navigation\DesktopNavigation.tsx:12:            <Link href={group.href} 
+className={styles.navLink}>
+src\components\navigation\DesktopNavigation.tsx:24:                  <Link href={item.href} 
+key={item.href}>
+src\components\navigation\DesktopNavigation.tsx:35:          <Link className={styles.navLink} 
+href={link.href} key={link.href}>
+src\components\navigation\DesktopNavigation.tsx:44:        <Link className={styles.navCta} 
+href={navigationContent.cta.href}>
+src\components\navigation\MobileNavigation.tsx:133:                        <Link 
+href={group.href} onClick={close}>
+src\components\navigation\MobileNavigation.tsx:140:                            
+href={item.href}
+src\components\navigation\MobileNavigation.tsx:156:                  href={link.href}
+src\components\navigation\MobileNavigation.tsx:169:                  
+href={contactConfig.phone.href}
+src\components\navigation\MobileNavigation.tsx:178:                  
+href={contactConfig.whatsapp.href}
+src\components\navigation\MobileNavigation.tsx:190:                
+href={navigationContent.cta.href}
+src\components\navigation\Navbar.tsx:13:          href={navigationContent.logo.href}
+src\components\navigation\navigation.data.ts:7:    href: "/",
+src\components\navigation\navigation.data.ts:13:      href: "/services",
+src\components\navigation\navigation.data.ts:20:          href: "/services/business-setup",
+src\components\navigation\navigation.data.ts:26:          href: "/services/tax-compliance",
+src\components\navigation\navigation.data.ts:32:          href: "/services/legal-protection",
+src\components\navigation\navigation.data.ts:38:          href: 
+"/services/licences-certifications",
+src\components\navigation\navigation.data.ts:46:          href: "/services/gst-registration",
+src\components\navigation\navigation.data.ts:50:          href: 
+"/services/private-limited-company",
+src\components\navigation\navigation.data.ts:54:          href: 
+"/services/trademark-registration",
+src\components\navigation\navigation.data.ts:61:      href: "/industries",
+src\components\navigation\navigation.data.ts:68:          href: "/industries/startups",
+src\components\navigation\navigation.data.ts:74:          href: "/industries/manufacturing",
+src\components\navigation\navigation.data.ts:80:          href: "/industries/healthcare",
+src\components\navigation\navigation.data.ts:86:          href: 
+"/industries/ecommerce-retail",
+src\components\navigation\navigation.data.ts:94:          href: "/industries/agriculture-fpo",
+src\components\navigation\navigation.data.ts:98:          href: "/industries/smes",
+src\components\navigation\navigation.data.ts:102:          href: "/industries",
+src\components\navigation\navigation.data.ts:109:      href: "/resources",
+src\components\navigation\navigation.data.ts:116:          href: "/resources/guides",
+src\components\navigation\navigation.data.ts:122:          href: "/resources/updates",
+src\components\navigation\navigation.data.ts:128:          href: "/resources/knowledge-hub",
+src\components\navigation\navigation.data.ts:134:          href: "/faq",
+src\components\navigation\navigation.data.ts:142:          href: "/resources/updates",
+src\components\navigation\navigation.data.ts:146:          href: "/resources/guides",
+src\components\navigation\navigation.data.ts:150:          href: "/resources",
+src\components\navigation\navigation.data.ts:159:      href: "/about",
+src\components\navigation\navigation.data.ts:163:      href: "/contact",
+src\components\navigation\navigation.data.ts:169:    href: "/contact",
+src\components\navigation\navigation.types.ts:15:  href: string;
+src\components\navigation\navigation.types.ts:22:  href: string;
+src\components\navigation\navigation.types.ts:33:    href: string;
+src\components\navigation\SiteSearch.tsx:166:                      href={result.href}
+src\config\contact.config.ts:7:    href: "tel:+918595280874",
+src\config\contact.config.ts:12:    href:
+src\core\search\search-index.ts:44:        href: item.href,
+src\core\search\search-index.ts:60:        href: item.href,
+src\core\search\search-index.ts:77:    href: item.href,
+src\core\search\search-index.ts:90:  href: "/",
+src\core\search\search.types.ts:11:  href: string;
+src\design-system\primitives\action-link\ActionLink.tsx:6:  href: string;
+src\design-system\primitives\action-link\ActionLink.tsx:22:      href={href}
+src\modules\home\business-journey\business-journey.adapter.ts:128:        href: record.href,
+src\modules\home\business-journey\business-journey.adapter.ts:187:      href: 
+isSafeHref(cta.href)
+src\modules\home\business-journey\business-journey.data.ts:40:          href: 
+"/services/business-planning",
+src\modules\home\business-journey\business-journey.data.ts:44:          href: 
+"/services/market-research",
+src\modules\home\business-journey\business-journey.data.ts:48:          href: 
+"/services/business-setup",
+src\modules\home\business-journey\business-journey.data.ts:52:          href: 
+"/services/trademark-registration",
+src\modules\home\business-journey\business-journey.data.ts:57:        href: 
+"/services/business-planning",
+src\modules\home\business-journey\business-journey.data.ts:76:          href: 
+"/services/business-setup",
+src\modules\home\business-journey\business-journey.data.ts:80:          href: 
+"/services/gst-registration",
+src\modules\home\business-journey\business-journey.data.ts:84:          href: 
+"/services/msme-registration",
+src\modules\home\business-journey\business-journey.data.ts:88:          href: 
+"/services/licences-certifications",
+src\modules\home\business-journey\business-journey.data.ts:93:        href: 
+"/services/business-setup",
+src\modules\home\business-journey\business-journey.data.ts:112:          href: 
+"/services/tax-compliance",
+src\modules\home\business-journey\business-journey.data.ts:116:          href: 
+"/services/roc-compliance",
+src\modules\home\business-journey\business-journey.data.ts:120:          href: 
+"/services/accounting",
+src\modules\home\business-journey\business-journey.data.ts:124:          href: 
+"/services/government-schemes",
+src\modules\home\business-journey\business-journey.data.ts:128:          href: 
+"/services/msme-benefits",
+src\modules\home\business-journey\business-journey.data.ts:132:          href: 
+"/services/legal-protection",
+src\modules\home\business-journey\business-journey.data.ts:137:        href: 
+"/services/tax-compliance",
+src\modules\home\business-journey\business-journey.data.ts:157:          href: 
+"/services/digital-growth",
+src\modules\home\business-journey\business-journey.data.ts:161:          href: 
+"/services/seo",
+src\modules\home\business-journey\business-journey.data.ts:165:          href: 
+"/services/crm",
+src\modules\home\business-journey\business-journey.data.ts:169:          href: 
+"/services/automation",
+src\modules\home\business-journey\business-journey.data.ts:174:        href: 
+"/services/digital-growth",
+src\modules\home\business-journey\business-journey.data.ts:193:          href: 
+"/services/funding-readiness",
+src\modules\home\business-journey\business-journey.data.ts:197:          href: 
+"/services/import-export",
+src\modules\home\business-journey\business-journey.data.ts:201:          href: 
+"/services/business-restructuring",
+src\modules\home\business-journey\business-journey.data.ts:205:          href: 
+"/services/investor-readiness",
+src\modules\home\business-journey\business-journey.data.ts:210:        href: 
+"/services/expansion",
+src\modules\home\business-journey\business-journey.types.ts:20:  href: string;
+src\modules\home\business-journey\business-journey.types.ts:34:    href: string;
+src\modules\home\business-journey\JourneyPreview.tsx:23:            <Link href={service.href} 
+key={service.href}>
+src\modules\home\business-journey\JourneyPreview.tsx:30:        <Link href={stage.cta.href} 
+className={styles.stageCta}>
+src\modules\home\hero\hero.data.ts:17:    href: "/contact",
+src\modules\home\hero\hero.data.ts:22:    href: "/services",
+src\modules\home\hero\hero.data.ts:30:      href: "/services/roc-compliance",
+src\modules\home\hero\hero.data.ts:37:      href: "/services/gst-registration",
+src\modules\home\hero\hero.data.ts:44:      href: "/services/msme-registration",
+src\modules\home\hero\hero.data.ts:51:      href: "/services/llp-registration",
+src\modules\home\hero\hero.data.ts:58:      href: "/services/trademark-registration",
+src\modules\home\hero\hero.types.ts:3:  href: string;
+src\modules\home\hero\hero.types.ts:22:    href: string;
+src\modules\home\hero\hero.types.ts:27:    href: string;
+src\modules\home\hero\HeroSection.tsx:41:                href={heroContent.primaryAction.href}
+src\modules\home\hero\HeroSection.tsx:49:                
+href={heroContent.secondaryAction.href}
+src\modules\home\hero\HeroServiceRail.tsx:23:          href={item.href}
+
+

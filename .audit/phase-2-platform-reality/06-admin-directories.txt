@@ -1,0 +1,6 @@
+﻿src\app\admin : False
+src\modules\admin : False
+src\features\admin : False
+src\components\admin : False
+src\core\admin : False
+src\services\admin : False

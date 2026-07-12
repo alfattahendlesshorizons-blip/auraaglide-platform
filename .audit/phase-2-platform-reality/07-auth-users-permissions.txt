@@ -1,0 +1,20 @@
+﻿
+Path                                                                                         
+----                                                                                         
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\MobileNavigation.tsx        
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\MobileNavigation.tsx        
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\SiteSearch.tsx              
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\SiteSearch.tsx              
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-journey\JourneyNavigator.tsx
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-journey\JourneyNavigator.tsx
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\BusinessRealityCanvas.tsx    
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\BusinessRealityCanvas.tsx    
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\BusinessRealitySelector.tsx  
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\BusinessRealitySelector.tsx  
+
+
+

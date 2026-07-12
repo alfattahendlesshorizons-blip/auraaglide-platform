@@ -1,0 +1,156 @@
+﻿
+Path                                                                                         
+----                                                                                         
+D:\Auraa web\auraaglide-platform-final\src\app\layout.tsx                                    
+D:\Auraa web\auraaglide-platform-final\src\app\layout.tsx                                    
+D:\Auraa web\auraaglide-platform-final\src\app\layout.tsx                                    
+D:\Auraa web\auraaglide-platform-final\src\app\layout.tsx                                    
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.data.ts          
+D:\Auraa web\auraaglide-platform-final\src\components\navigation\navigation.types.ts         
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts                       
+D:\Auraa web\auraaglide-platform-final\src\core\search\search.types.ts                       
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.adapter.ts  
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.adapter.ts  
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.types.ts    
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-journey\business-journey.types.ts    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-priorities\business-prioriti
+es.data.ts                                                                                   
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-priorities\business-prioriti
+es.data.ts                                                                                   
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-priorities\business-prioriti
+es.data.ts                                                                                   
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-priorities\business-prioriti
+es.data.ts                                                                                   
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-priorities\business-prioriti
+es.data.ts                                                                                   
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-priorities\business-prioriti
+es.types.ts                                                                                  
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.data.ts     
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.types.ts    
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.types.ts    
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.types.ts    
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.types.ts    
+D:\Auraa                                                                                     
+web\auraaglide-platform-final\src\modules\home\business-reality\business-reality.types.ts    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-reality\BusinessRealityStruc
+turedData.tsx                                                                                
+D:\Auraa web\auraaglide-platform-final\src\modules\home\business-reality\BusinessRealityStruc
+turedData.tsx                                                                                
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.data.ts                    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.data.ts                    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.data.ts                    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.data.ts                    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.data.ts                    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.data.ts                    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.data.ts                    
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.types.ts                   
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.types.ts                   
+D:\Auraa web\auraaglide-platform-final\src\modules\home\hero\hero.types.ts                   
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.data.ts        
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.types.ts       
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.types.ts       
+D:\Auraa web\auraaglide-platform-final\src\modules\home\industries\industries.types.ts       
+
+
+

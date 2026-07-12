@@ -67,3 +67,4 @@ export const heroContent: HeroContent = {
     alt: "Premium business advisory workspace",
   },
 };
+

@@ -1,0 +1,10 @@
+﻿
+FullName                                                                 Length
+--------                                                                 ------
+D:\Auraa web\auraaglide-platform-final\src\core\search\index.ts             187
+D:\Auraa web\auraaglide-platform-final\src\core\search\search-index.ts     2697
+D:\Auraa web\auraaglide-platform-final\src\core\search\search.service.ts   1722
+D:\Auraa web\auraaglide-platform-final\src\core\search\search.types.ts      302
+
+
+

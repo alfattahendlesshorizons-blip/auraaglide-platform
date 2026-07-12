@@ -16,3 +16,4 @@ export type SearchItem = {
 export type SearchResult = SearchItem & {
   score: number;
 };
+

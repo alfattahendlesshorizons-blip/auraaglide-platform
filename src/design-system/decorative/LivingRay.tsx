@@ -28,3 +28,4 @@ export function LivingRay({
     </span>
   );
 }
+

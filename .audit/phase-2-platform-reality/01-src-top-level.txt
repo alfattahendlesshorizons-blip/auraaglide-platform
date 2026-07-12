@@ -1,0 +1,16 @@
+﻿
+Name          FullName                                                
+----          --------                                                
+app           D:\Auraa web\auraaglide-platform-final\src\app          
+components    D:\Auraa web\auraaglide-platform-final\src\components   
+config        D:\Auraa web\auraaglide-platform-final\src\config       
+core          D:\Auraa web\auraaglide-platform-final\src\core         
+design-system D:\Auraa web\auraaglide-platform-final\src\design-system
+hooks         D:\Auraa web\auraaglide-platform-final\src\hooks        
+modules       D:\Auraa web\auraaglide-platform-final\src\modules      
+providers     D:\Auraa web\auraaglide-platform-final\src\providers    
+styles        D:\Auraa web\auraaglide-platform-final\src\styles       
+types         D:\Auraa web\auraaglide-platform-final\src\types        
+
+
+

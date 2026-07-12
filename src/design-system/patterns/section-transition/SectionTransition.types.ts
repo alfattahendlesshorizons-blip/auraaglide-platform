@@ -12,3 +12,4 @@ export type SectionTransitionProps = {
   align?: SectionTransitionAlign;
   className?: string;
 };
+

@@ -1,0 +1,84 @@
+﻿diff --git a/src/app/layout.tsx b/src/app/layout.tsx
+index e2b4527..5803962 100644
+--- a/src/app/layout.tsx
++++ b/src/app/layout.tsx
+@@ -33,3 +33,4 @@ export default function RootLayout({
+     </html>
+   );
+ }
++
+diff --git a/src/config/contact.config.ts b/src/config/contact.config.ts
+index 0d1416e..1d8dab1 100644
+--- a/src/config/contact.config.ts
++++ b/src/config/contact.config.ts
+@@ -23,3 +23,4 @@
+     x: "",
+   },
+ } as const;
++
+diff --git a/src/config/site.config.ts b/src/config/site.config.ts
+index e69de29..5f28270 100644
+--- a/src/config/site.config.ts
++++ b/src/config/site.config.ts
+@@ -0,0 +1 @@
++∩╗┐
+\ No newline at end of file
+diff --git a/src/core/content/content.types.ts b/src/core/content/content.types.ts
+index e69de29..5f28270 100644
+--- a/src/core/content/content.types.ts
++++ b/src/core/content/content.types.ts
+@@ -0,0 +1 @@
++∩╗┐
+\ No newline at end of file
+diff --git a/src/core/registry/section-registry.ts b/src/core/registry/section-registry.ts
+index e69de29..5f28270 100644
+--- a/src/core/registry/section-registry.ts
++++ b/src/core/registry/section-registry.ts
+@@ -0,0 +1 @@
++∩╗┐
+\ No newline at end of file
+diff --git a/src/core/search/index.ts b/src/core/search/index.ts
+index 375c5e7..680f065 100644
+--- a/src/core/search/index.ts
++++ b/src/core/search/index.ts
+@@ -6,3 +6,4 @@ export type {
+   SearchItemType,
+   SearchResult,
+ } from "./search.types";
++
+diff --git a/src/core/search/search-index.ts b/src/core/search/search-index.ts
+index 9ae99c1..a3fb77c 100644
+--- a/src/core/search/search-index.ts
++++ b/src/core/search/search-index.ts
+@@ -117,3 +117,4 @@ const uniqueItems = new Map<string, SearchItem>();
+ 
+ export const searchIndex: SearchItem[] =
+   Array.from(uniqueItems.values());
++
+diff --git a/src/core/search/search.service.ts b/src/core/search/search.service.ts
+index 563ed09..ca6c398 100644
+--- a/src/core/search/search.service.ts
++++ b/src/core/search/search.service.ts
+@@ -84,3 +84,4 @@ export function searchSite(
+     })
+     .slice(0, limit);
+ }
++
+diff --git a/src/core/search/search.types.ts b/src/core/search/search.types.ts
+index b67bfe4..283b133 100644
+--- a/src/core/search/search.types.ts
++++ b/src/core/search/search.types.ts
+@@ -16,3 +16,4 @@ export type SearchItem = {
+ export type SearchResult = SearchItem & {
+   score: number;
+ };
++
+diff --git a/src/providers/ThemeProvider.tsx b/src/providers/ThemeProvider.tsx
+index 95713d2..263ef71 100644
+--- a/src/providers/ThemeProvider.tsx
++++ b/src/providers/ThemeProvider.tsx
+@@ -84,3 +84,4 @@ export function useTheme() {
+ 
+   return context;
+ }
++

@@ -1,0 +1,13 @@
+﻿
+FullName                                                                            Length
+--------                                                                            ------
+D:\Auraa web\auraaglide-platform-final\public\file.svg                                 391
+D:\Auraa web\auraaglide-platform-final\public\globe.svg                               1035
+D:\Auraa web\auraaglide-platform-final\public\next.svg                                1375
+D:\Auraa web\auraaglide-platform-final\public\vercel.svg                               128
+D:\Auraa web\auraaglide-platform-final\public\window.svg                               385
+D:\Auraa web\auraaglide-platform-final\public\images\brand\auraaglide-logo.png     1413155
+D:\Auraa web\auraaglide-platform-final\public\images\brand\auraaglide-logo.webp       5540
+D:\Auraa web\auraaglide-platform-final\public\images\home\hero-advisory-office.png 1968046
+
+

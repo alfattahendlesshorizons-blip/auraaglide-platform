@@ -1,0 +1,61 @@
+﻿==================================================
+FILE: src\app\layout.tsx
+EXISTS: True
+==================================================
+import type { Metadata } from "next";
+import { Geist, Manrope } from "next/font/google";
+import "./globals.css";
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "AuraaGlide Solutions",
+  description:
+    "Connected business advisory, compliance, legal and growth support.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={`${geist.variable} ${manrope.variable}`}>
+        {children}
+      </body>
+    </html>
+  );
+}
+
+
+==================================================
+FILE: src\app\robots.ts
+EXISTS: False
+==================================================
+
+==================================================
+FILE: src\app\sitemap.ts
+EXISTS: False
+==================================================
+
+==================================================
+FILE: src\app\manifest.ts
+EXISTS: False
+==================================================
+
+==================================================
+FILE: src\config\site.config.ts
+EXISTS: True
+==================================================
+
