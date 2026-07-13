@@ -642,15 +642,6 @@
     grid-template-columns: 1fr;
   }
 
-  .actionButton {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .secondaryAction {
-    width: fit-content;
-    justify-self: center;
-  }
 
   .reassurance {
     justify-content: center;
@@ -674,9 +665,7 @@
 
   .visual,
   .image,
-  .trustModule,
-  .actionButton,
-  .secondaryAction {
+  .trustModule {
     transition: none;
   }
 }
@@ -764,3 +753,4 @@
 }
 
 /* HOME-SIZING-LOCK-END */
+

@@ -1,10 +1,10 @@
-﻿import type { CSSProperties } from "react";
+import type { CSSProperties } from "react";
 import Link from "next/link";
 
 import { ActionLink } from "@/design-system/primitives/action-link";
 
 import type { JourneyStage } from "./business-journey.types";
-import styles from "./BusinessJourney.module.css";
+import styles from "./JourneyPreview.module.css";
 
 type JourneyPreviewProps = {
   stage: JourneyStage;

@@ -1,0 +1,139 @@
+﻿HOME CSS DUPLICATE SELECTOR REPORT
+Generated: 2026-07-13 02:44:39
+Branch: refactor/home-foundation-cleanup
+============================================================
+
+=== src\modules\home\hero\HeroSection.module.css ===
+.visual                                   9
+.trustModule                              8
+.panel                                    8
+.section                                  7
+.trustIcon                                3
+.networkPulse                             2
+.secondaryAction                          2
+.actions                                  2
+.actionButton                             2
+.image                                    2
+.reassurance                              2
+.eyebrowRay                               2
+.title                                    2
+.topEdge                                  2
+.eyebrow                                  2
+.description                              2
+.trustModules                             2
+.secondary                                2
+.accent                                   2
+
+=== src\modules\home\business-journey\BusinessJourney.module.css ===
+.serviceLink                             16
+.preview                                 13
+.previewEyebrow                          10
+.progressTrack                           10
+.stageButton                              7
+.section                                  6
+.navigator                                5
+.stageCta                                 5
+.serviceLinks                             5
+.stageNode                                5
+.previewServices                          4
+.previewHeading                           4
+.track                                    4
+.previewDescription                       4
+.container                                3
+.previewServicesRay                       3
+.previewEyebrowRay                        3
+.serviceIcon                              2
+.serviceArrow                             2
+.stageButtonActive                        2
+.progressRay                              2
+.previewDivider                           2
+
+=== src\modules\home\business-journey\BusinessJourneySection.module.css ===
+.stageCta                                13
+.previewServices                         12
+.preview                                  9
+.previewHeading                           8
+.serviceLinks                             4
+.previewDescription                       4
+.previewCopy                              3
+
+=== src\modules\home\business-reality\BusinessRealitySection.module.css ===
+.experience                              19
+.introQuote                              16
+.canvasVisual                            15
+.canvasContent                           15
+.selectorItem                            14
+.introLayout                             12
+.introQuotePanel                         11
+.introBridge                              9
+.selector                                 8
+.section                                  8
+.previewLabel                             7
+.intro                                    7
+.heading                                  7
+.container                                7
+.quote                                    6
+.canvas                                   6
+.selectorIconShell                        5
+.selectorIcon                             5
+.canvasDescription                        5
+.canvasIconShell                          5
+.canvasAction                             4
+.bridgeLight                              4
+.bridgeTrack                              4
+.introQuoteCaption                        4
+.descriptionReveal                        4
+.selectorIntroRay                         3
+.headingAccent                            3
+.eyebrowRay                               3
+.introRays                                3
+.canvasIcon                               3
+.description                              3
+.canvasContext                            3
+.selectorLabel                            3
+.selectorItemActive                       2
+.selectorIndicator                        2
+.selectorList                             2
+.selectorIntro                            2
+.highlightPulse                           2
+.headingLead                              2
+.headingMiddle                            2
+.highlights                               2
+.canvasHeader                             2
+.headingFirstLine                         2
+.introQuoteMark                           2
+
+=== src\modules\home\industries\IndustriesSection.module.css ===
+.panel                                   11
+.section                                  9
+.intro                                    5
+.grid                                     4
+.container                                4
+.panel_agriculture                        3
+.visual                                   3
+.eyebrowRay                               3
+.panelAction                              2
+.plannedLabel                             2
+.panelDescription                         2
+.heading                                  2
+.icon                                     2
+
+=== src\components\navigation\Navbar.module.css ===
+.megaItem                                10
+.header                                   6
+.cta                                      6
+.groupTrigger                             5
+.directLink                               5
+.searchPlaceholder                        5
+.group                                    5
+.navbar                                   5
+.logo                                     4
+.menuButton                               3
+.navIconPulse                             3
+.navIcon                                  3
+.actions                                  3
+.links                                    3
+.desktop                                  3
+.mobileQuickActions                       2
+.mobileDrawer                             2
+.mobileNav                                2

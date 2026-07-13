@@ -1,10 +1,10 @@
-﻿import type { CSSProperties, KeyboardEvent } from "react";
+import type { CSSProperties, KeyboardEvent } from "react";
 import type {
   JourneyStage,
   JourneyStageId,
 } from "./business-journey.types";
 import { JourneyStageMiniIcon } from "./JourneyStageMiniIcon";
-import styles from "./BusinessJourney.module.css";
+import styles from "./JourneyNavigator.module.css";
 
 type JourneyNavigatorProps = {
   stages: JourneyStage[];

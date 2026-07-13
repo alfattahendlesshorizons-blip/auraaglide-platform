@@ -1,4 +1,4 @@
-﻿import { BusinessRealityIcon } from "./BusinessRealityIcon";
+import { BusinessRealityIcon } from "./BusinessRealityIcon";
 import type { BusinessRealityItem } from "./business-reality.types";
 import styles from "./BusinessRealitySection.module.css";
 
@@ -17,7 +17,7 @@ export function BusinessRealitySelector({
     <div
       className={styles.selector}
       role="tablist"
-      aria-label="Choose a business type"
+      aria-label="Choose a business context"
     >
       <div className={styles.selectorIntro}>
         <div className={styles.selectorIntroLabel}>
@@ -26,11 +26,11 @@ export function BusinessRealitySelector({
             aria-hidden="true"
           />
 
-          <span>YOUR BUSINESS</span>
+          <span>BUSINESS CONTEXT</span>
         </div>
 
         <p>
-          Choose the business that best reflects your operations.
+          Choose the context that best reflects your operations.
         </p>
       </div>
 
