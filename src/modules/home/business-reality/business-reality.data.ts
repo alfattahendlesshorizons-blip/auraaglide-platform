@@ -2,12 +2,12 @@
 
 export const businessRealityFallbackContent: BusinessRealityContent = {
   sectionId: "businesses-like-yours",
-  eyebrow: "Your Business",
+  eyebrow: "Built Around Your Reality",
   headingLead: "Built for",
   headingMiddle: "businesses",
   headingAccent: "like yours.",
   description:
-    "Your industry shapes the decisions you face. Our guidance adapts to how your business operates and grows.",
+    "Your industry shapes the decisions you face. Our guidance adapts to how Built Around Your Reality operates and grows.",
   items: [
     {
       id: "startups",
@@ -255,4 +255,7 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
     },
   ],
 };
+
+
+
 
