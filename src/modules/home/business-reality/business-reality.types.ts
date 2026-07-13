@@ -1,4 +1,4 @@
-﻿export type BusinessRealityIconKey =
+export type BusinessRealityIconKey =
   | "startup"
   | "manufacturing"
   | "healthcare"
@@ -45,7 +45,7 @@ export type BusinessRealityContent = {
   headingLead: string;
   headingMiddle: string;
   headingAccent: string;
+  quoteCaption: string;
   description: string;
   items: BusinessRealityItem[];
 };
-

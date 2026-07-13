@@ -1,0 +1,210 @@
+﻿.sectionLayout {
+  padding-bottom: 0 !important;
+}
+
+.containerLayout {
+  width:
+    min(
+      calc(100% - 3rem),
+      var(--container-wide)
+    ) !important;
+  margin-inline: auto;
+}
+
+.introLayoutShell {
+  margin-bottom: var(--section-intro-gap) !important;
+}
+
+.introGrid {
+  display: grid !important;
+  grid-template-columns:
+    minmax(0, 1.18fr)
+    minmax(24rem, 0.72fr) !important;
+  align-items: center;
+  gap: clamp(3.5rem, 7vw, 7.5rem) !important;
+}
+
+.experienceLayout {
+  display: grid !important;
+  grid-template-columns:
+    minmax(18rem, 24%)
+    minmax(0, 76%) !important;
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.selectorLayout {
+  min-width: 0;
+}
+
+.selectorListLayout {
+  min-width: 0;
+}
+
+.selectorItemLayout {
+  min-width: 0;
+}
+
+.canvasLayout {
+  display: grid !important;
+  grid-template-columns:
+    minmax(0, 50%)
+    minmax(0, 50%) !important;
+  min-width: 0;
+}
+
+.canvasVisualLayout,
+.canvasContentLayout {
+  min-height:
+    clamp(25rem, 38vw, 29rem) !important;
+}
+
+.canvasContentLayout {
+  padding: var(--panel-padding) !important;
+}
+
+@media (max-width: 1080px) {
+  .containerLayout {
+    width:
+      min(
+        calc(100% - 2rem),
+        var(--container-wide)
+      ) !important;
+  }
+
+  .introGrid {
+    grid-template-columns:
+      minmax(0, 1.1fr)
+      minmax(20rem, 0.8fr) !important;
+    gap:
+      clamp(2.5rem, 5vw, 4.5rem) !important;
+  }
+
+  .experienceLayout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .selectorLayout {
+    display: block !important;
+    width: 100%;
+    overflow: hidden;
+    border-right: 0 !important;
+    border-bottom:
+      1px solid rgba(133, 174, 199, 0.14);
+  }
+
+  .selectorListLayout {
+    display: flex !important;
+    width: 100%;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .selectorListLayout::-webkit-scrollbar {
+    display: none;
+  }
+
+  .selectorItemLayout {
+    flex: 0 0 auto;
+    min-height: 3.45rem !important;
+    scroll-snap-align: start;
+  }
+
+  .canvasLayout {
+    grid-template-columns:
+      minmax(0, 46%)
+      minmax(0, 54%) !important;
+  }
+
+  .canvasVisualLayout {
+    min-height: 17rem !important;
+  }
+
+  .canvasContentLayout {
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .introGrid {
+    grid-template-columns: 1fr !important;
+    gap: 1.8rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .sectionLayout {
+    padding-block: 3.5rem 0 !important;
+  }
+
+  .containerLayout {
+    width:
+      calc(100% - 1.25rem) !important;
+  }
+
+  .introLayoutShell {
+    margin-bottom: 2.3rem !important;
+  }
+
+  .experienceLayout {
+    border-radius: 20px !important;
+  }
+
+  .selectorLayout {
+    padding:
+      0.62rem
+      0.5rem !important;
+  }
+
+  .selectorListLayout {
+    scroll-padding-inline: 0.15rem;
+  }
+
+  .selectorItemLayout {
+    min-height: 3.35rem !important;
+    padding:
+      0.38rem
+      0.66rem !important;
+  }
+
+  .canvasLayout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .canvasVisualLayout {
+    min-height: 15rem !important;
+  }
+
+  .canvasContentLayout {
+    min-height: auto !important;
+    padding:
+      1.5rem
+      1rem !important;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .selectorItemLayout:hover {
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experienceLayout,
+  .selectorItemLayout,
+  .canvasVisualLayout,
+  .canvasContentLayout {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .selectorListLayout {
+    scroll-behavior: auto;
+  }
+}

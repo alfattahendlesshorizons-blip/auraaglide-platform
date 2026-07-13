@@ -1,5 +1,6 @@
 import { BusinessRealityIcon } from "./BusinessRealityIcon";
 import type { BusinessRealityItem } from "./business-reality.types";
+import layoutStyles from "./BusinessRealityLayout.module.css";
 import styles from "./BusinessRealitySection.module.css";
 
 type BusinessRealitySelectorProps = {
@@ -15,7 +16,7 @@ export function BusinessRealitySelector({
 }: BusinessRealitySelectorProps) {
   return (
     <div
-      className={styles.selector}
+      className={`${styles.selector} ${layoutStyles.selectorLayout}`}
       role="tablist"
       aria-label="Choose a business context"
     >
@@ -34,7 +35,7 @@ export function BusinessRealitySelector({
         </p>
       </div>
 
-      <div className={styles.selectorList}>
+      <div className={`${styles.selectorList} ${layoutStyles.selectorListLayout}`}>
         {items.map((item) => {
           const isActive = item.id === activeId;
 
@@ -47,6 +48,8 @@ export function BusinessRealitySelector({
               aria-controls={`business-panel-${item.id}`}
               className={[
                 styles.selectorItem,
+                layoutStyles.selectorItemLayout,
+                layoutStyles.selectorItemLayout,
                 isActive
                   ? styles.selectorItemActive
                   : "",

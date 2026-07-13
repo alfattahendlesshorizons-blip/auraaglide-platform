@@ -6,6 +6,7 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
   headingLead: "Built for",
   headingMiddle: "businesses",
   headingAccent: "like yours.",
+  quoteCaption: "Built around your reality",
   description:
     "Your industry shapes the decisions you face. Our guidance adapts to how your business operates and grows.",
   items: [

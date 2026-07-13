@@ -1,4 +1,4 @@
-﻿import type { CSSProperties } from "react";
+import type { CSSProperties } from "react";
 
 import Link from "next/link";
 
@@ -7,6 +7,7 @@ import { Typography } from "@/design-system/typography";
 
 import { BusinessRealityIcon } from "./BusinessRealityIcon";
 import type { BusinessRealityItem } from "./business-reality.types";
+import layoutStyles from "./BusinessRealityLayout.module.css";
 import styles from "./BusinessRealitySection.module.css";
 
 type BusinessRealityCanvasProps = {
@@ -36,12 +37,12 @@ export function BusinessRealityCanvas({
     <article
       id={`business-panel-${item.id}`}
       role="tabpanel"
-      className={styles.canvas}
+      className={`${styles.canvas} ${layoutStyles.canvasLayout}`}
       aria-label={item.label}
     >
       <div
         key={`visual-${transitionKey}`}
-        className={styles.canvasVisual}
+        className={`${styles.canvasVisual} ${layoutStyles.canvasVisualLayout}`}
         style={visualStyle}
         role={item.imageSrc ? "img" : undefined}
         aria-label={item.imageSrc ? item.imageAlt : undefined}
@@ -54,7 +55,7 @@ export function BusinessRealityCanvas({
 
       <div
         key={`content-${transitionKey}`}
-        className={styles.canvasContent}
+        className={`${styles.canvasContent} ${layoutStyles.canvasContentLayout}`}
       >
         <div className={styles.canvasHeader}>
           <span

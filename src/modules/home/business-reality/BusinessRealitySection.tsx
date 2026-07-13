@@ -1,9 +1,10 @@
-﻿import { TypographyBreath } from "@/design-system/motion";
+import { TypographyBreath } from "@/design-system/motion";
 import { Typography } from "@/design-system/typography";
 
 import { BusinessRealityExperience } from "./BusinessRealityExperience";
 import { BusinessRealityStructuredData } from "./BusinessRealityStructuredData";
 import { getBusinessRealityContent } from "./business-reality.repository";
+import layoutStyles from "./BusinessRealityLayout.module.css";
 import styles from "./BusinessRealitySection.module.css";
 
 export async function BusinessRealitySection() {
@@ -12,12 +13,17 @@ export async function BusinessRealitySection() {
   return (
     <section
       id={content.sectionId}
-      className={styles.section}
+      className={`${styles.section} ${layoutStyles.sectionLayout}`}
       aria-labelledby="business-reality-heading"
     >
       <BusinessRealityStructuredData items={content.items} />
-<div className={styles.container}>
-        <header className={styles.intro}>
+
+      <div
+        className={`${styles.container} ${layoutStyles.containerLayout}`}
+      >
+        <header
+          className={`${styles.intro} ${layoutStyles.introLayoutShell}`}
+        >
           <div className={styles.eyebrowRow}>
             <span
               className={styles.eyebrowRay}
@@ -34,7 +40,9 @@ export async function BusinessRealitySection() {
             </Typography>
           </div>
 
-          <div className={styles.introLayout}>
+          <div
+            className={`${styles.introLayout} ${layoutStyles.introGrid}`}
+          >
             <Typography
               as="h2"
               variant="display"
@@ -81,7 +89,7 @@ export async function BusinessRealitySection() {
                 tone="gold"
                 className={styles.introQuoteCaption}
               >
-                Built around your reality
+                {content.quoteCaption}
               </Typography>
             </div>
           </div>
@@ -94,8 +102,3 @@ export async function BusinessRealitySection() {
     </section>
   );
 }
-
-
-
-
-

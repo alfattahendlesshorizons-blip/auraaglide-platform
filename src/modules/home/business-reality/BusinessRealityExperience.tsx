@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import {
   useMemo,
@@ -10,6 +10,7 @@ import { PremiumFrame } from "@/design-system/primitives/premium-frame";
 import { BusinessRealityCanvas } from "./BusinessRealityCanvas";
 import { BusinessRealitySelector } from "./BusinessRealitySelector";
 import type { BusinessRealityItem } from "./business-reality.types";
+import layoutStyles from "./BusinessRealityLayout.module.css";
 import styles from "./BusinessRealitySection.module.css";
 
 type BusinessRealityExperienceProps = {
@@ -52,7 +53,7 @@ export function BusinessRealityExperience({
 
   return (
     <PremiumFrame
-      className={styles.experience}
+      className={`${styles.experience} ${layoutStyles.experienceLayout}`}
     >
       <BusinessRealitySelector
         items={items}
