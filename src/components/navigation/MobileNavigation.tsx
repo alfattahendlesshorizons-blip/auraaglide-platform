@@ -1,8 +1,9 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { contactConfig } from "@/config/contact.config";
+import { ActionLink } from "@/design-system/primitives/action-link";
 import { navigationContent } from "./navigation.data";
 import { SiteSearch } from "./SiteSearch";
 import styles from "./Navbar.module.css";
@@ -186,14 +187,16 @@ export function MobileNavigation() {
                 </Link>
               </div>
 
-              <Link
+              <ActionLink
                 href={navigationContent.cta.href}
+                variant="navbar"
+                size="md"
+                arrow="diagonal"
                 className={styles.mobileCta}
                 onClick={close}
               >
-                <span>{navigationContent.cta.label}</span>
-                <span aria-hidden="true">↗</span>
-              </Link>
+                {navigationContent.cta.label}
+              </ActionLink>
             </div>
           </div>
         </div>
