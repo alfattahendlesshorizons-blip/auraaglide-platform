@@ -1,8 +1,8 @@
-﻿import type { NavigationContent } from "./navigation.types";
+import type { NavigationContent } from "./navigation.types";
 
 export const navigationContent: NavigationContent = {
   logo: {
-    src: "/images/brand/auraaglide-logo-light.png",
+    src: "/images/brand/auraaglide-logo.webp",
     alt: "AuraaGlide Solutions",
     href: "/",
   },
@@ -169,7 +169,3 @@ export const navigationContent: NavigationContent = {
     href: "/contact",
   },
 };
-
-
-
-

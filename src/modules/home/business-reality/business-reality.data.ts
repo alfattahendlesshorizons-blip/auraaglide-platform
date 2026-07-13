@@ -1,4 +1,4 @@
-﻿import type { BusinessRealityContent } from "./business-reality.types";
+import type { BusinessRealityContent } from "./business-reality.types";
 
 export const businessRealityFallbackContent: BusinessRealityContent = {
   sectionId: "businesses-like-yours",
@@ -7,7 +7,7 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
   headingMiddle: "businesses",
   headingAccent: "like yours.",
   description:
-    "Your industry shapes the decisions you face. Our guidance adapts to how Built Around Your Reality operates and grows.",
+    "Your industry shapes the decisions you face. Our guidance adapts to how your business operates and grows.",
   items: [
     {
       id: "startups",
@@ -255,7 +255,3 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
     },
   ],
 };
-
-
-
-

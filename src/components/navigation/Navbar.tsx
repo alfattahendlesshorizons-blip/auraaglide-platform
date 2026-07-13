@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { DesktopNavbar } from "./DesktopNavbar";
 import { MobileNavigation } from "./MobileNavigation";
@@ -15,7 +15,7 @@ export function Navbar() {
           aria-label="AuraaGlide Solutions home"
         >
           <Image
-            src="/images/brand/auraaglide-logo.png"
+            src={navigationContent.logo.src}
             alt="AuraaGlide Solutions"
             width={220}
             height={120}
@@ -30,4 +30,3 @@ export function Navbar() {
     </header>
   );
 }
-
