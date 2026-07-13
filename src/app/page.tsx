@@ -21,7 +21,6 @@ export default function Home() {
 
         <BusinessJourneySection />
         <SectionTransition variant="canvas-to-canvas" />
-<SectionTransition variant="canvas-to-canvas" />
 
         <ConnectedDecisionsSection />
 
@@ -30,7 +29,7 @@ export default function Home() {
         <BusinessRealitySection />
 
         <AdvisoryApproachSection />
-      <ClientImpactSection />
+        <ClientImpactSection />
       </main>
     </>
   );

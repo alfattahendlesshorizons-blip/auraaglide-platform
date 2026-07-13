@@ -479,14 +479,28 @@
 
   .experience {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   .navigator {
-    grid-template-columns:
-      repeat(3, minmax(0, 1fr));
+    display: block;
+    padding:
+      1.4rem
+      clamp(1.1rem, 3vw, 1.65rem);
     border-right: 0;
     border-bottom:
       1px solid rgba(125, 169, 198, 0.16);
+  }
+
+  .navigatorIntro {
+    max-width: 34rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .nodeList {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    gap: 0.3rem 0.75rem;
   }
 
   .track,
@@ -496,13 +510,20 @@
 
   .node {
     justify-content: flex-start;
-    min-height: 2.75rem;
+    min-height: 3rem;
+    padding:
+      0.55rem
+      0.35rem;
+  }
+
+  .preview {
+    min-width: 0;
   }
 }
 
 @media (max-width: 640px) {
   .section {
-    padding: 3.5rem 0 4rem;
+    padding: 3.2rem 0 3.8rem;
   }
 
   .container {
@@ -514,13 +535,14 @@
   }
 
   .intro {
-    gap: 1.65rem;
+    gap: 1.5rem;
   }
 
   .heading {
     display: block;
     max-width: 9ch;
-    font-size: clamp(2.65rem, 13vw, 3.75rem);
+    font-size:
+      clamp(2.55rem, 12.4vw, 3.55rem);
   }
 
   .headingLead,
@@ -533,18 +555,22 @@
 
   .introQuotePanel {
     padding:
+      0.9rem
       0.95rem
-      1.1rem
-      1rem
-      1.45rem;
+      0.95rem
+      1.3rem;
   }
 
   .introQuote {
-    font-size: clamp(1.2rem, 6vw, 1.55rem);
+    font-size:
+      clamp(1.16rem, 5.7vw, 1.48rem);
   }
 
   .context {
-    margin-bottom: 1.8rem;
+    margin:
+      1.2rem
+      0
+      1.55rem;
   }
 
   .experience {
@@ -552,27 +578,106 @@
   }
 
   .navigator {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-    padding: 1rem;
+    display: block;
+    padding:
+      1.15rem
+      1rem
+      1.25rem;
+  }
+
+  .navigatorIntro {
+    margin-bottom: 1rem;
+  }
+
+  .navigatorDescription {
+    max-width: 28rem;
+  }
+
+  .nodeList {
+    position: relative;
+    grid-template-columns: 1fr;
+    gap: 0.12rem;
+  }
+
+  .track,
+  .travelLight {
+    display: block;
+    top: 1.5rem;
+    left: 0.38rem;
+  }
+
+  .track {
+    bottom: 1.5rem;
+  }
+
+  .travelLight {
+    bottom: auto;
   }
 
   .node {
-    gap: 0.62rem;
-    padding-right: 0.25rem;
-    font-size: 0.68rem;
-    letter-spacing: 0.05em;
+    width: 100%;
+    min-height: 3rem;
+    gap: 0.78rem;
+    padding:
+      0.55rem
+      0.25rem
+      0.55rem
+      0;
+    font-size: 0.72rem;
+    letter-spacing: 0.065em;
   }
 
   .preview {
-    padding: 1.65rem 1.2rem 1.85rem;
+    padding:
+      1.65rem
+      1.15rem
+      1.85rem;
   }
 
   .previewHeading {
-    font-size: clamp(1.9rem, 9vw, 2.65rem);
+    max-width: 12ch;
+    font-size:
+      clamp(1.9rem, 8.8vw, 2.55rem);
+  }
+
+  .previewDescription,
+  .insight {
+    max-width: none;
+  }
+
+  .links a {
+    min-height: 2.85rem;
   }
 }
+@media (hover: none) and (pointer: coarse) {
+  .node:hover {
+    color: var(--home-text-muted);
+    transform: none;
+  }
 
+  .node[data-active="true"] {
+    color: var(--home-text-primary);
+  }
+
+  .node:hover .dot {
+    border-color:
+      rgba(121, 162, 195, 0.52);
+    background: var(--home-bg);
+    box-shadow:
+      0 0 0 0.38rem
+      rgba(121, 162, 195, 0.035);
+  }
+
+  .node[data-active="true"] .dot {
+    border-color: var(--home-gold-soft);
+    background: var(--home-gold);
+    box-shadow:
+      0 0 0 0.42rem
+      rgba(201, 154, 77, 0.1),
+      0 0 1.1rem
+      rgba(201, 154, 77, 0.26);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .eyebrowRay::after,
   .travelLight,
@@ -670,24 +775,19 @@
 
 @media (max-width: 980px) {
   .navigator {
-    padding-top: 1.5rem;
-  }
-
-  .nodeList {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-top: 1.4rem;
   }
 }
 
 @media (max-width: 640px) {
-  .navigatorIntro {
-    margin-bottom: 0.8rem;
+  .navigator {
+    padding-top: 1.15rem;
   }
 
-  .nodeList {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .navigatorIntro {
+    margin-bottom: 1rem;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .previewPrimary,
   .previewSecondary,
