@@ -1,27 +1,27 @@
-﻿import type { BusinessJourneyContent } from "./business-journey.types";
+import type { BusinessJourneyContent } from "./business-journey.types";
 
 export const businessJourneyContent: BusinessJourneyContent = {
   eyebrow: "Your Business Journey",
 
   heading: [
     {
-      text: "Wherever you are,",
+      text: "Every stage changes",
       tone: "light",
     },
     {
-      text: "there is a clear",
+      text: "what matters",
       tone: "steel",
     },
     {
-      text: "next step.",
+      text: "next.",
       tone: "gold",
     },
   ],
 
   quote: {
     text:
-      "From shaping an idea to running compliance, building growth systems and expanding with confidence—every stage moves through one connected business ecosystem.",
-    signature: "One connected business system",
+      "Whether you are shaping an idea, preparing to launch, managing a growing operation or planning expansion, knowing where you are today helps reveal what deserves attention next.",
+    signature: "Every stage deserves the right direction",
   },
 
   stages: [
@@ -30,9 +30,9 @@ export const businessJourneyContent: BusinessJourneyContent = {
       label: "Idea",
       shortLabel: "Idea",
       eyebrow: "Shape the foundation",
-      title: "Turn a promising idea into a viable business direction.",
+      title: "Turn an early opportunity into a clearer business direction.",
       description:
-        "Clarify the opportunity, understand the market and choose the right structure before investing heavily.",
+        "Clarify the opportunity, test its direction and choose a foundation that supports what may come next.",
       visualKey: "idea",
       services: [
         {
@@ -66,9 +66,9 @@ export const businessJourneyContent: BusinessJourneyContent = {
       shortLabel: "Launch",
       eyebrow: "Build the legal base",
       title:
-        "Launch with the registrations and approvals your business needs.",
+        "Build the right structure before daily operations begin.",
       description:
-        "Create the right entity, complete essential registrations and establish a compliant operating foundation.",
+        "Choose the right entity, complete essential registrations and begin with a clear operating foundation.",
       visualKey: "launch",
       services: [
         {
@@ -102,9 +102,9 @@ export const businessJourneyContent: BusinessJourneyContent = {
       shortLabel: "Running",
       eyebrow: "Operate with confidence",
       title:
-        "Stay compliant, claim available benefits and keep operations structured.",
+        "Bring greater control to compliance, finance and operations.",
       description:
-        "Manage recurring obligations, financial reporting, government opportunities and day-to-day advisory through one connected support system.",
+        "Manage recurring responsibilities, financial visibility and daily operations through one connected support system.",
       visualKey: "running",
       services: [
         {
@@ -147,9 +147,9 @@ export const businessJourneyContent: BusinessJourneyContent = {
       shortLabel: "Growth",
       eyebrow: "Build stronger systems",
       title:
-        "Create the systems, visibility and processes required to grow.",
+        "Strengthen systems before demand creates pressure.",
       description:
-        "Strengthen your digital presence, customer management, automation and operating processes before scaling further.",
+        "Improve visibility, customer management, automation and operating processes before scaling further.",
       visualKey: "growth",
       services: [
         {
@@ -183,9 +183,9 @@ export const businessJourneyContent: BusinessJourneyContent = {
       shortLabel: "Expand",
       eyebrow: "Scale with structure",
       title:
-        "Prepare the business for larger markets, funding and expansion.",
+        "Prepare the business for wider markets, teams and complexity.",
       description:
-        "Strengthen legal, operational and financial readiness before entering new markets or raising capital.",
+        "Strengthen legal, operational and financial readiness before entering new markets, raising capital or expanding the team.",
       visualKey: "expansion",
       services: [
         {

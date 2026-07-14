@@ -10,7 +10,7 @@ export const heroContent: HeroContent = {
   },
 
   description:
-    "Business setup, legal protection, compliance and growth advisory connected through one structured support system.",
+    "Your business is shaped by the decisions you make today. From building the right foundation to preparing for sustainable growth, every next step becomes easier with clarity, structure and informed guidance.",
 
   primaryAction: {
     label: "Talk to an Advisor",
@@ -18,8 +18,8 @@ export const heroContent: HeroContent = {
   },
 
   secondaryAction: {
-    label: "Explore Services",
-    href: "/services",
+    label: "Explore the Business Journey",
+    href: "#business-journey",
   },
 
   reassurance: "Clear guidance. No unnecessary complexity.",
@@ -64,6 +64,6 @@ export const heroContent: HeroContent = {
 
   image: {
     src: "/images/home/hero-advisory-office.png",
-    alt: "Premium business advisory workspace",
+    alt: "AuraaGlide business advisory workspace",
   },
 };

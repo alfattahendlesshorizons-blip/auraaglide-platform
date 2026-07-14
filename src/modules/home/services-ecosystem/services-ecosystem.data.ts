@@ -10,12 +10,12 @@ export const servicesEcosystemFallback: ServicesEcosystemContent = {
   },
 
   statement:
-    "Formation, protection, compliance, finance and growth create stronger outcomes when every decision understands what comes next.",
+    "Strong businesses are built through connected thinking, not disconnected actions.",
 
   statementCaption: "ONE CONNECTED SUPPORT SYSTEM",
 
   helper:
-    "Explore the capability areas that help a business start correctly, stay protected, operate responsibly and grow with greater clarity.",
+    "A business works as one system. Its foundation, protection, compliance, financial visibility, growth and ongoing guidance influence one another every day.",
 
   capabilities: [
     {
@@ -150,7 +150,7 @@ export const servicesEcosystemFallback: ServicesEcosystemContent = {
       },
       description:
         "As priorities change, businesses need continuity across legal, financial, operational and growth decisions. Ongoing guidance helps each next step understand what came before it.",
-      insight: "CONTINUITY PREVENTS GOOD DECISIONS FROM WORKING ALONE.",
+      insight: "CONTINUITY KEEPS EACH NEXT STEP CONNECTED TO THE WIDER BUSINESS.",
       services: [
         { label: "Business Advisory", href: "/services/business-advisory" },
         { label: "Compliance Review", href: "/services/compliance-review" },

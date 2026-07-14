@@ -1,26 +1,26 @@
-﻿import type { ConnectedDecisionItem } from "./connected-decisions.types";
+import type { ConnectedDecisionItem } from "./connected-decisions.types";
 
 export const connectedDecisionsContent = {
-  eyebrow: "DECISIONS IN MOTION",
+  eyebrow: "DECISION CHAIN",
   headingLead: "No decision",
   headingMiddle: "stands",
   headingAccent: "alone.",
   description:
-    "Formation, protection, compliance, finance and growth continuously shape one another.",
+    "Every important business choice changes what becomes possible next. Small decisions rarely stay small.",
   quote:
-    "The strongest next step is the one that considers the whole business.",
-  quoteCaption: "CONNECTED DECISION-MAKING",
+    "Today's decisions quietly become tomorrow's business reality.",
+  quoteCaption: "CONSEQUENCES BEYOND THE MOMENT",
   items: [
     {
       id: "foundation",
       label: "Foundation",
-      eyebrow: "START WITH CLARITY",
+      eyebrow: "DEFINE WHAT FOLLOWS",
       heading:
-        "The structure chosen today shapes every decision that follows.",
+        "The starting structure shapes ownership, responsibility and future flexibility.",
       description:
-        "Entity type, ownership and registrations influence taxation, compliance, fundraising and future flexibility.",
+        "The foundation chosen today affects taxation, compliance, investment readiness and how easily the business can change later.",
       insight:
-        "A strong foundation reduces expensive corrections later.",
+        "Early clarity creates more room for stronger choices later.",
       links: [
         {
           label: "Business registration",
@@ -35,13 +35,13 @@ export const connectedDecisionsContent = {
     {
       id: "legal",
       label: "Legal",
-      eyebrow: "PROTECT THE POSITION",
+      eyebrow: "PROTECT WHAT IS GROWING",
       heading:
-        "Protection should grow with the value being created.",
+        "Value becomes harder to protect after exposure has already appeared.",
       description:
-        "Contracts, ownership rights, licences and intellectual property need to evolve as operations and partnerships expand.",
+        "Ownership rights, agreements, licences and intellectual property influence partnerships, responsibility and future opportunity.",
       insight:
-        "Protection works best before a dispute or opportunity appears.",
+        "Protection planned early reduces avoidable friction later.",
       links: [
         {
           label: "Trademark support",
@@ -56,13 +56,13 @@ export const connectedDecisionsContent = {
     {
       id: "compliance",
       label: "Compliance",
-      eyebrow: "STAY READY",
+      eyebrow: "PRESERVE OPERATING FREEDOM",
       heading:
-        "Compliance works best when it follows the business rhythm.",
+        "Compliance determines how confidently the business can keep moving.",
       description:
-        "Filings, licences and statutory obligations change with revenue, team size and operating complexity.",
+        "Filings, licences and statutory responsibilities change with revenue, team size, activity and operating complexity.",
       insight:
-        "Timely compliance protects operational confidence.",
+        "Readiness today protects momentum when the next opportunity arrives.",
       links: [
         {
           label: "GST compliance",
@@ -77,11 +77,11 @@ export const connectedDecisionsContent = {
     {
       id: "finance",
       label: "Finance",
-      eyebrow: "SEE THE REAL POSITION",
+      eyebrow: "CREATE DECISION VISIBILITY",
       heading:
-        "Reliable decisions depend on reliable financial visibility.",
+        "Financial visibility changes the quality and timing of every next move.",
       description:
-        "Reporting, taxation and cash-flow discipline turn business activity into information leaders can use.",
+        "Reporting, taxation and cash-flow discipline reveal what the business can support, where pressure is building and what is realistic next.",
       insight:
         "Clear numbers convert activity into direction.",
       links: [
@@ -98,13 +98,13 @@ export const connectedDecisionsContent = {
     {
       id: "growth",
       label: "Growth",
-      eyebrow: "BUILD FOR DEMAND",
+      eyebrow: "EXPAND WITHOUT LOSING CONTROL",
       heading:
-        "Growth becomes sustainable when the operating structure can support it.",
+        "Growth magnifies the quality of every system already in place.",
       description:
-        "Visibility, lead systems and digital execution perform better when finance, compliance and delivery remain aligned.",
+        "Demand, teams and market reach create stronger outcomes when compliance, finance, technology and delivery can support the added complexity.",
       insight:
-        "Demand is valuable only when the business can serve it well.",
+        "Sustainable growth builds on readiness, not activity alone.",
       links: [
         {
           label: "Digital growth",
@@ -119,20 +119,20 @@ export const connectedDecisionsContent = {
     {
       id: "advisory",
       label: "Advisory",
-      eyebrow: "KEEP THE WIDER VIEW",
+      eyebrow: "KEEP THE CONSEQUENCES IN VIEW",
       heading:
-        "The next decision should reflect the whole business, not one isolated issue.",
+        "The next choice should understand what came before and what may follow.",
       description:
-        "Ongoing advisory connects immediate actions with risk, capability and long-term direction.",
+        "Ongoing guidance helps immediate action reflect risk, capability, timing and the wider direction of the business.",
       insight:
-        "The wider view keeps individual decisions working together.",
+        "The wider view prevents a useful action from creating a new problem elsewhere.",
       links: [
         {
           label: "Business advisory",
           href: "/services/business-advisory",
         },
         {
-          label: "Book a consultation",
+          label: "Talk to an advisor",
           href: "/contact",
         },
       ],

@@ -2,13 +2,13 @@ import type { BusinessRealityContent } from "./business-reality.types";
 
 export const businessRealityFallbackContent: BusinessRealityContent = {
   sectionId: "businesses-like-yours",
-  eyebrow: "Built Around Your Reality",
-  headingLead: "Built for",
-  headingMiddle: "businesses",
-  headingAccent: "like yours.",
-  quoteCaption: "Built around your reality",
+  eyebrow: "Built for Your Business",
+  headingLead: "Every industry",
+  headingMiddle: "works differently.",
+  headingAccent: "So should every roadmap.",
+  quoteCaption: "Context before recommendation",
   description:
-    "Your industry shapes the decisions you face. Our guidance adapts to how your business operates and grows.",
+    "Regulations, customer expectations, operating models, documentation and growth patterns influence what the right next step looks like.",
   items: [
     {
       id: "startups",
@@ -16,7 +16,7 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       label: "Startups",
       quote: "\"Great ideas deserve stronger foundations.\"",
       description:
-        "AuraaGlide helps startups establish a clear business structure, protect important decisions and prepare for responsible growth.",
+        "Startup roadmaps must balance speed with ownership clarity, protection, compliance and the ability to grow responsibly.",
       highlights: [
         {
           label: "Business Formation",
@@ -65,7 +65,7 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       quote:
         "\"Precision on the floor begins with structure behind the business.\"",
       description:
-        "AuraaGlide supports manufacturing businesses across taxation, labour compliance, commercial contracts and government incentive planning.",
+        "Manufacturing businesses need operational discipline behind production, from taxation and labour compliance to contracts and incentive planning.",
       highlights: [
         {
           label: "Tax & GST",
@@ -114,7 +114,7 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       quote:
         "\"Trust grows when every system remains clear, compliant and dependable.\"",
       description:
-        "AuraaGlide supports healthcare businesses where registrations, regulatory responsibility and operational continuity must work together.",
+        "Healthcare businesses depend on registrations, regulatory responsibility, documentation and operational continuity working together.",
       highlights: [
         {
           label: "Registrations",
@@ -163,7 +163,7 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       quote:
         "\"Every customer experience is supported by the structure behind it.\"",
       description:
-        "AuraaGlide helps physical and digital retailers strengthen taxation, compliance and operational foundations across customer channels.",
+        "Retail and e-commerce businesses need taxation, compliance and digital operations to remain aligned across every customer channel.",
       highlights: [
         {
           label: "Business Compliance",
@@ -212,7 +212,7 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       quote:
         "\"Sustainable growth begins with the right structure at ground level.\"",
       description:
-        "AuraaGlide supports producer-led enterprises through FPO formation, government schemes, compliance and structured business growth.",
+        "Agriculture and FPO enterprises need formal structure, scheme readiness, compliance and market access to support sustainable growth.",
       highlights: [
         {
           label: "FPO Formation",

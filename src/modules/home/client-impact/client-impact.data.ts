@@ -1,49 +1,49 @@
 import type { ClientImpactContent } from "./client-impact.types";
 
 export const clientImpactFallback: ClientImpactContent = {
-  eyebrow: "PROGRESS IN PRACTICE",
+  eyebrow: "BUSINESS OUTCOMES",
 
   heading: {
-    primary: "Progress",
-    secondary: "you can",
-    accent: "see.",
+    primary: "What stronger foundations",
+    secondary: "make",
+    accent: "possible.",
   },
 
   quote:
-    "The value of good advisory becomes visible when decisions become clearer, risks become easier to manage and progress becomes easier to sustain.",
+    "Progress is not activity. It is confidence in what comes next.",
 
-  quoteCaption: "OUTCOMES OVER PROMISES",
+  quoteCaption: "OUTCOMES OVER ACTIVITY",
 
   helper:
-    "Explore how stronger structure changes the way a business starts, operates and grows.",
+    "Real progress appears when a business becomes easier to manage, more prepared for change and clearer about what comes next.",
 
   stories: [
     {
       id: "startup-foundation",
-      label: "Startup Foundation",
-      eyebrow: "START WITH STRUCTURE",
+      label: "Greater Clarity",
+      eyebrow: "KNOW WHAT COMES NEXT",
       heading: {
-        primary: "From scattered setup decisions",
+        primary: "From scattered priorities",
         secondary: "to one clear",
-        accent: "operating foundation.",
+        accent: "direction.",
       },
       summary:
-        "Formation, registrations, ownership and early compliance work better when they are planned as one connected starting point.",
+        "Clarity improves when priorities, responsibilities and dependencies are understood as one connected starting point.",
       outcomes: [
         {
-          label: "Clear entity direction",
+          label: "Clear next-step direction",
           description:
-            "The structure reflects ownership, risk and future growth.",
+            "The business knows what deserves attention now and what should follow later.",
         },
         {
-          label: "Coordinated registrations",
+          label: "Visible priorities",
           description:
-            "Required registrations follow one practical sequence.",
+            "Responsibilities and dependencies are easier to understand and manage.",
         },
         {
-          label: "Defined next-step roadmap",
+          label: "Confident planning",
           description:
-            "The business knows what must happen now and what comes later.",
+            "Future decisions are grounded in a clearer view of the business.",
         },
       ],
       ctaLabel: "Explore startup advisory",
@@ -51,30 +51,30 @@ export const clientImpactFallback: ClientImpactContent = {
     },
     {
       id: "operational-readiness",
-      label: "Operational Readiness",
-      eyebrow: "MOVE FROM REACTIVE TO READY",
+      label: "Stronger Structure",
+      eyebrow: "OPERATE WITH GREATER CONTROL",
       heading: {
-        primary: "From reactive compliance",
-        secondary: "to planned",
-        accent: "operational control.",
+        primary: "From reactive operations",
+        secondary: "to stronger",
+        accent: "working structure.",
       },
       summary:
-        "Licences, documentation, reporting and review cycles become more manageable when they follow the actual rhythm of operations.",
+        "Systems, responsibilities and review cycles become more manageable when they reflect how the business actually operates.",
       outcomes: [
         {
-          label: "Visible compliance position",
+          label: "Clear responsibilities",
           description:
-            "Responsibilities, deadlines and gaps are easier to understand.",
+            "Ownership and accountability become easier to see across daily operations.",
         },
         {
-          label: "Stronger documentation",
+          label: "Reliable operating records",
           description:
-            "Records support both daily operations and future review.",
+            "Documentation supports daily work, review and future decisions.",
         },
         {
-          label: "Improved readiness",
+          label: "Greater readiness",
           description:
-            "The business is better prepared for expansion, finance and scrutiny.",
+            "The business is better prepared for change, finance and increasing complexity.",
         },
       ],
       ctaLabel: "Explore operational advisory",
@@ -82,30 +82,30 @@ export const clientImpactFallback: ClientImpactContent = {
     },
     {
       id: "coordinated-growth",
-      label: "Coordinated Growth",
-      eyebrow: "ALIGN THE NEXT STAGE",
+      label: "Sustainable Growth",
+      eyebrow: "GROW WITHOUT LOSING CONTROL",
       heading: {
-        primary: "From disconnected growth activity",
-        secondary: "to one coordinated",
-        accent: "direction.",
+        primary: "From disconnected activity",
+        secondary: "to growth that",
+        accent: "systems can support.",
       },
       summary:
-        "Finance, compliance, protection and digital execution create stronger outcomes when they support the same growth priorities.",
+        "Growth becomes more sustainable when finance, compliance, technology and delivery can support the same direction.",
       outcomes: [
         {
-          label: "Better decision visibility",
+          label: "Connected operations",
           description:
-            "Leadership can see how one choice affects the wider business.",
+            "Teams and systems work with greater awareness of the wider business.",
         },
         {
-          label: "Aligned growth systems",
+          label: "Manageable complexity",
           description:
-            "Demand, operations and reporting move in the same direction.",
+            "Increasing demand does not immediately create avoidable operational pressure.",
         },
         {
-          label: "Sustainable next steps",
+          label: "Stronger growth readiness",
           description:
-            "Growth decisions reflect capability, risk and long-term intent.",
+            "Expansion reflects capability, risk and the foundations already in place.",
         },
       ],
       ctaLabel: "Explore growth advisory",

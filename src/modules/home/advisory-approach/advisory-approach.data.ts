@@ -1,29 +1,29 @@
-﻿import type { AdvisoryApproachContent } from "./advisory-approach.types";
+import type { AdvisoryApproachContent } from "./advisory-approach.types";
 
 export const advisoryApproachContent: AdvisoryApproachContent = {
-  eyebrow: "OUR ADVISORY APPROACH",
+  eyebrow: "ADVISORY APPROACH",
   heading: {
-    primary: "Better decisions",
-    secondary: "begin with better",
+    primary: "Every recommendation",
+    secondary: "begins with",
     accent: "understanding.",
   },
   quote:
-    "We recommend only after we understand how the business actually works.",
-  quoteCaption: "ADVICE WITH CONTEXT",
+    "Good advice starts by listening, not by prescribing.",
+  quoteCaption: "CONTEXT BEFORE RECOMMENDATION",
   introduction:
-    "We connect the present position, the real risk and the intended direction before defining the next step.",
+    "Before discussing solutions, we understand how the business works today, what requires attention and what it is trying to build next.",
   steps: [
     {
       id: "understand",
       label: "Understand",
-      eyebrow: "LISTEN BEFORE RECOMMENDING",
+      eyebrow: "SEE THE BUSINESS AS IT IS",
       heading: {
         primary: "We begin with",
-        secondary: "how the business",
-        accent: "really works.",
+        secondary: "the business",
+        accent: "as it operates today.",
       },
       description:
-        "We learn the business model, operating reality, responsibilities and goals before proposing any solution.",
+        "We listen to the business model, operating reality, responsibilities and goals before proposing any direction.",
       points: [
         "Business model and ownership",
         "Current operations and systems",
@@ -35,14 +35,14 @@ export const advisoryApproachContent: AdvisoryApproachContent = {
     {
       id: "assess",
       label: "Assess",
-      eyebrow: "SEE THE REAL POSITION",
+      eyebrow: "IDENTIFY WHAT REQUIRES ATTENTION",
       heading: {
-        primary: "We identify",
-        secondary: "what needs attention",
-        accent: "and why.",
+        primary: "We evaluate",
+        secondary: "priorities, dependencies",
+        accent: "and avoidable risk.",
       },
       description:
-        "We review the current structure, obligations, risks and capability so the recommendation reflects the real position.",
+        "We review the current structure, obligations, dependencies and capability so guidance reflects the real position.",
       points: [
         "Compliance and documentation review",
         "Risk and dependency mapping",
@@ -54,14 +54,14 @@ export const advisoryApproachContent: AdvisoryApproachContent = {
     {
       id: "structure",
       label: "Structure",
-      eyebrow: "CREATE THE RIGHT ORDER",
+      eyebrow: "PRIORITISE THE NEXT STEP",
       heading: {
-        primary: "We turn complexity",
-        secondary: "into a clear",
-        accent: "working plan.",
+        primary: "We define",
+        secondary: "what deserves attention",
+        accent: "now and next.",
       },
       description:
-        "We organise priorities, responsibilities and dependencies into a sequence the business can understand and execute.",
+        "We organise priorities, responsibilities and dependencies into a practical sequence the business can understand.",
       points: [
         "Prioritised roadmap",
         "Clear responsibilities",
@@ -73,14 +73,14 @@ export const advisoryApproachContent: AdvisoryApproachContent = {
     {
       id: "execute",
       label: "Execute",
-      eyebrow: "MOVE WITH CONTROL",
+      eyebrow: "CONVERT DIRECTION INTO PROGRESS",
       heading: {
-        primary: "We help convert",
-        secondary: "the plan into",
-        accent: "real progress.",
+        primary: "We help turn",
+        secondary: "clear direction into",
+        accent: "coordinated progress.",
       },
       description:
-        "Execution is coordinated across the required workstreams so one action does not create avoidable problems elsewhere.",
+        "Required workstreams are coordinated so progress in one area does not create avoidable friction somewhere else.",
       points: [
         "Coordinated implementation",
         "Milestone visibility",
@@ -92,14 +92,14 @@ export const advisoryApproachContent: AdvisoryApproachContent = {
     {
       id: "support",
       label: "Support",
-      eyebrow: "STAY ALIGNED",
+      eyebrow: "REMAIN CONNECTED AS THINGS CHANGE",
       heading: {
-        primary: "We remain connected",
-        secondary: "as the business",
-        accent: "keeps changing.",
+        primary: "We stay connected",
+        secondary: "as priorities",
+        accent: "keep changing.",
       },
       description:
-        "Ongoing review keeps compliance, operations and growth aligned as circumstances, opportunities and responsibilities evolve.",
+        "Ongoing review helps guidance remain relevant as circumstances, responsibilities and opportunities evolve.",
       points: [
         "Review and follow-up",
         "Issue resolution and guidance",
