@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import { ActionLink } from "@/design-system/primitives/action-link";
 import { heroContent } from "./hero.data";
 import { HeroServiceRail } from "./HeroServiceRail";
@@ -40,7 +40,7 @@ export function HeroSection() {
               <ActionLink
                 href={heroContent.primaryAction.href}
                 variant="primary"
-                arrow="diagonal"
+                arrow="journey"
               >
                 {heroContent.primaryAction.label}
               </ActionLink>
@@ -82,8 +82,3 @@ export function HeroSection() {
     </section>
   );
 }
-
-
-
-
-

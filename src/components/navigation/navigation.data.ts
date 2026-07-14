@@ -165,7 +165,7 @@ export const navigationContent: NavigationContent = {
   ],
 
   cta: {
-    label: "Book Consultation",
+    label: "Start with Clarity",
     href: "/contact",
   },
 };

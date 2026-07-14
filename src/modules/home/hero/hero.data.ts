@@ -1,4 +1,4 @@
-﻿import type { HeroContent } from "./hero.types";
+import type { HeroContent } from "./hero.types";
 
 export const heroContent: HeroContent = {
   eyebrow: "One connected business ecosystem",
@@ -13,7 +13,7 @@ export const heroContent: HeroContent = {
     "Business setup, legal protection, compliance and growth advisory connected through one structured support system.",
 
   primaryAction: {
-    label: "Book a Consultation",
+    label: "Talk to an Advisor",
     href: "/contact",
   },
 
@@ -67,4 +67,3 @@ export const heroContent: HeroContent = {
     alt: "Premium business advisory workspace",
   },
 };
-

@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { ActionLink } from "@/design-system/primitives/action-link";
 import { navigationContent } from "./navigation.data";
 import { NavigationIconGraphic } from "./NavigationIconGraphic";
@@ -82,7 +82,7 @@ export function DesktopNavbar() {
           href={navigationContent.cta.href}
           variant="navbar"
           size="sm"
-          arrow="diagonal"
+          arrow="journey"
         >
           {navigationContent.cta.label}
         </ActionLink>
@@ -90,7 +90,3 @@ export function DesktopNavbar() {
     </div>
   );
 }
-
-
-
-

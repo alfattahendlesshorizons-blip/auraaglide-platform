@@ -8,6 +8,38 @@ import { navigationContent } from "./navigation.data";
 import { SiteSearch } from "./SiteSearch";
 import styles from "./Navbar.module.css";
 
+
+function AccordionStateIcon({
+  expanded,
+}: {
+  expanded: boolean;
+}) {
+  return (
+    <svg
+      viewBox="0 0 18 18"
+      data-expanded={expanded ? "true" : "false"}
+      aria-hidden="true"
+    >
+      <path
+        className={styles.mobileStateHorizontal}
+        d="M4 9h10"
+      />
+      <path
+        className={styles.mobileStateVertical}
+        d="M9 4v10"
+      />
+    </svg>
+  );
+}
+
+function OpenLinkMark() {
+  return (
+    <svg viewBox="0 0 18 18" aria-hidden="true">
+      <path d="M5 12.5 12.5 5" />
+      <path d="M7.5 5h5v5" />
+    </svg>
+  );
+}
 function PhoneIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -104,6 +136,8 @@ export function MobileNavigation() {
               </button>
             </div>
 
+
+            <div className={styles.mobileBody}>
             <SiteSearch
               mobile
               triggerLabel="Search AuraaGlide"
@@ -124,16 +158,14 @@ export function MobileNavigation() {
                       aria-expanded={isActive}
                     >
                       <span>{group.label}</span>
-                      <span aria-hidden="true">
-                        {isActive ? "−" : "+"}
-                      </span>
+                      <span className={styles.mobileStateIcon} aria-hidden="true"><AccordionStateIcon expanded={isActive} /></span>
                     </button>
 
                     {isActive ? (
                       <div className={styles.mobileItems}>
                         <Link href={group.href} onClick={close}>
                           View all {group.label}
-                          <span aria-hidden="true">↗</span>
+                          <span className={styles.mobileOpenIcon} aria-hidden="true"><OpenLinkMark /></span>
                         </Link>
 
                         {group.items.map((item) => (
@@ -159,9 +191,11 @@ export function MobileNavigation() {
                   onClick={close}
                 >
                   {link.label}
-                  <span aria-hidden="true">↗</span>
+                  <span className={styles.mobileOpenIcon} aria-hidden="true"><OpenLinkMark /></span>
                 </Link>
               ))}
+            </div>
+
             </div>
 
             <div className={styles.mobileFooter}>
@@ -191,7 +225,7 @@ export function MobileNavigation() {
                 href={navigationContent.cta.href}
                 variant="navbar"
                 size="md"
-                arrow="diagonal"
+                arrow="journey"
                 className={styles.mobileCta}
                 onClick={close}
               >
@@ -204,8 +238,3 @@ export function MobileNavigation() {
     </div>
   );
 }
-
-
-
-
-
