@@ -6,6 +6,7 @@ import { ConnectedDecisionsSection } from "@/modules/home/connected-decisions";
 import { BusinessRealitySection } from "@/modules/home/business-reality";
 import { AdvisoryApproachSection } from "@/modules/home/advisory-approach";
 import { ClientImpactSection } from "@/modules/home/client-impact";
+import { ServicesEcosystemSection } from "@/modules/home/services-ecosystem";
 import { HeroSection } from "@/modules/home/hero";
 
 export default function Home() {
@@ -30,6 +31,10 @@ export default function Home() {
 
         <AdvisoryApproachSection />
         <ClientImpactSection />
+
+        <SectionTransition variant="canvas-to-canvas" />
+
+        <ServicesEcosystemSection />
       </main>
     </>
   );
