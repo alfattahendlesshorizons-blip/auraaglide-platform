@@ -1,4 +1,4 @@
-﻿@import "../design-system/motion/motion.tokens.css";
+@import "../design-system/motion/motion.tokens.css";
 @import "../styles/tokens.css";
 @import "../styles/typography.css";
 
@@ -44,4 +44,3 @@ main {
   position: relative;
   min-height: 100vh;
 }
-

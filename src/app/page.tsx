@@ -18,23 +18,25 @@ export default function Home() {
       <main>
         <HeroSection />
 
-        <SectionTransition variant="panel-to-canvas" />
+        <div className="homeFlowAmbient">
+          <SectionTransition variant="panel-to-canvas" />
 
-        <BusinessJourneySection />
-        <SectionTransition variant="canvas-to-canvas" />
+          <BusinessJourneySection />
+          <SectionTransition variant="canvas-to-canvas" />
 
-        <ConnectedDecisionsSection />
+          <ConnectedDecisionsSection />
 
-        <SectionTransition variant="canvas-to-canvas" />
+          <SectionTransition variant="canvas-to-canvas" />
 
-        <BusinessRealitySection />
+          <BusinessRealitySection />
 
-        <AdvisoryApproachSection />
-        <ClientImpactSection />
+          <AdvisoryApproachSection />
+          <ClientImpactSection />
 
-        <SectionTransition variant="canvas-to-canvas" />
+          <SectionTransition variant="canvas-to-canvas" />
 
-        <ServicesEcosystemSection />
+          <ServicesEcosystemSection />
+        </div>
       </main>
     </>
   );
