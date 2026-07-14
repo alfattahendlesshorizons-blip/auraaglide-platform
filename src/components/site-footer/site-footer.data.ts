@@ -8,6 +8,10 @@ export const siteFooterContent: SiteFooterContent = {
     heading: "Ready to build the next stage of your business?",
     description:
       "Whether you are starting something new or strengthening what already exists, the next step begins with understanding your business—not guessing.",
+    quote: "Strong businesses move forward when the next decision is clear.",
+    contextLabel: "YOUR NEXT STEP",
+    contextDescription:
+      "Start with a focused conversation about where the business stands and what deserves attention next.",
     primaryAction: { label: "Plan Your Next Step", href: "/contact" },
     secondaryAction: { label: "Explore Services", href: "/services" },
   },

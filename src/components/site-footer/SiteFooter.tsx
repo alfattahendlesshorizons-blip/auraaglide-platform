@@ -1,4 +1,5 @@
 import { contactConfig } from "@/config/contact.config";
+
 import { FooterBrand } from "./components/FooterBrand";
 import { FooterContactActions } from "./components/FooterContactActions";
 import { FooterCta } from "./components/FooterCta";

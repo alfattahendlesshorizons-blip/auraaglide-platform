@@ -29,6 +29,9 @@ export type SiteFooterContent = {
     eyebrow: string;
     heading: string;
     description: string;
+    quote: string;
+    contextLabel: string;
+    contextDescription: string;
     primaryAction: FooterAction;
     secondaryAction: FooterAction;
   };

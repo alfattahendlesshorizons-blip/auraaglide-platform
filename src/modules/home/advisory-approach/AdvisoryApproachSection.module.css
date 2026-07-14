@@ -719,3 +719,93 @@
   }
 }
 
+
+/* ADVISORY-REAL-MOBILE-COMPACT-START */
+@media (max-width: 700px) {
+  .section {
+    padding: 3rem 0 3.4rem;
+  }
+
+  .heading {
+    font-size: clamp(2.4rem, 11.4vw, 3.2rem);
+  }
+
+  .experience {
+    overflow: hidden;
+  }
+
+  .rail {
+    position: relative;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0;
+    min-height: 5.15rem;
+    padding: 0.72rem 0.42rem 0.8rem;
+  }
+
+  .railLine,
+  .railProgress,
+  .railLight {
+    top: 1.58rem;
+    right: 0.95rem;
+    bottom: auto;
+    left: 0.95rem;
+    width: auto;
+    height: 1px;
+  }
+
+  .railLine {
+    background: linear-gradient(90deg, rgba(121,162,195,.12), rgba(201,154,77,.42), rgba(121,162,195,.12));
+  }
+
+  .railProgress {
+    transform-origin: left center;
+  }
+
+  .railLight {
+    width: 22%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(235,190,103,.95), transparent);
+    animation: railTravel 6.5s ease-in-out infinite;
+  }
+
+  .step {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.45rem;
+    min-width: 0;
+    min-height: 3.7rem;
+    padding: 0;
+  }
+
+  .stepIcon {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  .stepIcon svg {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+
+  .stepLabel {
+    max-width: 100%;
+    font-size: 0.56rem;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .detail {
+    padding: 1.35rem 1rem 1.55rem;
+  }
+
+  .detailHeading {
+    font-size: clamp(1.8rem, 8.2vw, 2.35rem);
+  }
+
+  .detailDescription {
+    line-height: 1.58;
+  }
+}
+/* ADVISORY-REAL-MOBILE-COMPACT-END */
