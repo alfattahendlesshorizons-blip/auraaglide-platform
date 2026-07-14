@@ -6,8 +6,19 @@ import {
   useMemo,
   useRef,
   useState,
+  useSyncExternalStore,
 } from "react";
 import { createPortal } from "react-dom";
+/* SITE-SEARCH-SAFE-HYDRATION */
+const subscribeToClientState = () => () => {};
+
+function useIsClient() {
+  return useSyncExternalStore(
+    subscribeToClientState,
+    () => true,
+    () => false
+  );
+}
 
 import { searchSite } from "@/core/search";
 
@@ -35,7 +46,7 @@ export function SiteSearch({
   onNavigate,
   mobile = false,
 }: SiteSearchProps) {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useIsClient();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -46,9 +57,7 @@ export function SiteSearch({
     [query],
   );
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  
 
   useEffect(() => {
     if (!open) {
@@ -201,7 +210,7 @@ export function SiteSearch({
                           className={styles.resultArrow}
                           aria-hidden="true"
                         >
-                          ↗
+                          â†—
                         </span>
                       </Link>
                     ))}
