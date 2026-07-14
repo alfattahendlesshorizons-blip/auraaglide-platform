@@ -2,7 +2,7 @@ import type { NavigationContent } from "./navigation.types";
 
 export const navigationContent: NavigationContent = {
   logo: {
-    src: "/images/brand/auraaglide-logo.webp",
+    src: "/images/brand/auraaglide-logo-horizontal.png",
     alt: "AuraaGlide Solutions",
     href: "/",
   },

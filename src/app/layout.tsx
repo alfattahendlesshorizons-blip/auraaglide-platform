@@ -1,5 +1,7 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Geist, Manrope } from "next/font/google";
+
+import { SiteFooter } from "@/components/site-footer";
 import "./globals.css";
 
 const geist = Geist({
@@ -29,6 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geist.variable} ${manrope.variable}`}>
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
