@@ -10,7 +10,7 @@ export const heroContent: HeroContent = {
   },
 
   description:
-    "Your business is shaped by the decisions you make today. From building the right foundation to preparing for sustainable growth, every next step becomes easier with clarity, structure and informed guidance.",
+    "AuraaGlide helps businesses choose the right structure, complete registrations, manage GST and tax, protect their brand, stay compliant and prepare for growth through one connected support system.",
 
   primaryAction: {
     label: "Talk to an Advisor",
@@ -22,41 +22,42 @@ export const heroContent: HeroContent = {
     href: "#business-journey",
   },
 
-  reassurance: "Clear guidance. No unnecessary complexity.",
+  reassurance:
+    "Business registration, compliance, tax, protection and growth supportâ€”without unnecessary complexity.",
 
   railItems: [
     {
       label: "ROC",
       href: "/services/roc-compliance",
-      description: "Company filings and compliance",
+      description: "Company filings and annual compliance",
       enabled: true,
       order: 1,
     },
     {
       label: "GST",
       href: "/services/gst-registration",
-      description: "Registration and returns",
+      description: "Registration, returns and compliance",
       enabled: true,
       order: 2,
     },
     {
       label: "MSME",
       href: "/services/msme-registration",
-      description: "Udyam registration",
+      description: "Udyam registration and recognition",
       enabled: true,
       order: 3,
     },
     {
       label: "LLP",
       href: "/services/llp-registration",
-      description: "LLP setup and filings",
+      description: "LLP registration and filings",
       enabled: true,
       order: 4,
     },
     {
       label: "Trademark",
       href: "/services/trademark-registration",
-      description: "Brand protection",
+      description: "Brand name and logo protection",
       enabled: true,
       order: 5,
     },
@@ -64,6 +65,7 @@ export const heroContent: HeroContent = {
 
   image: {
     src: "/images/home/hero-advisory-office.png",
-    alt: "AuraaGlide business advisory workspace",
+    alt:
+      "Business owner reviewing registration, compliance and growth decisions with AuraaGlide",
   },
 };

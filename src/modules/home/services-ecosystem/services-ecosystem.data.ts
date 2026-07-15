@@ -1,164 +1,280 @@
 import type { ServicesEcosystemContent } from "./services-ecosystem.types";
 
 export const servicesEcosystemFallback: ServicesEcosystemContent = {
-  eyebrow: "CONNECTED CAPABILITIES",
+  eyebrow: "BUSINESS SUPPORT",
 
   heading: {
-    primary: "The support your business needs",
-    secondary: "should not work",
-    accent: "in isolation.",
+    primary: "Find the support",
+    secondary: "your business needs",
+    accent: "today.",
   },
 
   statement:
-    "Strong businesses are built through connected thinking, not disconnected actions.",
+    "One requirement often creates another. The right support keeps those decisions connected.",
 
-  statementCaption: "ONE CONNECTED SUPPORT SYSTEM",
+  statementCaption: "FROM ONE REQUIREMENT TO THE NEXT",
 
   helper:
-    "A business works as one system. Its foundation, protection, compliance, financial visibility, growth and ongoing guidance influence one another every day.",
+    "Start with the requirement you already know. AuraaGlide helps you understand what applies now, what may follow and how each step connects to the wider business.",
 
   capabilities: [
     {
       id: "foundation",
-      shortLabel: "Foundation",
-      eyebrow: "START WITH CLARITY",
-      title: "Business Setup & Formation",
+      shortLabel: "Start",
+      eyebrow: "START YOUR BUSINESS",
+      title: "Business Registration & Formation",
       heading: {
-        primary: "Choose a structure",
-        secondary: "that supports",
-        accent: "what comes next.",
+        primary: "Choose and register",
+        secondary: "the structure that fits",
+        accent: "your business.",
       },
       description:
-        "The right structure shapes ownership, taxation, compliance and future expansion. Early choices should create room for the business to grow, not restrictions it must later undo.",
-      insight: "EARLY STRUCTURE SHAPES LATER FREEDOM.",
+        "The right structure affects ownership, taxation, compliance and future expansion. Compare the available options before registering the business.",
+      insight: "THE RIGHT STRUCTURE MAKES LATER DECISIONS EASIER.",
       services: [
-        { label: "Private Limited Company", href: "/services/private-limited-company-registration" },
-        { label: "Limited Liability Partnership", href: "/services/llp-registration" },
-        { label: "One Person Company", href: "/services/opc-registration" },
-        { label: "Startup India Recognition", href: "/services/startup-india-registration" },
-        { label: "MSME Registration", href: "/services/msme-registration" },
+        {
+          label: "Private Limited Company",
+          href: "/services/private-limited-company-registration",
+        },
+        {
+          label: "Limited Liability Partnership",
+          href: "/services/llp-registration",
+        },
+        {
+          label: "One Person Company",
+          href: "/services/opc-registration",
+        },
+        {
+          label: "Proprietorship Registration",
+          href: "/services/proprietorship-registration",
+        },
+        {
+          label: "Partnership Firm Registration",
+          href: "/services/partnership-firm-registration",
+        },
+        {
+          label: "Section 8 Company",
+          href: "/services/section-8-company-registration",
+        },
+        {
+          label: "MSME Registration",
+          href: "/services/msme-registration",
+        },
       ],
-      cta: { label: "Explore Business Foundation", href: "/services/business-setup" },
+      cta: {
+        label: "Explore Business Registration",
+        href: "/services/business-setup",
+      },
       order: 1,
       published: true,
     },
     {
       id: "protection",
-      shortLabel: "Protection",
-      eyebrow: "PROTECT WHAT YOU BUILD",
-      title: "Legal & Brand Protection",
+      shortLabel: "Protect",
+      eyebrow: "PROTECT YOUR BUSINESS",
+      title: "Brand, Intellectual Property & Legal Documents",
       heading: {
-        primary: "Protect the value",
-        secondary: "your business is",
-        accent: "working to create.",
+        primary: "Protect the name, work",
+        secondary: "and agreements your business",
+        accent: "depends on.",
       },
       description:
-        "Names, brands, agreements and ownership positions become more important as visibility grows. Protection works best when it is planned before avoidable disputes or exposure appear.",
-      insight: "PROTECTION IS STRONGEST BEFORE IT BECOMES URGENT.",
+        "Brand names, creative work, inventions, contracts and ownership records become more valuable as the business becomes visible. Protection is easier before a dispute begins.",
+      insight: "PROTECT BUSINESS VALUE BEFORE EXPOSURE BECOMES A PROBLEM.",
       services: [
-        { label: "Trademark Registration", href: "/services/trademark-registration" },
-        { label: "Copyright Registration", href: "/services/copyright-registration" },
-        { label: "Business Agreements", href: "/services/business-agreements" },
-        { label: "Legal Documentation", href: "/services/legal-documentation" },
-        { label: "Brand Protection Review", href: "/services/brand-protection" },
+        {
+          label: "Trademark Registration",
+          href: "/services/trademark-registration",
+        },
+        {
+          label: "Patent Registration",
+          href: "/services/patent-registration",
+        },
+        {
+          label: "Copyright Registration",
+          href: "/services/copyright-registration",
+        },
+        {
+          label: "Business Agreements",
+          href: "/services/business-agreements",
+        },
+        {
+          label: "Legal Documentation",
+          href: "/services/legal-documentation",
+        },
       ],
-      cta: { label: "Explore Legal Protection", href: "/services/legal-protection" },
+      cta: {
+        label: "Explore Business Protection",
+        href: "/services/legal-protection",
+      },
       order: 2,
       published: true,
     },
     {
       id: "compliance",
-      shortLabel: "Compliance",
-      eyebrow: "STAY READY",
-      title: "Registrations & Compliance",
+      shortLabel: "Comply",
+      eyebrow: "MANAGE REGISTRATIONS & COMPLIANCE",
+      title: "Licences, Filings & Ongoing Compliance",
       heading: {
-        primary: "Turn obligations",
-        secondary: "into a clear",
-        accent: "operating rhythm.",
+        primary: "Understand what applies",
+        secondary: "and keep recurring work",
+        accent: "under control.",
       },
       description:
-        "Registrations, licences, filings and documentation are easier to manage when they follow the real structure and activities of the business. Clear ownership reduces reactive decisions.",
-      insight: "COMPLIANCE WORKS BETTER AS A SYSTEM, NOT A DEADLINE.",
+        "Registrations, licences, statutory filings and renewals depend on the activity and structure of the business. Clear ownership makes ongoing compliance easier to manage.",
+      insight: "COMPLIANCE WORKS BEST AS A ROUTINE, NOT A LAST-MINUTE RESPONSE.",
       services: [
-        { label: "GST Registration", href: "/services/gst-registration" },
-        { label: "Business Licences", href: "/services/business-licences" },
-        { label: "Annual Compliance", href: "/services/annual-compliance" },
-        { label: "FSSAI Registration", href: "/services/fssai-registration" },
-        { label: "Import Export Code", href: "/services/import-export-code" },
+        {
+          label: "GST Registration",
+          href: "/services/gst-registration",
+        },
+        {
+          label: "Annual & ROC Compliance",
+          href: "/services/annual-compliance",
+        },
+        {
+          label: "FSSAI Registration",
+          href: "/services/fssai-registration",
+        },
+        {
+          label: "Import Export Code",
+          href: "/services/import-export-code",
+        },
+        {
+          label: "Business Licences",
+          href: "/services/business-licences",
+        },
       ],
-      cta: { label: "Explore Compliance Support", href: "/services/business-compliance" },
+      cta: {
+        label: "Explore Compliance Support",
+        href: "/services/business-compliance",
+      },
       order: 3,
       published: true,
     },
     {
       id: "finance-tax",
-      shortLabel: "Finance & Tax",
-      eyebrow: "SEE THE FINANCIAL PICTURE",
-      title: "Finance, Tax & Reporting",
+      shortLabel: "Tax",
+      eyebrow: "MANAGE GST, TAX & ACCOUNTS",
+      title: "Tax Filing, Accounting & Reporting",
       heading: {
-        primary: "Build visibility",
-        secondary: "before financial decisions",
-        accent: "become difficult.",
+        primary: "Meet filing requirements",
+        secondary: "and understand the numbers",
+        accent: "behind the business.",
       },
       description:
-        "Tax, reporting and records should help leadership understand the business, not only satisfy a filing requirement. Better visibility supports stronger operating and growth decisions.",
-      insight: "GOOD REPORTING TURNS NUMBERS INTO DIRECTION.",
+        "Income tax, GST returns, bookkeeping and reporting should meet compliance requirements while giving the business a clearer view of income, costs and obligations.",
+      insight: "GOOD RECORDS SUPPORT BOTH COMPLIANCE AND BETTER DECISIONS.",
       services: [
-        { label: "Income Tax Return", href: "/services/income-tax-return" },
-        { label: "GST Return Filing", href: "/services/gst-return-filing" },
-        { label: "Accounting & Bookkeeping", href: "/services/accounting-bookkeeping" },
-        { label: "Financial Reporting", href: "/services/financial-reporting" },
-        { label: "Tax Planning", href: "/services/tax-planning" },
+        {
+          label: "Income Tax Return Filing",
+          href: "/services/income-tax-return",
+        },
+        {
+          label: "GST Return Filing",
+          href: "/services/gst-return-filing",
+        },
+        {
+          label: "Accounting & Bookkeeping",
+          href: "/services/accounting-bookkeeping",
+        },
+        {
+          label: "TDS & Payroll",
+          href: "/services/tds-payroll",
+        },
+        {
+          label: "Tax Planning",
+          href: "/services/tax-planning",
+        },
       ],
-      cta: { label: "Explore Finance & Tax", href: "/services/finance-tax" },
+      cta: {
+        label: "Explore GST, Tax & Accounts",
+        href: "/services/finance-tax",
+      },
       order: 4,
       published: true,
     },
     {
       id: "growth",
-      shortLabel: "Growth",
-      eyebrow: "ALIGN THE NEXT STAGE",
-      title: "Digital Growth & Market Access",
+      shortLabel: "Grow",
+      eyebrow: "GROW YOUR BUSINESS",
+      title: "Digital Systems, Market Access & Growth Readiness",
       heading: {
-        primary: "Create demand",
-        secondary: "that your systems",
-        accent: "can support.",
+        primary: "Build demand",
+        secondary: "with systems that can",
+        accent: "support it.",
       },
       description:
-        "Digital presence and market access are more valuable when operations, compliance and reporting can support the demand they create. Visibility should connect to readiness.",
-      insight: "GROWTH IS STRONGER WHEN DELIVERY CAN KEEP UP.",
+        "Web platforms, customer management, automation, market access and funding readiness should strengthen the business without creating avoidable operational pressure.",
+      insight: "GROWTH IS STRONGER WHEN OPERATIONS CAN KEEP UP.",
       services: [
-        { label: "Website & Digital Platform", href: "/services/website-development" },
-        { label: "Digital Growth Strategy", href: "/services/digital-growth" },
-        { label: "Marketplace Enablement", href: "/services/marketplace-enablement" },
-        { label: "Export Readiness", href: "/services/export-readiness" },
-        { label: "Business Automation", href: "/services/business-automation" },
+        {
+          label: "Website & Digital Platform",
+          href: "/services/website-development",
+        },
+        {
+          label: "CRM & Lead Management",
+          href: "/services/crm",
+        },
+        {
+          label: "Business Automation",
+          href: "/services/business-automation",
+        },
+        {
+          label: "ISO Certification",
+          href: "/services/iso-certification",
+        },
+        {
+          label: "Funding Support",
+          href: "/services/funding-readiness",
+        },
       ],
-      cta: { label: "Explore Business Growth", href: "/services/business-growth" },
+      cta: {
+        label: "Explore Growth Support",
+        href: "/services/business-growth",
+      },
       order: 5,
       published: true,
     },
     {
       id: "advisory",
-      shortLabel: "Advisory",
-      eyebrow: "KEEP THE WIDER VIEW",
-      title: "Ongoing Business Advisory",
+      shortLabel: "Global",
+      eyebrow: "EXPAND & STAY GUIDED",
+      title: "Global Setup & Ongoing Business Advisory",
       heading: {
-        primary: "Make the next decision",
-        secondary: "with the wider business",
-        accent: "in view.",
+        primary: "Prepare for expansion",
+        secondary: "without losing sight of",
+        accent: "what must remain connected.",
       },
       description:
-        "As priorities change, businesses need continuity across legal, financial, operational and growth decisions. Ongoing guidance helps each next step understand what came before it.",
-      insight: "CONTINUITY KEEPS EACH NEXT STEP CONNECTED TO THE WIDER BUSINESS.",
+        "International company setup, export readiness and ongoing advisory require legal, financial and operational decisions to move in the same direction.",
+      insight: "EXPANSION WORKS BETTER WHEN EACH NEW STEP UNDERSTANDS THE WIDER BUSINESS.",
       services: [
-        { label: "Business Advisory", href: "/services/business-advisory" },
-        { label: "Compliance Review", href: "/services/compliance-review" },
-        { label: "Growth Readiness Review", href: "/services/growth-readiness" },
-        { label: "Documentation Review", href: "/services/documentation-review" },
-        { label: "Business Support Retainer", href: "/services/ongoing-support" },
+        {
+          label: "UAE Company Setup",
+          href: "/services/uae-company-setup",
+        },
+        {
+          label: "Singapore Company Registration",
+          href: "/services/singapore-company-registration",
+        },
+        {
+          label: "Malaysia Company Registration",
+          href: "/services/malaysia-company-registration",
+        },
+        {
+          label: "Business Advisory",
+          href: "/services/business-advisory",
+        },
+        {
+          label: "Ongoing Business Support",
+          href: "/services/ongoing-support",
+        },
       ],
-      cta: { label: "Explore Ongoing Advisory", href: "/services/business-advisory" },
+      cta: {
+        label: "Explore Global Business Support",
+        href: "/services/global-business",
+      },
       order: 6,
       published: true,
     },

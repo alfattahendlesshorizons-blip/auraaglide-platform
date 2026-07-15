@@ -4,111 +4,111 @@ export const clientImpactFallback: ClientImpactContent = {
   eyebrow: "BUSINESS OUTCOMES",
 
   heading: {
-    primary: "What stronger foundations",
+    primary: "What better business decisions",
     secondary: "make",
     accent: "possible.",
   },
 
   quote:
-    "Progress is not activity. It is confidence in what comes next.",
+    "Progress becomes visible when the business knows what needs attention, what can wait and what should follow.",
 
   quoteCaption: "OUTCOMES OVER ACTIVITY",
 
   helper:
-    "Real progress appears when a business becomes easier to manage, more prepared for change and clearer about what comes next.",
+    "The objective is not more activity. It is a business that is easier to understand, manage and prepare for what comes next.",
 
   stories: [
     {
       id: "startup-foundation",
-      label: "Greater Clarity",
-      eyebrow: "KNOW WHAT COMES NEXT",
+      label: "Clear Direction",
+      eyebrow: "KNOW WHAT NEEDS ATTENTION",
       heading: {
-        primary: "From scattered priorities",
+        primary: "From scattered questions",
         secondary: "to one clear",
-        accent: "direction.",
+        accent: "next step.",
       },
       summary:
-        "Clarity improves when priorities, responsibilities and dependencies are understood as one connected starting point.",
+        "The business gains a clearer view of the immediate requirement, the connected responsibilities and the order in which work should happen.",
       outcomes: [
         {
-          label: "Clear next-step direction",
+          label: "Relevant requirements identified",
           description:
-            "The business knows what deserves attention now and what should follow later.",
+            "The business understands which registration, filing, licence or document applies.",
         },
         {
-          label: "Visible priorities",
+          label: "Priorities put in order",
           description:
-            "Responsibilities and dependencies are easier to understand and manage.",
+            "Immediate needs are separated from work that can follow later.",
         },
         {
-          label: "Confident planning",
+          label: "Fewer avoidable gaps",
           description:
-            "Future decisions are grounded in a clearer view of the business.",
+            "Connected responsibilities are considered before action begins.",
         },
       ],
-      ctaLabel: "Explore startup advisory",
+      ctaLabel: "Explore startup support",
       href: "/industries/startups",
     },
     {
       id: "operational-readiness",
-      label: "Stronger Structure",
-      eyebrow: "OPERATE WITH GREATER CONTROL",
+      label: "Greater Control",
+      eyebrow: "KEEP RESPONSIBILITIES VISIBLE",
       heading: {
-        primary: "From reactive operations",
-        secondary: "to stronger",
-        accent: "working structure.",
+        primary: "From reactive follow-up",
+        secondary: "to better control of",
+        accent: "ongoing work.",
       },
       summary:
-        "Systems, responsibilities and review cycles become more manageable when they reflect how the business actually operates.",
+        "Registrations, filings, accounts, records and responsibilities become easier to manage when ownership and timing are clear.",
       outcomes: [
         {
-          label: "Clear responsibilities",
+          label: "Clear responsibility",
           description:
-            "Ownership and accountability become easier to see across daily operations.",
+            "The business knows who is responsible for documents, filings and follow-up.",
         },
         {
-          label: "Reliable operating records",
+          label: "Better organised records",
           description:
-            "Documentation supports daily work, review and future decisions.",
+            "Information is easier to retrieve for filing, review and future decisions.",
         },
         {
-          label: "Greater readiness",
+          label: "Greater compliance readiness",
           description:
-            "The business is better prepared for change, finance and increasing complexity.",
+            "Recurring obligations are less likely to become last-minute surprises.",
         },
       ],
-      ctaLabel: "Explore operational advisory",
+      ctaLabel: "Explore compliance support",
       href: "/services/business-compliance",
     },
     {
       id: "coordinated-growth",
-      label: "Sustainable Growth",
-      eyebrow: "GROW WITHOUT LOSING CONTROL",
+      label: "Prepared Growth",
+      eyebrow: "GROW WITHOUT CREATING AVOIDABLE RISK",
       heading: {
         primary: "From disconnected activity",
-        secondary: "to growth that",
-        accent: "systems can support.",
+        secondary: "to growth the business",
+        accent: "can support.",
       },
       summary:
-        "Growth becomes more sustainable when finance, compliance, technology and delivery can support the same direction.",
+        "Expansion becomes more sustainable when finance, compliance, technology and operations are prepared for the same direction.",
       outcomes: [
         {
-          label: "Connected operations",
+          label: "Connected operating decisions",
           description:
-            "Teams and systems work with greater awareness of the wider business.",
+            "Growth plans consider tax, compliance, systems and delivery together.",
         },
         {
           label: "Manageable complexity",
           description:
-            "Increasing demand does not immediately create avoidable operational pressure.",
+            "New demand is supported without unnecessary operational confusion.",
         },
         {
-          label: "Stronger growth readiness",
+          label: "Stronger expansion readiness",
           description:
-            "Expansion reflects capability, risk and the foundations already in place.",
+            "The business is better prepared for investment, exports or new markets.",
         },
       ],
-      ctaLabel: "Explore growth advisory",
+      ctaLabel: "Explore growth support",
       href: "/services/business-growth",
     },
   ],

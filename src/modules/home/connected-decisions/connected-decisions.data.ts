@@ -1,139 +1,139 @@
 import type { ConnectedDecisionItem } from "./connected-decisions.types";
 
 export const connectedDecisionsContent = {
-  eyebrow: "DECISION CHAIN",
-  headingLead: "No decision",
-  headingMiddle: "stands",
-  headingAccent: "alone.",
+  eyebrow: "CONNECTED DECISIONS",
+  headingLead: "One requirement",
+  headingMiddle: "often leads",
+  headingAccent: "to another.",
   description:
-    "Every important business choice changes what becomes possible next. Small decisions rarely stay small.",
+    "A company registration, licence, tax filing or brand-protection decision rarely ends by itself. Understanding the next connected step prevents avoidable gaps.",
   quote:
-    "Today's decisions quietly become tomorrow's business reality.",
-  quoteCaption: "CONSEQUENCES BEYOND THE MOMENT",
+    "The value of one business decision is often seen in how well it prepares the next.",
+  quoteCaption: "WHAT HAPPENS AFTER THIS?",
   items: [
     {
       id: "foundation",
-      label: "Foundation",
-      eyebrow: "DEFINE WHAT FOLLOWS",
+      label: "Start",
+      eyebrow: "FROM REGISTRATION TO OPERATIONS",
       heading:
-        "The starting structure shapes ownership, responsibility and future flexibility.",
+        "Registering the business creates the foundation for tax, banking, ownership and future compliance.",
       description:
-        "The foundation chosen today affects taxation, compliance, investment readiness and how easily the business can change later.",
+        "The chosen structure may lead to PAN and TAN, GST, MSME recognition, agreements, accounting and recurring statutory filings.",
       insight:
-        "Early clarity creates more room for stronger choices later.",
+        "A registration is the beginning of the operating structure, not the end of the process.",
       links: [
         {
           label: "Business registration",
           href: "/services/business-registration",
         },
         {
-          label: "Entity selection",
-          href: "/resources/entity-selection",
+          label: "GST registration",
+          href: "/services/gst-registration",
         },
       ],
     },
     {
       id: "legal",
-      label: "Legal",
-      eyebrow: "PROTECT WHAT IS GROWING",
+      label: "Protect",
+      eyebrow: "FROM BUSINESS NAME TO BRAND VALUE",
       heading:
-        "Value becomes harder to protect after exposure has already appeared.",
+        "A business name becomes more valuable when ownership and usage rights are clear.",
       description:
-        "Ownership rights, agreements, licences and intellectual property influence partnerships, responsibility and future opportunity.",
+        "Trademark, copyright, patent support and business agreements help protect the identity, work and relationships the business is building.",
       insight:
-        "Protection planned early reduces avoidable friction later.",
+        "Protection planned early is usually simpler than protection sought after a conflict.",
       links: [
         {
-          label: "Trademark support",
+          label: "Trademark registration",
           href: "/services/trademark-registration",
         },
         {
-          label: "Legal documentation",
-          href: "/services/legal-documentation",
+          label: "Patent registration",
+          href: "/services/patent-registration",
         },
       ],
     },
     {
       id: "compliance",
-      label: "Compliance",
-      eyebrow: "PRESERVE OPERATING FREEDOM",
+      label: "Comply",
+      eyebrow: "FROM LICENCE TO RENEWAL",
       heading:
-        "Compliance determines how confidently the business can keep moving.",
+        "A registration or licence often creates ongoing filing, renewal and record-keeping responsibilities.",
       description:
-        "Filings, licences and statutory responsibilities change with revenue, team size, activity and operating complexity.",
+        "GST returns, ROC filings, FSSAI renewals, statutory records and other obligations depend on the activity and structure of the business.",
       insight:
-        "Readiness today protects momentum when the next opportunity arrives.",
+        "Knowing the recurring responsibility is as important as completing the first application.",
       links: [
-        {
-          label: "GST compliance",
-          href: "/services/gst-compliance",
-        },
         {
           label: "Annual compliance",
           href: "/services/annual-compliance",
+        },
+        {
+          label: "Business licences",
+          href: "/services/business-licences",
         },
       ],
     },
     {
       id: "finance",
-      label: "Finance",
-      eyebrow: "CREATE DECISION VISIBILITY",
+      label: "Manage",
+      eyebrow: "FROM TRANSACTIONS TO FINANCIAL VISIBILITY",
       heading:
-        "Financial visibility changes the quality and timing of every next move.",
+        "Tax filing becomes easier when accounts, records and reporting remain organised throughout the year.",
       description:
-        "Reporting, taxation and cash-flow discipline reveal what the business can support, where pressure is building and what is realistic next.",
+        "Bookkeeping, GST returns, income tax, TDS, payroll and financial reporting work better when they share accurate and consistent records.",
       insight:
-        "Clear numbers convert activity into direction.",
+        "Better records reduce filing pressure and improve the quality of business decisions.",
       links: [
         {
-          label: "Accounting support",
-          href: "/services/accounting",
+          label: "Accounting & bookkeeping",
+          href: "/services/accounting-bookkeeping",
         },
         {
-          label: "Tax advisory",
-          href: "/services/tax-advisory",
+          label: "Income tax return",
+          href: "/services/income-tax-return",
         },
       ],
     },
     {
       id: "growth",
-      label: "Growth",
-      eyebrow: "EXPAND WITHOUT LOSING CONTROL",
+      label: "Grow",
+      eyebrow: "FROM DEMAND TO DELIVERY",
       heading:
-        "Growth magnifies the quality of every system already in place.",
+        "Growth creates new pressure on systems, people, compliance and cash flow.",
       description:
-        "Demand, teams and market reach create stronger outcomes when compliance, finance, technology and delivery can support the added complexity.",
+        "Digital growth, customer management, automation and market expansion create stronger results when operations and reporting can support the added demand.",
       insight:
-        "Sustainable growth builds on readiness, not activity alone.",
+        "Growth is more sustainable when the business is ready for the complexity it creates.",
       links: [
         {
-          label: "Digital growth",
-          href: "/services/digital-growth",
+          label: "CRM & automation",
+          href: "/services/business-automation",
         },
         {
-          label: "Growth systems",
-          href: "/services/business-growth",
+          label: "Growth readiness",
+          href: "/services/growth-readiness",
         },
       ],
     },
     {
       id: "advisory",
-      label: "Advisory",
-      eyebrow: "KEEP THE CONSEQUENCES IN VIEW",
+      label: "Expand",
+      eyebrow: "FROM ONE MARKET TO THE NEXT",
       heading:
-        "The next choice should understand what came before and what may follow.",
+        "International expansion adds new legal, tax, banking and operating decisions.",
       description:
-        "Ongoing guidance helps immediate action reflect risk, capability, timing and the wider direction of the business.",
+        "Country selection, company setup, documentation, tax context and ongoing obligations should be reviewed together before entering a new jurisdiction.",
       insight:
-        "The wider view prevents a useful action from creating a new problem elsewhere.",
+        "The right international route depends on the business behind the application.",
       links: [
         {
-          label: "Business advisory",
-          href: "/services/business-advisory",
+          label: "Global business setup",
+          href: "/services/global-business",
         },
         {
-          label: "Talk to an advisor",
-          href: "/contact",
+          label: "Business assessment",
+          href: "/approach/assessment",
         },
       ],
     },

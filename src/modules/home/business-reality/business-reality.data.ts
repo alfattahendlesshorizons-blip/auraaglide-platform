@@ -8,27 +8,28 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
   headingAccent: "So should every roadmap.",
   quoteCaption: "Context before recommendation",
   description:
-    "Regulations, customer expectations, operating models, documentation and growth patterns influence what the right next step looks like.",
+    "The right registration, licence, tax requirement and growth plan depends on how the business actually operates. Explore support shaped around the realities of your industry.",
   items: [
     {
       id: "startups",
       slug: "startups",
       label: "Startups",
-      quote: "\"Great ideas deserve stronger foundations.\"",
+      quote:
+        "\"Starting quickly matters. Starting with the right structure matters longer.\"",
       description:
-        "Startup roadmaps must balance speed with ownership clarity, protection, compliance and the ability to grow responsibly.",
+        "Support for company formation, founder ownership, GST, legal protection, compliance and growth readiness from the first serious stage.",
       highlights: [
         {
-          label: "Business Formation",
+          label: "Company Registration",
           href: "/services/business-formation",
         },
         {
-          label: "Legal Protection",
-          href: "/services/legal-advisory",
+          label: "Trademark Protection",
+          href: "/services/trademark-registration",
         },
         {
-          label: "Growth Readiness",
-          href: "/services/business-growth",
+          label: "Startup Compliance",
+          href: "/services/business-compliance",
         },
       ],
       tags: [
@@ -39,20 +40,20 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       ],
       iconKey: "startup",
       imageAlt:
-        "Startup founders reviewing business structure and growth planning",
+        "Startup founders reviewing company registration, ownership and compliance decisions",
       href: "/industries/startups",
       routeStatus: "planned",
       visible: true,
       order: 1,
       seo: {
-        title: "Startup Business Advisory and Compliance Support",
+        title: "Startup Registration, Compliance and Business Advisory",
         description:
-          "Business formation, legal protection, compliance and growth-readiness support for startups.",
+          "Company formation, GST, trademark, compliance and growth-readiness support for startups.",
         keywords: [
-          "startup business advisory",
           "startup registration",
+          "startup business advisory",
           "startup legal compliance",
-          "business formation support",
+          "company formation support",
         ],
         entityName: "Startup Business Advisory",
         schemaType: "ProfessionalService",
@@ -63,12 +64,12 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       slug: "manufacturing",
       label: "Manufacturing",
       quote:
-        "\"Precision on the floor begins with structure behind the business.\"",
+        "\"Production runs better when the business behind it remains compliant and prepared.\"",
       description:
-        "Manufacturing businesses need operational discipline behind production, from taxation and labour compliance to contracts and incentive planning.",
+        "Support for GST, labour compliance, contracts, licences, accounting and government incentives around manufacturing operations.",
       highlights: [
         {
-          label: "Tax & GST",
+          label: "GST & Tax",
           href: "/services/tax-gst",
         },
         {
@@ -88,15 +89,15 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       ],
       iconKey: "manufacturing",
       imageAlt:
-        "Manufacturing operations team reviewing compliance and business documentation",
+        "Manufacturing team reviewing GST, labour compliance and licence documentation",
       href: "/industries/manufacturing",
       routeStatus: "planned",
       visible: true,
       order: 2,
       seo: {
-        title: "Manufacturing Compliance and Business Advisory",
+        title: "Manufacturing Compliance, GST and Business Advisory",
         description:
-          "Tax, GST, labour compliance, contracts and government incentive support for manufacturing businesses.",
+          "GST, labour compliance, contracts, licences and government incentive support for manufacturing businesses.",
         keywords: [
           "manufacturing compliance",
           "factory GST advisory",
@@ -112,9 +113,9 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       slug: "healthcare",
       label: "Healthcare",
       quote:
-        "\"Trust grows when every system remains clear, compliant and dependable.\"",
+        "\"Trust depends on the registrations, records and systems behind the service.\"",
       description:
-        "Healthcare businesses depend on registrations, regulatory responsibility, documentation and operational continuity working together.",
+        "Support for healthcare registrations, regulatory obligations, tax, documentation and ongoing operational compliance.",
       highlights: [
         {
           label: "Registrations",
@@ -137,15 +138,15 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       ],
       iconKey: "healthcare",
       imageAlt:
-        "Healthcare administration team managing registrations and regulatory documentation",
+        "Healthcare administration team managing registration and regulatory records",
       href: "/industries/healthcare",
       routeStatus: "planned",
       visible: true,
       order: 3,
       seo: {
-        title: "Healthcare Registration and Compliance Advisory",
+        title: "Healthcare Registration, Regulatory and Compliance Support",
         description:
-          "Registration, regulatory and operational compliance support for healthcare businesses.",
+          "Registration, regulatory, tax and operational compliance support for healthcare businesses.",
         keywords: [
           "healthcare compliance",
           "healthcare registration",
@@ -161,17 +162,17 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       slug: "ecommerce-retail",
       label: "Retail & E-commerce",
       quote:
-        "\"Every customer experience is supported by the structure behind it.\"",
+        "\"Every sale depends on tax, records and operations working behind the customer experience.\"",
       description:
-        "Retail and e-commerce businesses need taxation, compliance and digital operations to remain aligned across every customer channel.",
+        "Support for business registration, GST, accounting, marketplace compliance, legal documentation and digital operations across online and offline channels.",
       highlights: [
         {
-          label: "Business Compliance",
+          label: "GST & Compliance",
           href: "/services/compliance-management",
         },
         {
-          label: "Taxation",
-          href: "/services/tax-gst",
+          label: "Accounting",
+          href: "/services/accounting-bookkeeping",
         },
         {
           label: "Digital Operations",
@@ -181,20 +182,20 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       tags: [
         "retail compliance",
         "ecommerce GST",
-        "online business advisory",
+        "online business registration",
         "digital operations",
       ],
       iconKey: "retail",
       imageAlt:
-        "Retail and e-commerce business team reviewing sales and operational systems",
+        "Retail and e-commerce team reviewing GST, accounting and online operations",
       href: "/industries/ecommerce-retail",
       routeStatus: "planned",
       visible: true,
       order: 4,
       seo: {
-        title: "Retail and E-commerce Business Compliance",
+        title: "Retail and E-commerce Registration, GST and Compliance",
         description:
-          "Tax, compliance and operational advisory for retail and e-commerce businesses.",
+          "Registration, GST, accounting, marketplace compliance and digital operations support for retail and e-commerce businesses.",
         keywords: [
           "retail compliance",
           "ecommerce GST",
@@ -210,9 +211,9 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       slug: "agriculture-fpo",
       label: "Agriculture & FPO",
       quote:
-        "\"Sustainable growth begins with the right structure at ground level.\"",
+        "\"A stronger enterprise begins with the right structure at ground level.\"",
       description:
-        "Agriculture and FPO enterprises need formal structure, scheme readiness, compliance and market access to support sustainable growth.",
+        "Support for FPO and producer-company formation, government schemes, registrations, compliance and market readiness.",
       highlights: [
         {
           label: "FPO Formation",
@@ -235,15 +236,15 @@ export const businessRealityFallbackContent: BusinessRealityContent = {
       ],
       iconKey: "agriculture",
       imageAlt:
-        "Agriculture and FPO representatives reviewing business and government scheme documentation",
+        "Agriculture and FPO representatives reviewing formation and scheme documentation",
       href: "/industries/agriculture-fpo",
       routeStatus: "planned",
       visible: true,
       order: 5,
       seo: {
-        title: "Agriculture and FPO Formation Advisory",
+        title: "FPO Formation, Agriculture Compliance and Scheme Support",
         description:
-          "FPO formation, compliance and government scheme support for agriculture-based enterprises.",
+          "FPO formation, producer-company registration, compliance and government scheme support for agriculture-based enterprises.",
         keywords: [
           "FPO formation",
           "farmer producer company registration",

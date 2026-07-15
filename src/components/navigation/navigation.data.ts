@@ -11,32 +11,43 @@ export const navigationContent: NavigationContent = {
     {
       label: "Services",
       href: "/services",
-      eyebrow: "Business Support",
+      eyebrow: "What do you need help with today?",
       description:
-        "Connected services designed to help businesses start, operate and grow with clarity.",
+        "Find business registration, GST, tax, compliance, brand protection, licences and global setup support.",
       items: [
         {
-          label: "Business Setup",
+          label: "Start Your Business",
           href: "/services/business-setup",
-          description: "Company registration and startup structuring.",
+          description:
+            "Private Limited, LLP, OPC, Proprietorship, Partnership, Section 8 and MSME.",
           icon: "setup",
         },
         {
-          label: "Tax & Compliance",
+          label: "Run Your Business",
           href: "/services/tax-compliance",
-          description: "GST, ITR, ROC and ongoing compliance.",
+          description:
+            "GST, income tax, ROC filings, accounting, TDS, payroll and annual compliance.",
           icon: "tax",
         },
         {
-          label: "Legal Protection",
+          label: "Protect Your Business",
           href: "/services/legal-protection",
-          description: "Contracts, trademarks and legal safeguards.",
+          description:
+            "Trademark, patent, copyright, agreements and business documentation.",
           icon: "legal",
         },
         {
-          label: "Licences & Certifications",
-          href: "/services/licences-certifications",
-          description: "FSSAI, IEC, ISO, MSME and industry approvals.",
+          label: "Grow Your Business",
+          href: "/services/business-growth",
+          description:
+            "ISO, advisory, digital systems, automation and funding readiness.",
+          icon: "industry",
+        },
+        {
+          label: "Expand Globally",
+          href: "/services/global-business",
+          description:
+            "IEC, UAE, Singapore, Malaysia and international business setup.",
           icon: "certificate",
         },
       ],
@@ -47,11 +58,19 @@ export const navigationContent: NavigationContent = {
         },
         {
           label: "Private Limited Company",
-          href: "/services/private-limited-company",
+          href: "/services/private-limited-company-registration",
         },
         {
           label: "Trademark Registration",
           href: "/services/trademark-registration",
+        },
+        {
+          label: "Income Tax Return",
+          href: "/services/income-tax-return",
+        },
+        {
+          label: "Business Assessment",
+          href: "/approach/assessment",
         },
       ],
     },
@@ -59,32 +78,36 @@ export const navigationContent: NavigationContent = {
     {
       label: "Industries",
       href: "/industries",
-      eyebrow: "Industry Expertise",
+      eyebrow: "Support shaped around your business",
       description:
-        "Advisory shaped around the operational realities of different sectors.",
+        "Explore registration, compliance, tax and growth support for different operating realities.",
       items: [
         {
           label: "Startups",
           href: "/industries/startups",
-          description: "Launch, structure and scale new ventures.",
+          description:
+            "Formation, ownership, GST, protection and startup compliance.",
           icon: "startup",
         },
         {
           label: "Manufacturing",
           href: "/industries/manufacturing",
-          description: "Licensing, compliance and operational support.",
+          description:
+            "GST, licences, labour compliance, contracts and incentives.",
           icon: "industry",
         },
         {
           label: "Healthcare",
           href: "/industries/healthcare",
-          description: "Regulatory and business support for healthcare.",
+          description:
+            "Registrations, regulatory records, tax and operational compliance.",
           icon: "industry",
         },
         {
           label: "E-commerce & Retail",
           href: "/industries/ecommerce-retail",
-          description: "Tax, legal and growth support for modern commerce.",
+          description:
+            "Registration, GST, accounting and marketplace operations.",
           icon: "industry",
         },
       ],
@@ -107,32 +130,36 @@ export const navigationContent: NavigationContent = {
     {
       label: "Resources",
       href: "/resources",
-      eyebrow: "Knowledge Centre",
+      eyebrow: "Understand before you decide",
       description:
-        "Guides, updates and practical resources for better business decisions.",
+        "Use practical guides, compliance updates and clear answers to understand business requirements.",
       items: [
         {
           label: "Business Guides",
           href: "/resources/guides",
-          description: "Practical guides for founders and businesses.",
+          description:
+            "Step-by-step guidance for registrations and business decisions.",
           icon: "guide",
         },
         {
           label: "Compliance Updates",
           href: "/resources/updates",
-          description: "Important regulatory and filing updates.",
+          description:
+            "Important filing, tax and regulatory updates.",
           icon: "update",
         },
         {
           label: "Knowledge Hub",
           href: "/resources/knowledge-hub",
-          description: "Articles, explainers and business insights.",
+          description:
+            "Articles and explainers in clear business language.",
           icon: "knowledge",
         },
         {
           label: "FAQs",
           href: "/faq",
-          description: "Clear answers to common business questions.",
+          description:
+            "Clear answers to common registration and compliance questions.",
           icon: "faq",
         },
       ],

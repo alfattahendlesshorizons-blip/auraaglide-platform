@@ -1,33 +1,33 @@
 import type { AdvisoryApproachContent } from "./advisory-approach.types";
 
 export const advisoryApproachContent: AdvisoryApproachContent = {
-  eyebrow: "ADVISORY APPROACH",
+  eyebrow: "HOW WE WORK",
   heading: {
-    primary: "Every recommendation",
-    secondary: "begins with",
-    accent: "understanding.",
+    primary: "We understand the business",
+    secondary: "before recommending",
+    accent: "the service.",
   },
   quote:
-    "Good advice starts by listening, not by prescribing.",
+    "The right recommendation begins with understanding the business behind the requirement.",
   quoteCaption: "CONTEXT BEFORE RECOMMENDATION",
   introduction:
-    "Before discussing solutions, we understand how the business works today, what requires attention and what it is trying to build next.",
+    "We begin by understanding how the business works today, what requirement brought you here and what other decisions may be connected to it.",
   steps: [
     {
       id: "understand",
       label: "Understand",
-      eyebrow: "SEE THE BUSINESS AS IT IS",
+      eyebrow: "BEGIN WITH YOUR SITUATION",
       heading: {
-        primary: "We begin with",
-        secondary: "the business",
-        accent: "as it operates today.",
+        primary: "We understand",
+        secondary: "the business and",
+        accent: "the requirement.",
       },
       description:
-        "We listen to the business model, operating reality, responsibilities and goals before proposing any direction.",
+        "We listen to the business model, ownership, activities, current registrations and the outcome you are trying to achieve.",
       points: [
         "Business model and ownership",
-        "Current operations and systems",
-        "Priorities, constraints and goals",
+        "Current registrations and operations",
+        "Immediate requirement and wider goal",
       ],
       href: "/approach/discovery",
       ctaLabel: "Explore discovery",
@@ -35,18 +35,18 @@ export const advisoryApproachContent: AdvisoryApproachContent = {
     {
       id: "assess",
       label: "Assess",
-      eyebrow: "IDENTIFY WHAT REQUIRES ATTENTION",
+      eyebrow: "IDENTIFY WHAT APPLIES",
       heading: {
-        primary: "We evaluate",
-        secondary: "priorities, dependencies",
-        accent: "and avoidable risk.",
+        primary: "We review",
+        secondary: "requirements, dependencies",
+        accent: "and avoidable gaps.",
       },
       description:
-        "We review the current structure, obligations, dependencies and capability so guidance reflects the real position.",
+        "We assess which registration, filing, licence, document or advisory support is relevant and what may depend on it.",
       points: [
-        "Compliance and documentation review",
-        "Risk and dependency mapping",
-        "Readiness and opportunity assessment",
+        "Applicable registrations and filings",
+        "Document and compliance review",
+        "Dependencies and avoidable risk",
       ],
       href: "/approach/assessment",
       ctaLabel: "Explore assessment",
@@ -54,18 +54,18 @@ export const advisoryApproachContent: AdvisoryApproachContent = {
     {
       id: "structure",
       label: "Structure",
-      eyebrow: "PRIORITISE THE NEXT STEP",
+      eyebrow: "PUT THE WORK IN ORDER",
       heading: {
-        primary: "We define",
-        secondary: "what deserves attention",
+        primary: "We organise",
+        secondary: "what should happen",
         accent: "now and next.",
       },
       description:
-        "We organise priorities, responsibilities and dependencies into a practical sequence the business can understand.",
+        "We arrange the work in a practical sequence so immediate action does not create unnecessary rework later.",
       points: [
-        "Prioritised roadmap",
+        "Prioritised action plan",
         "Clear responsibilities",
-        "Connected legal, finance and growth decisions",
+        "Connected legal, tax and growth steps",
       ],
       href: "/approach/structure",
       ctaLabel: "Explore structuring",
@@ -73,18 +73,18 @@ export const advisoryApproachContent: AdvisoryApproachContent = {
     {
       id: "execute",
       label: "Execute",
-      eyebrow: "CONVERT DIRECTION INTO PROGRESS",
+      eyebrow: "MOVE THE WORK FORWARD",
       heading: {
-        primary: "We help turn",
-        secondary: "clear direction into",
-        accent: "coordinated progress.",
+        primary: "We coordinate",
+        secondary: "documents, applications",
+        accent: "and follow-through.",
       },
       description:
-        "Required workstreams are coordinated so progress in one area does not create avoidable friction somewhere else.",
+        "Required workstreams are coordinated with clear documentation, status visibility and attention to connected requirements.",
       points: [
-        "Coordinated implementation",
-        "Milestone visibility",
-        "Documentation and decision tracking",
+        "Application and filing coordination",
+        "Document and milestone tracking",
+        "Clear communication on progress",
       ],
       href: "/approach/execution",
       ctaLabel: "Explore execution",
@@ -92,18 +92,18 @@ export const advisoryApproachContent: AdvisoryApproachContent = {
     {
       id: "support",
       label: "Support",
-      eyebrow: "REMAIN CONNECTED AS THINGS CHANGE",
+      eyebrow: "STAY PREPARED AFTER COMPLETION",
       heading: {
-        primary: "We stay connected",
-        secondary: "as priorities",
-        accent: "keep changing.",
+        primary: "We help you understand",
+        secondary: "what follows after",
+        accent: "the immediate work.",
       },
       description:
-        "Ongoing review helps guidance remain relevant as circumstances, responsibilities and opportunities evolve.",
+        "Where required, ongoing support helps the business manage filings, renewals, documentation and new decisions as circumstances change.",
       points: [
-        "Review and follow-up",
-        "Issue resolution and guidance",
-        "Long-term advisory continuity",
+        "Follow-up and issue guidance",
+        "Recurring compliance awareness",
+        "Ongoing business advisory",
       ],
       href: "/approach/ongoing-support",
       ctaLabel: "Explore ongoing support",

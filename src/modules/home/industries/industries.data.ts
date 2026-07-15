@@ -1,4 +1,4 @@
-﻿import type { IndustriesSectionContent } from "./industries.types";
+import type { IndustriesSectionContent } from "./industries.types";
 
 export const industriesFallbackContent: IndustriesSectionContent = {
   sectionId: "industries",
@@ -7,15 +7,15 @@ export const industriesFallbackContent: IndustriesSectionContent = {
   headingMiddle: "your business",
   headingAccent: "reality.",
   description:
-    "Every industry operates through different regulations, priorities and growth decisions. Our advisory adapts to the structure of your business and the direction you want to take next.",
+    "Registrations, tax, compliance and growth needs change with the way a business operates. Explore support shaped around the realities of your industry.",
   industries: [
     {
       id: "startups",
-      eyebrow: "Helping",
+      eyebrow: "Starting with",
       title: "Startups",
-      statement: "Turning ideas into structured businesses.",
+      statement: "Build the company, ownership and compliance foundation.",
       description:
-        "Formation, legal protection, tax foundations and growth readiness for businesses taking their first serious steps.",
+        "Company formation, GST, legal protection, founder documentation and growth readiness for new ventures.",
       iconKey: "startup",
       href: "/industries/startups",
       routeStatus: "planned",
@@ -27,9 +27,9 @@ export const industriesFallbackContent: IndustriesSectionContent = {
       id: "manufacturing",
       eyebrow: "Supporting",
       title: "Manufacturing",
-      statement: "Operational clarity built for scale.",
+      statement: "Keep operations, licences and compliance aligned.",
       description:
-        "Compliance, taxation, contracts, incentives and advisory support aligned with complex business operations.",
+        "GST, labour compliance, contracts, licences, accounting and government incentive support for manufacturers.",
       iconKey: "manufacturing",
       href: "/industries/manufacturing",
       routeStatus: "planned",
@@ -41,9 +41,9 @@ export const industriesFallbackContent: IndustriesSectionContent = {
       id: "healthcare",
       eyebrow: "Built for",
       title: "Healthcare",
-      statement: "Guidance shaped around trust and continuity.",
+      statement: "Manage registrations and regulatory responsibility.",
       description:
-        "Structured support for registrations, regulatory obligations, taxation and sustainable healthcare operations.",
+        "Registration, tax, regulatory documentation and ongoing compliance support for healthcare businesses.",
       iconKey: "healthcare",
       href: "/industries/healthcare",
       routeStatus: "planned",
@@ -55,9 +55,9 @@ export const industriesFallbackContent: IndustriesSectionContent = {
       id: "retail",
       eyebrow: "Growing with",
       title: "Retail & E-commerce",
-      statement: "Structure across every customer touchpoint.",
+      statement: "Connect sales with GST, records and operations.",
       description:
-        "Business, tax, legal and operational guidance for businesses selling across physical and digital channels.",
+        "Registration, GST, accounting, marketplace compliance and digital operations across online and offline channels.",
       iconKey: "retail",
       href: "/industries/ecommerce-retail",
       routeStatus: "planned",
@@ -69,9 +69,9 @@ export const industriesFallbackContent: IndustriesSectionContent = {
       id: "agriculture",
       eyebrow: "Strengthening",
       title: "Agriculture & FPO",
-      statement: "Helping enterprises grow from the ground up.",
+      statement: "Build the structure behind collective growth.",
       description:
-        "Formation, schemes, compliance and advisory support for agricultural enterprises, producers and FPOs.",
+        "FPO formation, producer-company registration, schemes, compliance and market-readiness support.",
       iconKey: "agriculture",
       href: "/industries/agriculture-fpo",
       routeStatus: "planned",

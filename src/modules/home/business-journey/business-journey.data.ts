@@ -20,8 +20,8 @@ export const businessJourneyContent: BusinessJourneyContent = {
 
   quote: {
     text:
-      "Whether you are shaping an idea, preparing to launch, managing a growing operation or planning expansion, knowing where you are today helps reveal what deserves attention next.",
-    signature: "Every stage deserves the right direction",
+      "Every stage brings different business decisions. Knowing where your business stands makes the next one easier to understand.",
+    signature: "The right direction begins with the right context",
   },
 
   stages: [
@@ -29,10 +29,11 @@ export const businessJourneyContent: BusinessJourneyContent = {
       id: "idea",
       label: "Idea",
       shortLabel: "Idea",
-      eyebrow: "Shape the foundation",
-      title: "Turn an early opportunity into a clearer business direction.",
+      eyebrow: "Understand the opportunity",
+      title:
+        "You have an idea, but the structure, market and next steps are still taking shape.",
       description:
-        "Clarify the opportunity, test its direction and choose a foundation that supports what may come next.",
+        "Clarify the business opportunity, understand the market and compare structures before making commitments that may be difficult to change later.",
       visualKey: "idea",
       services: [
         {
@@ -64,11 +65,11 @@ export const businessJourneyContent: BusinessJourneyContent = {
       id: "launch",
       label: "Launch",
       shortLabel: "Launch",
-      eyebrow: "Build the legal base",
+      eyebrow: "Build the legal foundation",
       title:
-        "Build the right structure before daily operations begin.",
+        "You are ready to start, register and build the business correctly.",
       description:
-        "Choose the right entity, complete essential registrations and begin with a clear operating foundation.",
+        "Choose the right entity, complete essential registrations and put the legal and operational basics in place before daily activity begins.",
       visualKey: "launch",
       services: [
         {
@@ -84,12 +85,12 @@ export const businessJourneyContent: BusinessJourneyContent = {
           href: "/services/msme-registration",
         },
         {
-          label: "Licences & Certifications",
+          label: "Licences & Registrations",
           href: "/services/licences-certifications",
         },
       ],
       cta: {
-        label: "Explore launch solutions",
+        label: "Explore launch support",
         href: "/services/business-setup",
       },
       enabled: true,
@@ -100,11 +101,11 @@ export const businessJourneyContent: BusinessJourneyContent = {
       id: "running",
       label: "Running Business",
       shortLabel: "Running",
-      eyebrow: "Operate with confidence",
+      eyebrow: "Manage daily responsibilities",
       title:
-        "Bring greater control to compliance, finance and operations.",
+        "Your business is active, and GST, tax, filings, records and operations now need regular attention.",
       description:
-        "Manage recurring responsibilities, financial visibility and daily operations through one connected support system.",
+        "Keep recurring compliance, accounting, documentation and operational responsibilities visible so deadlines do not become avoidable disruptions.",
       visualKey: "running",
       services: [
         {
@@ -116,7 +117,7 @@ export const businessJourneyContent: BusinessJourneyContent = {
           href: "/services/roc-compliance",
         },
         {
-          label: "Accounting",
+          label: "Accounting & Bookkeeping",
           href: "/services/accounting",
         },
         {
@@ -128,7 +129,7 @@ export const businessJourneyContent: BusinessJourneyContent = {
           href: "/services/msme-benefits",
         },
         {
-          label: "Legal Support",
+          label: "Legal Documentation",
           href: "/services/legal-protection",
         },
       ],
@@ -145,11 +146,11 @@ export const businessJourneyContent: BusinessJourneyContent = {
       id: "growth",
       label: "Growth",
       shortLabel: "Growth",
-      eyebrow: "Build stronger systems",
+      eyebrow: "Strengthen the systems behind growth",
       title:
-        "Strengthen systems before demand creates pressure.",
+        "Your business is growing, and its systems now need to keep up.",
       description:
-        "Improve visibility, customer management, automation and operating processes before scaling further.",
+        "Improve customer management, reporting, digital presence and operating processes before increasing demand creates pressure or confusion.",
       visualKey: "growth",
       services: [
         {
@@ -165,12 +166,12 @@ export const businessJourneyContent: BusinessJourneyContent = {
           href: "/services/crm",
         },
         {
-          label: "Automation",
+          label: "Business Automation",
           href: "/services/automation",
         },
       ],
       cta: {
-        label: "Explore growth solutions",
+        label: "Explore growth support",
         href: "/services/digital-growth",
       },
       enabled: true,
@@ -181,11 +182,11 @@ export const businessJourneyContent: BusinessJourneyContent = {
       id: "expansion",
       label: "Expansion",
       shortLabel: "Expand",
-      eyebrow: "Scale with structure",
+      eyebrow: "Prepare for greater complexity",
       title:
-        "Prepare the business for wider markets, teams and complexity.",
+        "You are preparing for new markets, exports, investment or a larger organisation.",
       description:
-        "Strengthen legal, operational and financial readiness before entering new markets, raising capital or expanding the team.",
+        "Review legal, financial and operational readiness before entering new markets, raising capital, expanding the team or establishing a business outside India.",
       visualKey: "expansion",
       services: [
         {
@@ -193,12 +194,12 @@ export const businessJourneyContent: BusinessJourneyContent = {
           href: "/services/funding-readiness",
         },
         {
-          label: "Import Export",
-          href: "/services/import-export",
+          label: "Import Export Code",
+          href: "/services/import-export-code",
         },
         {
-          label: "Business Restructuring",
-          href: "/services/business-restructuring",
+          label: "International Company Setup",
+          href: "/services/global-business",
         },
         {
           label: "Investor Readiness",
@@ -214,4 +215,3 @@ export const businessJourneyContent: BusinessJourneyContent = {
     },
   ],
 };
-
