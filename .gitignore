@@ -45,4 +45,11 @@ next-env.d.ts
 
 .repair-backups/
 
-.repair-backups/
+# internal audit and temporary repair artifacts
+.audit/
+inventory/
+*.bak
+*.backup
+*.emergency-*
+home-mobile-audit.txt
+*.zip

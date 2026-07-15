@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Manrope } from "next/font/google";
 
 import { SiteFooter } from "@/components/site-footer";
+import { siteSeoConfig } from "@/core/seo";
 import "./globals.css";
 
 const geist = Geist({
@@ -17,9 +18,36 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "AuraaGlide Solutions",
-  description:
-    "Connected business advisory, compliance, legal and growth support.",
+  metadataBase: new URL(siteSeoConfig.siteUrl),
+  title: {
+    default: siteSeoConfig.defaultTitle,
+    template: siteSeoConfig.titleTemplate,
+  },
+  description: siteSeoConfig.defaultDescription,
+  applicationName: siteSeoConfig.siteName,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName: siteSeoConfig.siteName,
+    locale: siteSeoConfig.locale,
+    title: siteSeoConfig.defaultTitle,
+    description: siteSeoConfig.defaultDescription,
+    url: "/",
+    images: [
+      {
+        url: siteSeoConfig.socialImagePath,
+        alt: siteSeoConfig.siteName,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteSeoConfig.defaultTitle,
+    description: siteSeoConfig.defaultDescription,
+    images: [siteSeoConfig.socialImagePath],
+  },
 };
 
 export default function RootLayout({
@@ -36,4 +64,3 @@ export default function RootLayout({
     </html>
   );
 }
-
