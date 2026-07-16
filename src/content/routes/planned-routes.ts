@@ -84,6 +84,19 @@ export const plannedRoutes = new Set([
   "/services/tax-planning",
   "/services/trademark-registration",
   "/services/website-development",
+  "/disclaimer",
+  "/privacy",
+  "/services/global-business",
+  "/services/iso-certification",
+  "/services/malaysia-company-registration",
+  "/services/partnership-firm-registration",
+  "/services/patent-registration",
+  "/services/proprietorship-registration",
+  "/services/section-8-company-registration",
+  "/services/singapore-company-registration",
+  "/services/tds-payroll",
+  "/services/uae-company-setup",
+  "/terms",
 ] as const);
 
 export function isPlannedRoute(pathname: string) {

@@ -1,82 +1,45 @@
-﻿.root {
+.root {
   position: fixed;
   z-index: -20;
   inset: 0;
-
   overflow: hidden;
   pointer-events: none;
 
-  background: var(--home-bg);
+  background:
+    radial-gradient(
+      circle at 85% 12%,
+      rgba(200, 155, 74, 0.14),
+      transparent 25rem
+    ),
+    radial-gradient(
+      circle at 12% 48%,
+      rgba(85, 139, 177, 0.2),
+      transparent 34rem
+    ),
+    linear-gradient(
+      145deg,
+      #07121d,
+      #0b1925 55%,
+      #102536
+    );
 }
 
 .base,
 .blueDepth,
 .leftVignette,
-.goldWarmth,
+.goldWarmth {
+  display: none;
+}
+
 .noise {
   position: absolute;
   inset: 0;
-}
-
-.base {
-  background:
-    linear-gradient(
-      180deg,
-      var(--home-bg) 0%,
-      #071522 48%,
-      var(--home-bg-deep) 100%
-    );
-}
-
-.blueDepth {
-  inset: -16% -10% auto auto;
-
-  width: 72vw;
-  height: 72vw;
-
-  opacity: 0.45;
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(51, 105, 150, 0.25) 0%,
-      rgba(28, 70, 106, 0.11) 34%,
-      transparent 70%
-    );
-
-  filter: blur(16px);
-}
-
-.leftVignette {
-  background:
-    radial-gradient(
-      ellipse at left center,
-      rgba(0, 0, 0, 0.38),
-      transparent 58%
-    );
-}
-
-.goldWarmth {
-  inset: auto 5% -38% auto;
-
-  width: 58vw;
-  height: 58vw;
-
-  opacity: 0.11;
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(201, 154, 77, 0.27),
-      transparent 68%
-    );
-
-  filter: blur(34px);
-}
-
-.noise {
-  opacity: 0.02;
+  opacity: 0.025;
 
   background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    linear-gradient(rgba(160, 190, 210, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(160, 190, 210, 0.06) 1px, transparent 1px);
+
+  background-size: 6rem 6rem;
+  mask-image: linear-gradient(to bottom, black, transparent 94%);
 }

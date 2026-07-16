@@ -1,0 +1,195 @@
+.section {
+  width: min(
+    calc(100% - (var(--space-page-x) * 2)),
+    var(--container-wide)
+  );
+  margin-inline: auto;
+  padding-block: 28px 22px;
+}
+
+.panel {
+  position: relative;
+  isolation: isolate;
+
+  display: grid;
+  min-height: clamp(590px, 66vh, 680px);
+  padding: clamp(38px, 4vw, 58px);
+  overflow: hidden;
+
+  grid-template-columns:
+    minmax(0, 1.06fr)
+    minmax(390px, 0.94fr);
+
+  gap: clamp(36px, 4vw, 64px);
+  align-items: center;
+
+  border: 1px solid rgba(130, 163, 190, 0.17);
+  border-radius: 34px;
+
+  background:
+    radial-gradient(
+      circle at 85% 8%,
+      rgba(62, 119, 163, 0.15),
+      transparent 31%
+    ),
+    radial-gradient(
+      circle at 15% 78%,
+      rgba(43, 82, 113, 0.1),
+      transparent 42%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(15, 35, 52, 0.99),
+      rgba(7, 20, 31, 0.98) 58%,
+      rgba(8, 23, 35, 0.99)
+    );
+
+  box-shadow:
+    0 66px 145px rgba(0, 0, 0, 0.44),
+    0 22px 54px rgba(0, 0, 0, 0.27),
+    inset 0 1px rgba(255, 255, 255, 0.06),
+    inset 0 -1px rgba(201, 154, 77, 0.05);
+}
+
+.panel::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+
+  background:
+    linear-gradient(
+      112deg,
+      rgba(255, 255, 255, 0.022),
+      transparent 29%
+    ),
+    radial-gradient(
+      circle at 23% 19%,
+      rgba(104, 151, 188, 0.055),
+      transparent 40%
+    );
+}
+
+.panel::after {
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  border-radius: inherit;
+  content: "";
+
+  box-shadow:
+    inset 0 2px rgba(255, 255, 255, 0.027),
+    inset 0 -18px 38px rgba(0, 0, 0, 0.08);
+
+  pointer-events: none;
+}
+
+.topEdge {
+  position: absolute;
+  z-index: 12;
+  top: -1px;
+  right: 12%;
+  left: 12%;
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(112, 165, 204, 0.26) 24%,
+      rgba(229, 190, 113, 0.86) 50%,
+      rgba(112, 165, 204, 0.26) 76%,
+      transparent
+    );
+
+  filter: drop-shadow(0 3px 9px rgba(201, 154, 77, 0.18));
+}
+
+.topBloom {
+  position: absolute;
+  top: -25px;
+  right: 18%;
+  left: 18%;
+  height: 54px;
+  opacity: 0.15;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(215, 171, 91, 0.25),
+      transparent 68%
+    );
+
+  filter: blur(18px);
+}
+
+.cornerLight {
+  position: absolute;
+  top: -130px;
+  right: -100px;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  opacity: 0.13;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70, 132, 179, 0.5),
+      transparent 70%
+    );
+
+  filter: blur(18px);
+}
+
+.content,
+.media {
+  position: relative;
+  z-index: 4;
+  min-width: 0;
+}
+
+.footer {
+  position: relative;
+  z-index: 4;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 1100px) {
+  .panel {
+    min-height: auto;
+    padding: clamp(36px, 6vw, 56px);
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    width: calc(100% - 20px);
+    padding-block: 14px 18px;
+  }
+
+  .panel {
+    padding: 28px 17px 17px;
+    gap: 30px;
+    border-radius: 27px;
+  }
+}
+
+@media (min-width: 1081px) {
+  .section {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  .section {
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-top: 20px;
+  }
+}

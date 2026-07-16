@@ -23,7 +23,7 @@ export const heroContent: HeroContent = {
   },
 
   reassurance:
-    "Business registration, compliance, tax, protection and growth supportâ€”without unnecessary complexity.",
+    "Business registration, compliance, tax, protection and growth support—without unnecessary complexity.",
 
   railItems: [
     {
